@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+
+@media (max-width: 767px) { 
+    *{
+        font-size: 1.1rem;
+        font-family: "sans-serif";
+        color: black;
+    }
+    body {
+        font-family: "Yuji Mai", serif;
+        background-color:#F08FB5;
+    }
+    nav{   
+        border-radius: 10px ;
+    }
+    .nav-link{
+        color: #3C041A !important;
+    }
+    .nav-link:hover{
+        transition: 1s;
+        color: green;
+        background-color: cadetblue;
+        border-radius: 6px;
+    }
+    main{
+        background-color:#F08FB5;
+        /*background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/f.jpg');
+        
+        background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
+        background-repeat: no-repeat;*/
+        border: #3C041A dashed;
+        border-radius: 10px;
+        width: 100vw;
+        height: 1000px;
+    }
+    #main-div{
+        display: block;
+        /*border: 3px solid black;*/
+        align-content: space-around;
+    }
+    #div-1, #div-2{
+        margin: 10px;
+        text-align: center;
+        background-color:#EB4310;
+        color: #3C041A;
+        border-radius: 10px;
+        
+    }
+    #titulo{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        background-color: rgb(255, 255, 44);
+        color:#3C041A;
+        display: inline-block;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p,ul{
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    li{
+        font-size: 1.3rem;
+    }
+
+
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+    *{
+        font-size: 1rem;
+        font-family: "sans-serif";
+        padding-left: 20px; /* Preenchimento à esquerda de 20px */
+        padding-right: 20px; /* Preenchimento à direita de 20px */
+        color:red;
+    }
+    body {
+        font-family: "Yuji Mai", serif;
+        background-color:#F08FB5;
+    }
+
+    nav{
+        
+        border-radius: 10px ;
+    }
+    .nav-link{
+        color: #3C041A !important;
+    }
+    .nav-link:hover{
+        transition: 1s;
+        color: green;
+        background-color: cadetblue;
+        border-radius: 6px;
+    }
+    main{
+        margin: 50px;
+        background-color: #EB4310;
+        /*
+        background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
+        background-repeat: no-repeat;*/
+        background-size: cover;
+        padding: 20PX;
+        border: #3C041A dashed;
+        border-radius: 10px;
+    }
+    #main-div{
+        display: flex;
+        /*border: 3px solid black;*/
+        align-content: space-around;
+    }
+    #div-1, #div-2{
+        margin: 10px;
+        text-align: center;
+        background-color: white;
+        color: #3C041A;
+        border-radius: 10px;
+        width: 630px;
+        height: 450px;
+    }
+    #titulo{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        border-radius: 10px;
+        font-size: 2rem;
+        background-color: rgb(255, 255, 44);
+        color:#3C041A;
+        display: inline-block;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p,ul{
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    li{
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (min-width: 1024px) { 
+    
+    *{
+        font-size: 1.3rem;
+        font-family: "sans-serif";
+        padding-left: 20px; /* Preenchimento à esquerda de 20px */
+        padding-right: 20px; /* Preenchimento à direita de 20px */
+    }
+    body {
+        font-family: "Yuji Mai", serif;
+        background-color:#F08FB5;
+        
+    }
+    
+    
+    nav{
+        
+        border-radius: 10px ;
+    }
+    .nav-link{
+        color: #3C041A !important;
+    }
+    .nav-link:hover{
+        transition: 1s;
+        color: green;
+        background-color: cadetblue;
+        border-radius: 6px;
+    }
+    main{
+        margin: 40px;
+        background-color: #EB4310;
+        /*
+        background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
+        background-repeat: no-repeat;*/
+        background-size: cover;
+        padding: 20PX;
+        border: #3C041A dashed;
+        border-radius: 10px;
+    }
+    #main-div{
+        display: flex;
+        /*border: 3px solid black;*/
+        align-content: space-around;
+    }
+    #div-1, #div-2{
+        margin: 10px;
+        text-align: center;
+        background-color: white;
+        color: #3C041A;
+        border-radius: 10px;
+        width: 630px;
+        height: 400px;
+    }
+    #titulo{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        border-radius: 10px;
+        font-size: 2rem;
+        background-color: rgb(255, 255, 44);
+        color:#3C041A;
+        display: inline-block;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    p,ul{
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    li{
+        font-size: 1.3rem;
+    }
+
+}
+
