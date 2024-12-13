@@ -47,6 +47,7 @@
         
     }
     #titulo{
+        font-size: 2rem;
         text-align: center;
     }
     h1{
@@ -150,44 +151,55 @@
     *{
         font-size: 1.3rem;
         font-family: "sans-serif";
-        padding-left: 20px; /* Preenchimento à esquerda de 20px */
-        padding-right: 20px; /* Preenchimento à direita de 20px */
+        padding-left: 20px;
+        padding-right: 20px;
     }
     body {
         font-family: "Yuji Mai", serif;
-        background-color:#F08FB5;
-        
+        background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/bac.avif');
+        background-size: cover;
     }
     
-    
     nav{
-        
         border-radius: 10px ;
     }
     .nav-link{
+        padding: 5px;
         color: #3C041A !important;
+        border-radius: 15px;
     }
     .nav-link:hover{
         transition: 1s;
         color: green;
-        background-color: cadetblue;
-        border-radius: 6px;
+        background-color: rgb(155, 170, 171);
+        
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+    
+    .navbar-brand{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Bangers", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color:black !important;
     }
     main{
+        opacity: 0.8;
         margin: 40px;
-        background-color: #EB4310;
-        /*
-        background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
-        background-repeat: no-repeat;*/
         background-size: cover;
         padding: 20PX;
-        border: #3C041A dashed;
         border-radius: 10px;
+        border: 2px solid red;
+        height: 760px;
     }
     #main-div{
         display: flex;
-        /*border: 3px solid black;*/
-        align-content: space-around;
+        flex-direction: column; /* Adicionado */
+        align-items: center; /* Adicionado */
+        justify-content: center; /* Adicionado, opcional para centralizar verticalmente */
+        width: 100%;/* Adicionado */
+    
     }
     #div-1, #div-2{
         margin: 10px;
@@ -200,15 +212,20 @@
     }
     #titulo{
         text-align: center;
-    }
-    h1{
-        text-align: center;
+
         border-radius: 10px;
         font-size: 2rem;
-        background-color: rgb(255, 255, 44);
+        background-color: yellow;
         color:#3C041A;
         display: inline-block;
     }
+    
+    
+    #text-main{
+        text-align: center ;
+        font-size: 4rem;
+    }
+    
     h2{
         font-size: 2rem;
     }
@@ -219,6 +236,15 @@
     li{
         font-size: 1.3rem;
     }
-
+    .contatos{
+        width: 100px;
+        height: 60px;
+        border-radius: 100%;
+        
+    }
+    #contatos{
+        align-self: flex-start;
+        
+    }
 }
 
