@@ -25,7 +25,6 @@
     main{
         background-color:#F08FB5;
         /*background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/f.jpg');
-        
         background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
         background-repeat: no-repeat;*/
         border: #3C041A dashed;
@@ -47,6 +46,7 @@
         
     }
     #titulo{
+        background-color: #3C041A;
         font-size: 2rem;
         text-align: center;
     }
@@ -83,6 +83,7 @@
         font-family: "Yuji Mai", serif;
         background-color:#F08FB5;
     }
+    
 
     nav{
         
@@ -148,20 +149,42 @@
 
 @media (min-width: 1024px) { 
     
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+    
     *{
         font-size: 1.3rem;
-        font-family: "sans-serif";
+        font-family: "Nunito", sans-serif;
         padding-left: 20px;
         padding-right: 20px;
+        
     }
     body {
         font-family: "Yuji Mai", serif;
         background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/bac.avif');
         background-size: cover;
+        background-repeat: no-repeat;
+    }
+    button{
+        display: block;
+    }
+    #change-color{
+        background-color: gainsboro;
+        float: right;
+        width: 100px !important;
+        height: 50px !important;
+        border-radius: 10px;
+    }
+    #change-color:hover{
+        transition: 1s;
+        background-color: gray;
+        width: 100px;
+        height: 50px;
     }
     
-    nav{
+    .navbar-nav{
         border-radius: 10px ;
+        display: flex !important;
+
     }
     .nav-link{
         padding: 5px;
@@ -184,45 +207,59 @@
         font-style: normal;
         color:black !important;
     }
-    main{
-        opacity: 0.8;
+    body > main {
+        opacity: 0.9;
+        background: linear-gradient(black, gray);
         margin: 40px;
         background-size: cover;
-        padding: 20PX;
+        padding: 20px;
         border-radius: 10px;
-        border: 2px solid red;
-        height: 760px;
-    }
-    #main-div{
-        display: flex;
+        border: double gray 2px;
+        height: 769px;
+        display: flex; /* Adicionado */
         flex-direction: column; /* Adicionado */
-        align-items: center; /* Adicionado */
-        justify-content: center; /* Adicionado, opcional para centralizar verticalmente */
-        width: 100%;/* Adicionado */
-    
+    }
+    #main-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap; /* Adicionado */
     }
     #div-1, #div-2{
         margin: 10px;
         text-align: center;
         background-color: white;
-        color: #3C041A;
         border-radius: 10px;
         width: 630px;
         height: 400px;
     }
+    #div-3,#div-4,#div-5,#div-6{
+        background: none;
+        /*border: 2px solid red;
+        width: 200px;
+        height: 300px;*/
+        
+    }
+    .img-icon{
+        width: 150px;
+        height: 100px;
+        /*border: double thick black;*/
+    }
+    .img-eu{
+        width: 200px;
+        height: 350px;
+    }
     #titulo{
-        text-align: center;
-
+        margin-top: 50px;
+        background-color: #3C041A;
         border-radius: 10px;
         font-size: 2rem;
-        background-color: yellow;
-        color:#3C041A;
+        color:white;
         display: inline-block;
     }
-    
-    
     #text-main{
-        text-align: center ;
+        color: aliceblue;
         font-size: 4rem;
     }
     
@@ -244,7 +281,23 @@
     }
     #contatos{
         align-self: flex-start;
-        
+    }
+    .text-apresentacao{
+        width: 500px;
+        border-radius: 6px;
+        color: white;
+        background-color: #3C041A;
+        font-size: 1rem;
+    }
+
+    #text-contatos{
+        display: none;
+        background-color: #3C041A;
+        width: 500px;
+        border-radius: 6px;
+        color: white;
+        font-size: 1rem;
+        color: rgb(61, 59, 59);
+        margin-top: auto ;
     }
 }
-

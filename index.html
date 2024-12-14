@@ -10,9 +10,9 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" href="css/index.css">
-<script src="js/js.js"></script>
+<script src="js/index.js" defer></script>
 </head>
-<body>
+<body id="body">
     <main>
         <header id="is">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -23,76 +23,100 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
+                        <!--
                         <li class="nav-item active">
                             <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        -->
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="projetos.html">Tecnologias</a> <!-- Link corrigido -->
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contatos.html">Contatos</a> <!-- Link corrigido -->
                         </li>
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="projetos.html">Projetos</a> <!-- Link corrigido -->
+                            
+                            <li><img onclick="change_color()" src="image/change_color.png" alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores" ></li>
+                            
                         </li>
+                       
+                        
+                        
                     </ul>
+                    
                 </div>
+                
             </nav>
+            
         </header>
+        
         <br>
-        <h1 id="titulo">Desenvolvedor backend júnior</h1>
+        <strong>
+            <h1 id="titulo">Desenvolvedor back-end júnior</h1>
+        </strong>
+        
         <!--
         <div id="image">
             <img src="background.jpeg" alt="" width="100" height="100">
             
         </div>-->
-        
+        <br>
+        <br>
         <div id="main-div">
+        
+            
+            
             <!--
-            <div id="div-1">
-                <br>
-                <h1>sobre</h1>
-                
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo deleniti impedit dolores omnis repellat excepturi fugiat at obcaecati nesciunt ullam deserunt, provident eum, voluptas unde minus magni temporibus? Fugit, voluptatibus.
-                </p>
-            </div>
-            
-
-    
-            <div id="div-2">
-                <br>
-                    <h1>Tecnologias</h1>
-                    <p>
-                        
-                            <ul>
-                                <li>python</li>
-                                <li>JavaScript</li>
-                                <li>SQL (sqlite, Mysql)</li>
-                            </ul>
-                        
-                    </p>
-
-            </div>
+            <img src="" alt="" class="img-eu">
             -->
-
-
-
-
+            <div id="div-3">
+                <img src="image/python.png" alt="Python" class="img-icon" title="Python">
+            </div>    
+            <div id="div-4">
+                <img src="image/sql.png" alt="SQL" class="img-icon" title="SQL">
+            </div>
+            <div id="div-5">
+                <img src="image/dj.svg" alt="Django" class="img-icon" title="Django">    
+            </div>
+            <div id="div-5">
+                <img src="image/st.png" alt="Streamlit" class="img-icon" title="Streamlit">    
+            </div>
+            <br>
             <h1 id="text-main">
-                Hora de codar?
-
-
-            </h1>
-
-            
                 
-            
-
+                Hora de codar?
+            </h1>
         </div>
         
-        
+        <!--
         <div id="contatos">
             <img src="/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/zap.png" alt="zap" class="contatos">
             <img src="/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/tel.png" alt="telefone" class="contatos">
             <img src="/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/insta.png" alt="instagram" class="contatos">
+        </div>
+        -->
+        
+        <br>
+        
+        <div class="text-apresentacao">
+            <br>
+            Tenho mais afinidade com essas tecnologias
+            <br>
+            apresentadas, também conhecimentos em<strong class="text-apresentacao">Html, CSS e JavaScript.</strong>Para mais clique em Tecnologias ou projetos. Obrigado:)
+            <br>
+            <br>
+            
+        </div>
+
+        <div id="text-contatos">
+            Whatsapp: 99-9999999
+            <br>
+            Email: victorh.csilva20@gmail.com
+            <br>
+            Instagram: @_victorh_
         </div>
     </main>
     
