@@ -1,139 +1,118 @@
 @import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
 
 @media (max-width: 767px) { 
-    *{
-        font-size: 1.1rem;
-        font-family: "sans-serif";
-        color: black;
-    }
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color:#F08FB5;
-    }
-    nav{   
-        border-radius: 10px ;
-    }
-    .nav-link{
-        color: #3C041A !important;
-    }
-    .nav-link:hover{
-        transition: 1s;
-        color: green;
-        background-color: cadetblue;
-        border-radius: 6px;
-    }
-    main{
-        background-color:#F08FB5;
-        /*background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/f.jpg');
-        background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
-        background-repeat: no-repeat;*/
-        border: #3C041A dashed;
-        border-radius: 10px;
-        width: 100vw;
-        height: 1000px;
-    }
-    #main-div{
-        display: block;
-        /*border: 3px solid black;*/
-        align-content: space-around;
-    }
-    #div-1, #div-2{
-        margin: 10px;
-        text-align: center;
-        background-color:#EB4310;
-        color: #3C041A;
-        border-radius: 10px;
-        
-    }
-    #titulo{
-        background-color: #3C041A;
-        font-size: 2rem;
-        text-align: center;
-    }
-    h1{
-        text-align: center;
-        border-radius: 10px;
-        font-size: 1.4rem;
-        background-color: rgb(255, 255, 44);
-        color:#3C041A;
-        display: inline-block;
-    }
-    h2{
-        font-size: 2rem;
-    }
-    p,ul{
-        text-align: left;
-        font-size: 1.1rem;
-    }
-    li{
-        font-size: 1.3rem;
-    }
-
-
-}
-@media (min-width: 768px) and (max-width: 1023px) { 
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+    
     *{
         font-size: 1rem;
-        font-family: "sans-serif";
-        padding-left: 20px; /* Preenchimento à esquerda de 20px */
-        padding-right: 20px; /* Preenchimento à direita de 20px */
-        color:red;
+        font-family: "Nunito", sans-serif;
+        /*padding-left: 20px;
+        padding-right: 20px;*/
     }
     body {
         font-family: "Yuji Mai", serif;
-        background-color:#F08FB5;
+        /*background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/bac.avif');*/
+        background-color: gainsboro;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    button{
+        display: block;
+    }
+    #change-color{
+        float:left;
+        width: 55px !important;
+        height: 50px !important;
+        border-radius: 10px;
+    }
+    #change-color:hover{
+        transition: 1s;
+        background-color: gray;
+        width: 100px;
+        height: 50px;
     }
     
-
-    nav{
-        
+    .navbar-nav{
         border-radius: 10px ;
+        display: flex !important;
+
     }
     .nav-link{
+        text-align: center;
+        padding: 5px;
         color: #3C041A !important;
+        border-radius: 15px;
     }
     .nav-link:hover{
         transition: 1s;
         color: green;
-        background-color: cadetblue;
-        border-radius: 6px;
+        background-color: rgb(155, 170, 171);
+        
     }
-    main{
-        margin: 50px;
-        background-color: #EB4310;
-        /*
-        background-image: url('/home/victor/main/projetos-curtos/portifolio/background.jpeg');
-        background-repeat: no-repeat;*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+    
+    .navbar-brand{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Bangers", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color:black !important;
+    }
+    body > main {
+        opacity: 0.9;
+        background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));
         background-size: cover;
-        padding: 20PX;
-        border: #3C041A dashed;
         border-radius: 10px;
+        border: double gray 2px;
+        display: flex; /* Adicionado */
+        flex-direction: column; /* Adicionado */
     }
-    #main-div{
+    #main-div {
         display: flex;
-        /*border: 3px solid black;*/
-        align-content: space-around;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap; /* Adicionado */
     }
     #div-1, #div-2{
         margin: 10px;
         text-align: center;
         background-color: white;
-        color: #3C041A;
         border-radius: 10px;
         width: 630px;
-        height: 450px;
+        height: 400px;
+    }
+    #div-3,#div-4,#div-5,#div-6,#div-7,#div-8,#div-9{
+        background: none;
+        color: white
+        /*border: 2px solid red;
+        width: 200px;
+        height: 300px;*/
+    }
+    .img-icon{
+        width: 165px;
+        height: 160px;
+        /*border: double thick black;*/
+    }
+    .img-eu{
+        width: 200px;
+        height: 350px;
     }
     #titulo{
-        text-align: center;
-    }
-    h1{
-        text-align: center;
+        margin: 20px;
+        background-color: #3C041A;
         border-radius: 10px;
-        font-size: 2rem;
-        background-color: rgb(255, 255, 44);
-        color:#3C041A;
+        font-size: 1.4rem;
+        color:white;
         display: inline-block;
     }
+    #text-main{
+        border-radius: 6px;
+        color: aliceblue;
+        font-size:2.2rem;
+    }
+    
     h2{
         font-size: 2rem;
     }
@@ -144,7 +123,185 @@
     li{
         font-size: 1.3rem;
     }
+    .contatos{
+        width: 100px;
+        height: 60px;
+        border-radius: 100%;
+        
+    }
+    #contatos{
+        align-self: flex-start;
+    }
+    .text-apresentacao > p{
+        color: white;
+        background-color: #3C041A;
+        font-size: 1.3rem;
+        margin: auto;
+    }
+    strong{
+        font-size: 1.2rem;
+    }
+    #text-contatos{
+        display: none;
+        background-color: #3C041A;
+        width: 500px;
+        border-radius: 6px;
+        color: white;
+        font-size: 1rem;
+        color: rgb(61, 59, 59);
+        margin-top: auto ;
+    }
 
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+    *{
+        font-size: 1rem;
+        font-family: "Nunito", sans-serif;
+        /*padding-left: 20px;
+        padding-right: 20px;*/
+    }
+    body {
+        font-family: "Yuji Mai", serif;
+        /*background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/bac.avif');*/
+        background-color: gainsboro;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    button{
+        display: block;
+    }
+    #change-color{
+        float:left;
+        width: 55px !important;
+        height: 50px !important;
+        border-radius: 10px;
+    }
+    #change-color:hover{
+        transition: 1s;
+        background-color: gray;
+        width: 100px;
+        height: 50px;
+    }
+    
+    
+    .navbar-nav{
+        border-radius: 10px ;
+    }
+    .nav-link{
+        text-align: center;
+        padding: 5px;
+        color: #3C041A !important;
+        border-radius: 15px;
+    }
+    .nav-link:hover{
+        transition: 1s;
+        color: green;
+        background-color: rgb(155, 170, 171);
+        
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+    
+    .navbar-brand{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-family: "Bangers", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        color:black !important;
+    }
+    body > main {
+        opacity: 0.9;
+        background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));
+        background-size: cover;
+        border-radius: 10px;
+        border: double gray 2px;
+        display: flex; /* Adicionado */
+        flex-direction: column; /* Adicionado */
+    }
+    #main-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        flex-wrap: wrap; /* Adicionado */
+    }
+    #div-1, #div-2{
+        margin: 10px;
+        text-align: center;
+        background-color: white;
+        border-radius: 10px;
+        width: 630px;
+        height: 400px;
+    }
+    #div-3,#div-4,#div-5,#div-6,#div-7,#div-8,#div-9{
+        background: none;
+        color: white
+        /*border: 2px solid red;
+        width: 200px;
+        height: 300px;*/
+    }
+    .img-icon{
+        width: 155px;
+        height: 150px;
+        /*border: double thick black;*/
+    }
+    .img-eu{
+        width: 200px;
+        height: 350px;
+    }
+    #titulo{
+        margin: 20px;
+        background-color: #3C041A;
+        border-radius: 10px;
+        font-size: 1.4rem;
+        color:white;
+        display: inline-block;
+    }
+    #text-main{
+        border-radius: 6px;
+        color: aliceblue;
+        font-size:2.2rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    p,ul{
+        text-align: left;
+        font-size: 1.1rem;
+    }
+    li{
+        font-size: 1.3rem;
+    }
+    .contatos{
+        width: 100px;
+        height: 60px;
+        border-radius: 100%;
+        
+    }
+    #contatos{
+        align-self: flex-start;
+    }
+    .text-apresentacao > p{
+        color: white;
+        background-color: #3C041A;
+        font-size: 1.3rem;
+        margin: auto;
+    }
+
+    #text-contatos{
+        display: none;
+        background-color: #3C041A;
+        width: 500px;
+        border-radius: 6px;
+        color: white;
+        font-size: 1rem;
+        color: rgb(61, 59, 59);
+        margin-top: auto ;
+    }
+    strong{
+        font-size: 1.2rem;
+    }
 }
 
 @media (min-width: 1024px) { 
@@ -160,15 +317,16 @@
     }
     body {
         font-family: "Yuji Mai", serif;
-        background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/bac.avif');
+        /*
+        background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/deserto.avif');*/
+        background: rgb(44, 178, 219);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
     button{
         display: block;
     }
     #change-color{
-        background-color: gainsboro;
         float: right;
         width: 100px !important;
         height: 50px !important;
@@ -183,8 +341,6 @@
     
     .navbar-nav{
         border-radius: 10px ;
-        display: flex !important;
-
     }
     .nav-link{
         padding: 5px;
@@ -209,10 +365,10 @@
     }
     body > main {
         opacity: 0.9;
-        background: linear-gradient(black, gray);
-        margin: 40px;
+        background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));
+        margin: 20px;
         background-size: cover;
-        padding: 20px;
+        padding: 0px;
         border-radius: 10px;
         border: double gray 2px;
         height: 769px;
@@ -234,17 +390,24 @@
         width: 630px;
         height: 400px;
     }
-    #div-3,#div-4,#div-5,#div-6{
+    #div-3,#div-4,#div-5,#div-6,#div-7,#div-8,#div-9{
         background: none;
+        color: white
         /*border: 2px solid red;
         width: 200px;
         height: 300px;*/
-        
     }
     .img-icon{
-        width: 150px;
-        height: 100px;
+        cursor: pointer;
+        width: 130px;
+        height: 80px;
         /*border: double thick black;*/
+    }
+    .img-icon:hover{
+        transition: 1s;
+        cursor: pointer;
+        width: 145px;
+        height: 95px;
     }
     .img-eu{
         width: 200px;
@@ -259,6 +422,7 @@
         display: inline-block;
     }
     #text-main{
+        border-radius: 6px;
         color: aliceblue;
         font-size: 4rem;
     }
@@ -288,6 +452,7 @@
         color: white;
         background-color: #3C041A;
         font-size: 1rem;
+        padding: 0;
     }
 
     #text-contatos{
