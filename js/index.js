@@ -5,10 +5,12 @@ const body = document.querySelector("body");
 const main = document.querySelector("#body > main");
 const titulo = document.querySelector("#titulo");
 const main_text = document.querySelector("#text-main");
-const text_apresentacao = document.querySelector("#body > main > div.text-apresentacao");
+const text_apresentacao = document.querySelector("div.text-apresentacao");
+const p_text = document.querySelector("p");
 
 // Salva os estilos iniciais
 const initialStyles = {
+  p_text: p_text.style.color,
   bodyBackground: body.style.background,
   mainBackground: main.style.background,
   tituloColor: titulo.style.color,
@@ -39,6 +41,7 @@ if(isChanged){
      //text_apresentacao color black and background white
     text_apresentacao.style.color = "black";
     text_apresentacao.style.backgroundColor = "white";
+    p_text.style.color = "white";
 }
 
 function change_color() {
@@ -79,3 +82,5 @@ function change_color() {
 // Adiciona o evento de clique ao botão
 const botao = document.getElementById("change_color");
 botao.addEventListener("click", change_color);
+
+
