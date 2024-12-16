@@ -290,13 +290,9 @@
         font-family: "Nunito", sans-serif;
         padding-left: 20px;
         padding-right: 20px;
-        
-        
     }
     body {
         font-family: "Yuji Mai", serif;
-        /*
-        background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/deserto.avif');*/
         background-color: royalblue;
         background-size: cover;
         background-repeat: repeat;
@@ -326,14 +322,7 @@
         color: black !important;
         border-radius: 15px;
     }
-    .nav-link:hover{
-        
-        transition: 1s;
-        
-        /*background-color: rgb(155, 170, 171);*/
-        
-    }
-    
+ 
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
     
     .navbar-brand{
@@ -352,7 +341,6 @@
         padding: 0px;
         border-radius: 10px;
         border: double gray 2px;
-        
         display: flex; /* Adicionado */
         flex-direction: column; /* Adicionado */
     }

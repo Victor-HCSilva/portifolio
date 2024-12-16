@@ -9,11 +9,35 @@
 
 @media (min-width: 1024px) { 
     *{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        font-family: "Nunito", sans-serif;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    body{
+    body {
+        font-family: "Yuji Mai", serif;
         background-color: royalblue;
-        
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    body > main {
+        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
+        background-color: orange;
+        margin: 20px;
+        background-size: cover;
+        border-radius: 10px;
+        border: double gray 2px;
+        display: flex; /* Adicionado */
+        flex-direction: column; /* Adicionado */
+    }
+    #nav-bar{
+        margin: auto;
+        border-radius: 6px;
+    }
+    .nav-link{
+        padding: 5px;
+        color: black !important;
+        border-radius: 15px;
     }
     #menu{
         text-align: left;
@@ -22,10 +46,7 @@
         transition: 1s;
         font-size: 1.3rem;
     }
-    .container{    
-        
-        background-color: aliceblue;
-    }
+    
     .json-tag,.js-tag,.html-tag,.json-tag,.css-tag,.django-tag, .streamlit-tag{
         border-radius: 6px;
         color: whitesmoke;
