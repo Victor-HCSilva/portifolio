@@ -1,72 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    
-    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/projetos.css">
 </head>
+
 <body>
     <main id="main">
         <header id="is">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <strong><a class="navbar-brand" href="index.html">Develop</a> </strong>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">        
-                        <li class="nav-item">                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
                             <a href="index.html">Voltar</a>
-                        </li>        
+                        </li>
                     </ul>
-                    
                 </div>
-                
             </nav>
-            
         </header>
         <div class="container">
-            <h1>Projetos</h1>
+            <div id="menu">
+                <h1>Projetos</h1>
             <ul>
-              <li><a href="#fap2024">Sistema de agendamento de consultas</a></li>
-              <li><a href="#acompanhamento-peso">Acompanhamento de saúde</a></li>
-              <li><a href="#lop-quiz">Jogo</a></li>
-              <li><a href="#api-youtube">API</a></li>
+                <ol>
+                    <a href="#fap2024">Sistema de agendamento de consultas</a>
+                </ol>
+                <ol>
+                    <a href="#acompanhamento-peso">Acompanhamento de saúde</a>
+                </ol>
+                <ol>
+                    <a href="#lop-quiz">Jogo</a>
+                </ol>
+                <ol>
+                    <a href="#api-youtube">API</a>
+                </ol>
+             
             </ul>
-          
-            <div id="fap2024">
-                <h2>Projeto da FAP </h2>
-                <p>Projeto integrador realizado na FAP, um sistema de agendamento de consultas</p>
-                
             </div>
-            <div id="acompanhamento-peso">
-                
+            
+            <!-- Projetos e Imagens com data-modal -->
+            <div id="fap2024" class="project">
+                <h2>Projeto da FAP</h2>
+                <p>Projeto integrador realizado na FAP, um sistema de agendamento de consultas</p>
+                <p class="django-tag">Django</p>
+                <p class="html-tag">Html</p>
+                <p class="js-tag">JavaScript</p>
+                <p class="css-tag">CSS</p>
+                 <img src="image/projetos-images/full_sage.png" alt="Sistema de agendamento de consultas" class="project-image" data-modal="modal1">
+
+                <p class="text-project-info">
+                    Um projeto feito na minha formação como desenvolvedor web. O projeto consiste, resumidamente, em resolver o problema da demora de agendamentos
+                    lentos e gerenciar uma clínica médica.
+                </p>
+            </div>
+            <div id="acompanhamento-peso" class="project">
                 <h2>Acompanhamento de saúde</h2>
                 <p>Acompanhar peso e realizar anotações feito com python e CSS (streamlit)</p>
-                <img src="image/projetos-images/peso.png" alt="">
+                <p class="streamlit-tag">Streamlit</p>
+                <p class="css-tag">CSS</p>
+                 <img src="image/projetos-images/peso.png" alt="Acompanhamento de Peso"  class="project-image" data-modal="modal2">
+                 <p class="text-project-info">
+                    Um projeto simples que serve para realizar anotações (tarefas) e realizar um acompanhamemto do seu peso, digitando 
+                    peso em data específica.
+                </p>
             </div>
-            <div id="lop-quiz">
+            <div id="lop-quiz" class="project">
                 <h2>Jogo em JavaScript</h2>
                 <p>Jogo em JavaScript utilizando a bibilioteca P5.js</p>
-                <iframe src="https://editor.p5js.org/victorLOP/full/2RTmi9DGV" style="width: 600px; height: 500px;"></iframe >
+                <p class="js-tag">JavaScript</p>
+                <p class="html-tag">Html</p>
+                <img src="image/projetos-images/quiz.png" alt="quizz"  class="project-image" data-modal="modal2">
+                 
+
+                 <p class="text-project-info">
+                    Um quiz em JavaScript na biblioteca P5.js, que foi o projeto final para ser entregue na plataforma 
+                    de jogos educativos (ColabEduc).
+                </p>
             </div>
-            <div id="api-youtube">
-                <h2>API para You tube</h2>
-                <p>Uma API para o You tube, que pode mudar fonte, imagem de fundo e cor do texto </p>
-                <img src="image/projetos-images/api-youtube.png" alt="">
+            <div id="api-youtube" class="project">
+                <h2>API para YouTube</h2>
+                <p>Uma API para o YouTube, que pode mudar fonte, imagem de fundo e cor do texto </p>
+                <p class="json-tag">Json</p>
+                <p class="html-tag">Html</p>
+                <p class="js-tag">JavaScript</p>
+                <p class="css-tag">CSS</p>
+                
+                <img src="image/projetos-images/api-youtube.png" alt="API YouTube" class="project-image" data-modal="modal4">
+                <p class="text-project-info">
+                    Está API serve para mudar a fonte no you tube e alterar o background, embora não seja não altere muito
+                    a experiência do usuário, é interessante adicionar atalhos e customizar.
+                </p>
+            </div>
+        </div>
+        <!-- Modais -->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <img src="image/projetos-images/full_sage.png" alt="Sistema de Agendamento Completo">
+                <p>Descrição detalhada do Sistema de Agendamento de Consultas.</p>
+            </div>
+        </div>
+        <div class="modal" id="modal2">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <img src="image/projetos-images/peso.png" alt="Acompanhamento de Peso Completo">
+                <p>Descrição detalhada do Acompanhamento de Peso.</p>
+            </div>
+        </div>
+         <div class="modal" id="modal4">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <img src="image/projetos-images/api-youtube.png" alt="API YouTube Completo">
+                 <p>Descrição detalhada da API do YouTube.</p>
             </div>
         </div>
         
-       
     </main>
-    
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+
+
+@media (max-width: 767px) { 
+
+}
+@media (min-width: 768px) and (max-width: 1023px) { 
+    
+}
+
+@media (min-width: 1024px) { 
+    *{
+        font-size: 1.2rem;
+    }
+    body{
+        background-color: royalblue;
+        
+    }
+    #menu{
+        text-align: left;
+    }
+    ol > a:hover{
+        transition: 1s;
+        font-size: 1.3rem;
+    }
+    .container{    
+        
+        background-color: aliceblue;
+    }
+    .json-tag,.js-tag,.html-tag,.json-tag,.css-tag,.django-tag, .streamlit-tag{
+        border-radius: 6px;
+        color: whitesmoke;
+        display: inline-block ;
+        border: 2px solid black;
+        cursor: pointer;
+    }
+    .json-tag:hover,.js-tag:hover,.html-tag:hover,.json-tag:hover,.css-tag:hover,.django-tag:hover, .streamlit-tag:hover{
+        font-size: 1.3rem;
+        transition: 0.5s;
+    }
+    .django-tag{
+        background-color: rgb(50, 150, 28);
+    }
+    .html-tag{
+        background-color: orangered;
+    }
+    .css-tag{
+        background-color: royalblue;
+    }
+    .js-tag{
+        background-color: gold;
+    }
+    .streamlit-tag{
+        background-color: brown;
+    }
+    .json-tag{
+        background-color: purple;
+    }
+    img{
+        width: 400px;
+        height: 300px;
+        border-radius:20px ;
+    }
+    img:hover, iframe:hover{
+        transition: 1s;
+        width: 600px;
+        height: 300px;
+    }
+    .text-project-info{
+        display: none;
+    }
+}
