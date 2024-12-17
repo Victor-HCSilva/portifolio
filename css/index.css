@@ -1,17 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
 
 @media (max-width: 767px) { 
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
-    
+   
     *{
         font-size: 1rem;
         font-family: "Nunito", sans-serif;
-        /*padding-left: 20px;
-        padding-right: 20px;*/
     }
     body {
         font-family: "Yuji Mai", serif;
-        /*background-image: url('/home/victor/main/projetos-curtos/portifolio (cópia 1)/image/bac.avif');*/
         background-color: royalblue;
         background-size: cover;
         background-repeat: no-repeat;
@@ -284,18 +281,23 @@
 @media (min-width: 1024px) { 
     
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+    html {
+        scroll-behavior: smooth;
+    }
     *{
-        font-size: 1.3rem;
+        font-size: 1.3rem !important;
         font-family: "Nunito", sans-serif;
         padding-left: 20px;
         padding-right: 20px;
+        transition: all 0.3s ease;
     }
     body {
         font-family: "Yuji Mai", serif;
         background-color: royalblue;
         background-size: cover;
         background-repeat: repeat;
+        transition: background-color 0.3s ease;
     }
     button{
         display: block;
@@ -305,6 +307,7 @@
         width: 100px !important;
         height: 50px !important;
         border-radius: 10px;
+        transition: background-color 0.3s ease;
     }
     #change-color:hover{
         transition: 1s;
@@ -321,8 +324,10 @@
         padding: 5px;
         color: black !important;
         border-radius: 15px;
+        font-family: "Nunito", sans-serif !important;
+        transition: color 0.3s ease;
     }
- 
+    
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
     
     .navbar-brand{
@@ -331,34 +336,27 @@
         font-weight: 400;
         font-style: normal;
         color:black !important;
+         transition: color 0.3s ease;
     }
     body > main {
-        
-        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
         background-color: orange;
         margin: 20px;
         background-size: cover;
         padding: 0px;
         border-radius: 10px;
         border: double gray 2px;
-        display: flex; /* Adicionado */
-        flex-direction: column; /* Adicionado */
+        display: flex; 
+        flex-direction: column; 
+        transition: background-color 0.3s ease;
     }
     #main-div {
         display: flex;
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        flex-wrap: wrap; /* Adicionado */
+        flex-wrap: wrap; 
     }
-    #div-1, #div-2{
-        margin: 10px;
-        text-align: center;
-        background-color: white;
-        border-radius: 10px;
-        width: 630px;
-        height: 400px;
-    }
+    
     #div-3,#div-4,#div-5,#div-6,#div-7,#div-8,#div-9{
         background: none;
         color: white
@@ -371,10 +369,12 @@
         width: 130px;
         height: 80px;
         /*border: double thick black;*/
+         transition: transform 0.3s ease;
     }
     .img-icon:hover{
         transition: 1s;
         cursor: pointer;
+        transform: scale(1.1);
     }
     .img-eu{
         width: 200px;
@@ -387,11 +387,13 @@
         font-size: 2rem;
         color:white;
         display: inline-block;
+         transition: background-color 0.3s ease, color 0.3s ease;
     }
     #text-main{
         border-radius: 6px;
         color: aliceblue;
         font-size: 4rem;
+        transition: color 0.3s ease, background-color 0.3s ease;
     }
     
     h2{
@@ -400,25 +402,19 @@
     p,ul{
         text-align: left;
         font-size: 1.1rem;
+         transition: color 0.3s ease;
     }
     li{
         font-size: 1.3rem;
     }
-    .contatos{
-        width: 100px;
-        height: 60px;
-        border-radius: 100%;
-        
-    }
-    #contatos{
-        align-self: flex-start;
-    }
+    
     .text-apresentacao{
         border-radius: 6px;
         color: white;
         background-color: purple;
         font-size: 1rem;
         padding: 0;
+        transition: color 0.3s ease, background-color 0.3s ease;
     }
     /*ADD: */
     .change-color-text{
@@ -435,7 +431,7 @@
         width: 350px !important;
         height: 350px !important;
     }
-
-
-    
+    h1, h2{
+        font-size: 2rem !important;
+    }
 }

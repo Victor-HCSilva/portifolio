@@ -7,29 +7,39 @@
     <title>Projetos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/projetos.css">
+    <script src="js/sobre.js" defer></script>
 </head>
 
 <body>
     <header id="is">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
-            <a class="navbar-brand" href="index.html"><strong>Develop</strong></a> 
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html"><strong>Develop</strong></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a> 
+                        <a class="nav-link" href="index.html">Início</a>
                     </li>
-                                
-                </ul>                
-            </div>            
-        </nav>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <img onclick="change_color()" src="image/change_color.png" alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores" style="cursor: pointer;">
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
+
     <main id="main">
-        
+
         <br>
         <br>
         <section class="container">
@@ -49,10 +59,10 @@
                         <li>
                             <a href="#api-youtube">API</a>
                         </li>
-    
+
                     </ul>
                 </div>
-    
+
                 <!-- Projetos e Imagens com data-modal -->
                 <div id="fap2024" class="project">
                     <h2>Projeto da FAP</h2>
@@ -63,9 +73,10 @@
                     <p class="css-tag">CSS</p>
                     <img src="image/projetos-images/full_sage.png" alt="Sistema de agendamento de consultas"
                         class="project-image" data-modal="modal1">
-    
+
                     <p class="text-project-info">
-                        Um projeto feito na minha formação como desenvolvedor web. O projeto consiste, resumidamente, em resolver o
+                        Um projeto feito na minha formação como desenvolvedor web. O projeto consiste, resumidamente, em
+                        resolver o
                         problema da demora de agendamentos
                         lentos e gerenciar uma clínica médica.
                     </p>
@@ -78,7 +89,8 @@
                     <img src="image/projetos-images/peso.png" alt="Acompanhamento de Peso" class="project-image"
                         data-modal="modal2">
                     <p class="text-project-info">
-                        Um projeto simples que serve para realizar anotações (tarefas) e realizar um acompanhamemto do seu peso,
+                        Um projeto simples que serve para realizar anotações (tarefas) e realizar um acompanhamemto do seu
+                        peso,
                         digitando
                         peso em data específica.
                     </p>
@@ -89,8 +101,8 @@
                     <p class="js-tag">JavaScript</p>
                     <p class="html-tag">Html</p>
                     <img src="image/projetos-images/quiz.png" alt="quizz" class="project-image" data-modal="modal2">
-    
-    
+
+
                     <p class="text-project-info">
                         Um quiz em JavaScript na biblioteca P5.js, que foi o projeto final para ser entregue na plataforma
                         de jogos educativos (ColabEduc).
@@ -103,11 +115,12 @@
                     <p class="html-tag">Html</p>
                     <p class="js-tag">JavaScript</p>
                     <p class="css-tag">CSS</p>
-    
+
                     <img src="image/projetos-images/api-youtube.png" alt="API YouTube" class="project-image"
                         data-modal="modal4">
                     <p class="text-project-info">
-                        Está API serve para mudar a fonte no you tube e alterar o background, embora não seja não altere muito
+                        Está API serve para mudar a fonte no you tube e alterar o background, embora não seja não altere
+                        muito
                         a experiência do usuário, é interessante adicionar atalhos e customizar.
                     </p>
                 </div>
@@ -134,9 +147,9 @@
                     <p>Descrição detalhada da API do YouTube.</p>
                 </div>
             </div>
-    
+
         </section>
-        
+
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

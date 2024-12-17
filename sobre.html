@@ -5,83 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/sobre.css">
+    <script src="js/sobre.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <main id="main">
-        
-        <header id="is">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <strong><a class="navbar-brand" href="index.html">Develop</a> </strong>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        
+    
+    
+    <header id="is">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
+            <a class="navbar-brand" href="index.html"><strong>Develop</strong></a> 
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a> 
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="projetos.html">Projetos</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">Contatos</a> 
+                    </li>
                     
-                        <li class="nav-item">                    
-                            <a href="index.html">Início</a>
-                        </li>  
-                        <li class="nav-item">                    
-                            <a href="projetos.html">Projetos</a>
-                        </li>        
+                     <li class="nav-item">                    
+                        <img onclick="change_color()" src="image/change_color.png" alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores" style="cursor: pointer;">
+                     
+                   </li>                      
+                </ul>                
+            </div>            
+        </nav>        
+    </header>
+    
+    <main>
+        <section class="container">
+            
+           
+            
+            <div class="container">
+                <h2>Sobre mim ...</h2>
+                <div id="container-menu">
+                    <ul id="menu-list">
+                        <li><a href="#formacao">Formação</a></li>
+                        <li><a href="#softskills">Soft Skills</a></li>
+                        <li><a href="#tecnologias">Tecnologias</a></li>
                     </ul>
-                    
                 </div>
                 
-            </nav>
             
-        </header>
-        <div id="container-menu">
-            <ul id="menu-list">
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#softskills">Soft Skills</a></li>
-                <li><a href="#tecnologias">Tecnologias</a></li>
-            </ul>
-        </div>
-        
-        <div class="container">
-            <h2>Sobre mim ...</h2>
-        <p>
-            <h3 id="formacao">Formação</h3>
-            Tenho formação em back-end pela FAP (formação acelerada em programação) ofertada pela Softex Pernambuco,
-            possuo formação em python conhecimentos sobre banco de dados (Mysql, sqlite) e como framework principal Django.
-            Também experiência em desenvolvimento em conjunto, o ultimo modulo desta formação envolvia um sistema de 
-            agendamentos de consultas, um problema real que foi passado ao nosso grupo e por meio do versionamento de código
-            (git e GitHub) criamos um site que tinha como objetivo solucioanr o problema de agendamentos lentos. Assim 
-            obtive prática real em trabalho em grupo e versionamento de código em um projeto real.
-
-            <h3 id="softskills">Soft Skills...</h3>
-            Nesta formação também havia o ensinamentos sobre Soft Skills: "Como lidar com adversidades no ambiente de trabalho",
-            "liderança", "empatia" todos este temas,  e outros, foram abordados visando nos introduzir melhor ao trabalho em grupo.
-            <h3 id="tecnologias">Tecnologias</h3>
-            Python é minha linguagem primária, a maioria dos projetos que fiz foram construidos com frameworks para 
-            python como o streamlit e Django.  Mesmo com aptidão para a linguagem python também tenho projetos em outras
-            linguagens, inclusive este portifólio foi feito diretamente por mim dispondo de html, CSS, bootstrap e js. 
-            Pode ver os projetos que fiz clicando na aba projetos, Obrigado:).
-        </p>
-        <div id="i">
-            <img src="image/i.jpeg" alt="" width="230" height="300">
-        </div>
-        <p>
-            Git Hub: <a href="https://github.com/Victor-HCSilva" target="_blank">Git Hub</a>
-            <br>
-            Email: <a href="mailto:victorh.csilva20@gmail.com">Me envie um email!</a>
-            <br>
-            Whatsapp: (84) 99-99999
-            <br>
-            Lattes: meulattes.com
-        </p>
-        <a href="#menu-list">Começo ^</a>
-        </div>
-        
-        
-    </main>
+                <h3 class="title-change-color" id="formacao">Formação</h3>
+                <p class="text-change-color">
+                    Tenho formação em back-end pela FAP (formação acelerada em programação) ofertada pela Softex Pernambuco,
+                possuo conhecimentos sobre banco de dados (Mysql, sqlite) e como framework principal Django.
+                Também experiência em desenvolvimento em conjunto, o ultimo modulo desta formação envolvia um sistema de 
+                agendamentos de consultas, um problema real que foi passado ao nosso grupo e por meio do versionamento de código
+                (Git e GitHub) criamos um site que tinha como objetivo solucioanr o problema de agendamentos lentos. Assim 
+                obtive prática real em trabalho em grupo e versionamento de código.
     
+                </p>
+                
+                <h3 class="title-change-color" id="softskills">Soft Skills...</h3>
+                <p class="text-change-color">
+                    Nesta formação também havia ensinamentos sobre Soft Skills: "Como lidar com adversidades no ambiente de trabalho",
+                "liderança", "empatia" todos este temas,  e outros, foram abordados visando nos introduzir melhor ao trabalho em grupo.
+                </p>
+                
+                <h3 class="title-change-color" id="tecnologias">Tecnologias</h3>
+                <p class="text-change-color">
+
+                    <u class="focus">Python</u>é minha linguagem primária, a maioria dos projetos que fiz foram construidos com frameworks para 
+                python como o streamlit e Django.  Mesmo com aptidão para a linguagem <u class="focus">Python</u>também tenho projetos em outras
+                linguagens, inclusive este portifólio foi feito diretamente por mim dispondo de<u class="focus">Html, CSS, bootstrap e js.</u>  
+                Pode ver os projetos que fiz clicando na aba projetos, Obrigado:).
+                </p>
+                
+            </p>
+            
+            <div id="contatos">
+                <div id="i">
+                    <img id="my-image" src="image/i.jpeg" alt="Eu mesmo" >
+                </div>
+                <p class="text-change-color">
+                    Git Hub: <a href="https://github.com/Victor-HCSilva" target="_blank">Git Hub</a>
+                    <br>
+                    Email: <u>victorh.csilva20@gmail.com</u>
+                    <br>
+                    Whatsapp: <u>(84) 99-99999</u>
+                    <br>
+                    Lattes: <u>meulattes.com</u> 
+                </p>
+                <a href="#is">Início</a>
+            </div>
+            
+            
+            </div>
+            
+        </section>
+        <div></div>
+    </main>
 </body>
 </html>

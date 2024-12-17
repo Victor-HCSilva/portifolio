@@ -1,92 +1,190 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
 
 @media (max-width: 767px) { 
-
+/**/
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
-    
+    /**/
 }
 
 @media (min-width: 1024px) { 
-    *{
-        font-size: 1.3rem;
-        font-family: "Nunito", sans-serif;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color: royalblue;
-        background-size: cover;
-        background-repeat: repeat;
-    }
-    body > main {
-        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-        background-color: orange;
-        margin: 20px;
-        background-size: cover;
-        border-radius: 10px;
-        border: double gray 2px;
-        display: flex; /* Adicionado */
-        flex-direction: column; /* Adicionado */
-    }
-    #nav-bar{
-        margin: auto;
-        border-radius: 6px;
-    }
-    .nav-link{
-        padding: 5px;
-        color: black !important;
-        border-radius: 15px;
-    }
-    #menu{
-        text-align: left;
-    }
-    ol > a:hover{
-        transition: 1s;
-        font-size: 1.3rem;
-    }
-    
-    .json-tag,.js-tag,.html-tag,.json-tag,.css-tag,.django-tag, .streamlit-tag{
-        border-radius: 6px;
-        color: whitesmoke;
-        display: inline-block ;
-        border: 2px solid black;
-        cursor: pointer;
-    }
-    .json-tag:hover,.js-tag:hover,.html-tag:hover,.json-tag:hover,.css-tag:hover,.django-tag:hover, .streamlit-tag:hover{
-        font-size: 1.3rem;
-        transition: 0.5s;
-    }
-    .django-tag{
-        background-color: rgb(50, 150, 28);
-    }
-    .html-tag{
-        background-color: orangered;
-    }
-    .css-tag{
-        background-color: royalblue;
-    }
-    .js-tag{
-        background-color: gold;
-    }
-    .streamlit-tag{
-        background-color: brown;
-    }
-    .json-tag{
-        background-color: purple;
-    }
-    img{
-        width: 400px;
-        height: 300px;
-        border-radius:20px ;
-    }
-    img:hover, iframe:hover{
-        transition: 1s;
-        width: 600px;
-        height: 300px;
-    }
-    .text-project-info{
-        display: none;
-    }
+    /* estilos.css */
+html {
+    scroll-behavior: smooth;
+}
+* {
+
+    font-size: 1.8rem;
+    font-family: "Nunito", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+body {
+    font-family: "Yuji Mai", serif;
+    background-color: royalblue;
+    background-size: cover;
+    background-repeat: repeat;
+    color: black; /* Cor padrão para textos */
+    transition: background-color 0.5s, color 0.5s; /* Transição suave */
+}
+
+body.dark-mode {
+    background-color: gray;
+    color: white; /* Cor para textos em dark mode */
+}
+
+body > main {
+    /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
+    background-color: orange;
+    margin: 20px;
+    background-size: cover;
+    border-radius: 10px;
+    border: double gray 2px;
+    display: flex;
+    /* Adicionado */
+    flex-direction: column;
+    /* Adicionado */
+    transition: background-color 0.5s; /* Transição para o main */
+    border: 2px solid white;
+}
+body.dark-mode > main {
+     background-color: black; /* Cor do main no modo escuro */
+     
+}
+button {
+    display: block;
+}
+
+#change-color {
+    float: left;
+    width: 125px !important;
+    height: 75px !important;
+    border-radius: 10px;
+}
+
+#change-color:hover {
+    transition: 1s;
+    background-color: gray;
+    width: 100px;
+    height: 50px;
+}
+
+#nav-bar {
+    margin: auto;
+    border-radius: 6px;
+}
+
+.nav-link {
+    padding: 5px;
+    color: black !important;
+    border-radius: 15px;
+    transition: color 0.5s;
+}
+body.dark-mode .nav-link{
+    color: black !important;
+}
+
+#menu {
+    text-align: left;
+    transition: color 0.5s; /* Transição para o menu */
+}
+body.dark-mode #menu {
+    color:white;
+}
+
+ol > a:hover {
+    transition: 1s;
+    font-size: 1.4rem;
+}
+
+.json-tag,
+.js-tag,
+.html-tag,
+.json-tag,
+.css-tag,
+.django-tag,
+.streamlit-tag {
+    border-radius: 6px;
+    color: whitesmoke;
+    display: inline-block;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: color 0.5s; /* Transição para as tags */
+}
+body.dark-mode .json-tag,
+body.dark-mode .js-tag,
+body.dark-mode .html-tag,
+body.dark-mode .json-tag,
+body.dark-mode .css-tag,
+body.dark-mode .django-tag,
+body.dark-mode .streamlit-tag {
+    border: 2px solid white; /* borda branca no modo escuro */
+}
+
+.json-tag:hover,
+.js-tag:hover,
+.html-tag:hover,
+.json-tag:hover,
+.css-tag:hover,
+.django-tag:hover,
+.streamlit-tag:hover {
+    font-size: 1.9rem;
+    transition: 0.5s;
+}
+.title-project{
+    display: inline-block;
+    background-color:green ;
+    border-radius: 15px;
+    cursor: pointer;
+}
+body.dark-mode .title-project{
+    background-color:red;
+}
+.django-tag {
+    background-color: rgb(50, 150, 28);
+}
+
+.html-tag {
+    background-color: orangered;
+}
+
+.css-tag {
+    background-color: royalblue;
+}
+
+.js-tag {
+    background-color: gold;
+}
+
+.streamlit-tag {
+    background-color: brown;
+}
+
+.json-tag {
+    background-color: purple;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.5s;/* Transição para as imagens*/
+}
+
+img:hover,
+iframe:hover {
+    transition: 1s;
+    width: 600px;
+    height: 300px;
+}
+body.dark-mode img{
+    border: 2px solid white; /* borda branca no modo escuro */
+}
+.text-project-info {
+    display: none;
+
+}
 }
