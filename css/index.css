@@ -12,6 +12,7 @@
         background-color: royalblue;
         background-size: cover;
         background-repeat: no-repeat;
+        height: 1900px;
     }
     button{
         display: block;
@@ -42,9 +43,7 @@
     }
     .nav-link:hover{
         transition: 1s;
-        
         background-color: rgb(155, 170, 171);
-        
     }
     
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
@@ -112,7 +111,7 @@
         font-size:2.2rem;
     }
     
-    h2{
+    h3{
         font-size: 2rem;
     }
     p,ul{
@@ -149,6 +148,28 @@
         font-size: 1rem;
         color: rgb(61, 59, 59);
         margin-top: auto ;
+    }
+    /*ADD: */
+    .change-color-text{
+        text-align: center;
+        color: white;
+       
+    }
+    #projects-main{
+        margin-top: 200px;
+        text-align: center;
+    }
+    .project-image{
+        padding: 20px;
+        width: 250px !important;
+        height: 150px !important;
+    }
+    h1, h2{
+        font-size: 2rem !important;
+    }
+    
+    h3{
+        font-weight: bold;
     }
 
 }
@@ -210,7 +231,6 @@
         color:black !important;
     }
     body > main {
-        
         /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
         background-color: orange;
         background-size: cover;
@@ -218,6 +238,7 @@
         border: double gray 2px;
         display: flex; /* Adicionado */
         flex-direction: column; /* Adicionado */
+        height: 1800px;
     }
     #main-div {
         display: flex;
@@ -275,6 +296,26 @@
         font-size: 1.3rem;
         margin: auto;
         padding: 0px;    
+    }
+    /*ADD: */
+    .change-color-text{
+        text-align: center;
+        color: white;
+    }
+    #projects-main{
+        margin-top: 200px;
+        text-align: center;
+    }
+    .project-image{
+        padding: 20px;
+        width: 250px !important;
+        height: 150px !important;
+    }
+    h1, h2{
+        font-size: 2rem !important;
+    }
+    h3{
+        font-weight: bold;
     }
 }
 
@@ -434,4 +475,8 @@
     h1, h2{
         font-size: 2rem !important;
     }
+    h3{
+        font-weight: bold;
+    }
+    
 }

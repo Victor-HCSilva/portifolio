@@ -17,7 +17,7 @@ html {
 
     font-size: 1.8rem;
     font-family: "Nunito", sans-serif;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-right: 20px;
     color: white;
 }
@@ -186,5 +186,8 @@ body.dark-mode img{
 .text-project-info {
     display: none;
 
+}
+    .title-project{
+    background-color: purple;
 }
 }
