@@ -3,9 +3,9 @@
 :root {
     --background-color: gray;
     --color-text: white;
-    --dark-background-color: #1a1a1a;
+    --dark-background-color: #333;
     --dark-color-text: white;
-    --main-background: black;
+    --main-background: orange;
     --dark-main-background: #333;
     --navbar-brand: black;
     --dark-navbar-brand: white;
@@ -21,6 +21,9 @@
 
 }
 @media (max-width: 767px) {
+    html {
+        scroll-behavior: smooth;
+    }
     * {
         font-size: 1rem;
         font-family: "Nunito", sans-serif;
@@ -100,7 +103,7 @@
     }
 
     body.dark-mode main {
-        background-color: var(--dark-main-background);
+        background-color: black;
     }
 
     #container-menu {
@@ -136,7 +139,7 @@
         transition: background-color 0.5s;
     }
     body.dark-mode .title-change-color {
-         background-color: var(--dark-select-color);
+         background-color: var(--select-color);
     }
     #contatos{
         display: flex;
@@ -166,6 +169,9 @@
 
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+    html {
+        scroll-behavior: smooth;
+    }
      * {
         font-size: 1rem;
         font-family: "Nunito", sans-serif;
@@ -174,7 +180,7 @@
 
     body {
         font-family: "Yuji Mai", serif;
-        background-color: var(--background-color);
+        background-color: var(--dark-background-color);
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--color-text);
