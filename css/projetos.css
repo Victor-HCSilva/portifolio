@@ -536,5 +536,8 @@ body.dark-mode img{
     display: none;
 
 }
+    .title-project{
+    background-color: purple;
+}
   
 }
