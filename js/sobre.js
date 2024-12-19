@@ -48,6 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const savedTheme = localStorage.getItem('theme');
         const savedColor = localStorage.getItem('customColor');
     
+        /*
         if(savedTheme === 'dark'){
             body.classList.add('dark-mode');
              textChangeColor.innerText = 'Light Mode'
@@ -55,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         else{
             body.classList.remove('dark-mode');
             textChangeColor.innerText = 'Dark Mode'
-        }
+        }*/
 
           
     

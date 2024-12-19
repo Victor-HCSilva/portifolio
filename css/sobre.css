@@ -1,23 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+.title-project{
+    text-align: center;
+}
 
 :root {
-    --background-color: gray;
+    --background-color: black;
     --color-text: white;
-    --dark-background-color: #333;
+    --dark-background-color: black;
     --dark-color-text: white;
     --main-background: orange;
-    --dark-main-background: #333;
+    --dark-main-background: black;
     --navbar-brand: black;
-    --dark-navbar-brand: white;
+    --dark-navbar-brand: black;
     --title-color: white;
-    --dark-title-color: #333;
+    --dark-title-color: purple;
     --text-color: aliceblue;
     --dark-text-color: white;
-    --hover-color: rgb(155, 170, 171);
+    --hover-color: black;
     --nav-link-color: #3C041A;
     --select-color: purple;
-    --dark-select-color: #333;
-
+    --dark-select-color: black;
+    --background-default: royalblue;
 
 }
 @media (max-width: 767px) {
@@ -31,7 +34,7 @@
 
     body {
         font-family: "Yuji Mai", serif;
-        background-color: var(--background-color);
+        background-color: var(--background-default);
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--color-text);
@@ -172,15 +175,14 @@
     html {
         scroll-behavior: smooth;
     }
-     * {
+    * {
         font-size: 1rem;
         font-family: "Nunito", sans-serif;
-        color: white;
     }
 
     body {
         font-family: "Yuji Mai", serif;
-        background-color: var(--dark-background-color);
+        background-color: var(--background-default);
         background-size: cover;
         background-repeat: no-repeat;
         color: var(--color-text);
@@ -202,17 +204,17 @@
         border-radius: 10px;
         transition: background-color 0.5s, color 0.5s;
     }
-
-    #change-color:hover {
+    
+    #change-color:hover{
         transition: 1s;
         background-color: #333;
         width: 100px;
         height: 50px;
     }
 
-
     .navbar-nav {
         border-radius: 10px;
+        display: flex !important;
     }
 
     .nav-link {
@@ -228,7 +230,6 @@
         background-color: var(--hover-color);
     }
 
-
     .navbar-brand {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-family: "Bangers", system-ui;
@@ -242,7 +243,7 @@
         color: var(--dark-navbar-brand) !important;
     }
 
-   body main {
+    body main {
         background-color: var(--main-background);
         background-size: cover;
         border-radius: 10px;
@@ -253,9 +254,8 @@
     }
 
     body.dark-mode main {
-        background-color: var(--dark-main-background);
+        background-color: black;
     }
-
 
     #container-menu {
         display: flex;
@@ -289,8 +289,8 @@
         display: inline-block;
         transition: background-color 0.5s;
     }
-      body.dark-mode .title-change-color {
-         background-color: var(--dark-select-color);
+    body.dark-mode .title-change-color {
+         background-color: var(--select-color);
     }
     #contatos{
         display: flex;
@@ -317,28 +317,41 @@
         color: #3C041A;
     }
 
+
 }
 
 @media (min-width: 1024px) {
-     html {
+    html {
         scroll-behavior: smooth;
     }
-
     * {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-family: "Nunito", sans-serif;
-        padding-left: 20px;
+        padding-left: 30px;
         padding-right: 20px;
-        transition: all 0.3s ease;
-        color: white;
     }
 
     body {
         font-family: "Yuji Mai", serif;
-        background-color: gray;
+        background-color: var(--background-default);
         background-size: cover;
-        background-repeat: repeat;
+        background-repeat: no-repeat;
+        color: var(--color-text);
         transition: background-color 0.5s, color 0.5s;
+    }
+    body > main {
+        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
+        background-color: orange;
+        margin: 20px;
+        background-size: cover;
+        border-radius: 10px;
+        border: double gray 2px;
+        display: flex;
+        /* Adicionado */
+        flex-direction: column;
+        /* Adicionado */
+        transition: background-color 0.5s; /* Transição para o main */
+        border: 2px solid white;
     }
 
     body.dark-mode {
@@ -350,35 +363,36 @@
     }
 
     #change-color {
-        float: right;
-        width: 100px !important;
+        float: left;
+        width: 105px !important;
         height: 50px !important;
         border-radius: 10px;
         transition: background-color 0.5s, color 0.5s;
     }
-
-    #change-color:hover {
+    
+    #change-color:hover{
         transition: 1s;
         background-color: #333;
         width: 100px;
         height: 50px;
     }
 
-    #nav-bar {
-        margin: auto;
-        border-radius: 6px;
+    .navbar-nav {
+        border-radius: 10px;
+        display: flex !important;
     }
 
     .nav-link {
+        text-align: center;
         padding: 5px;
         color: var(--nav-link-color) !important;
         border-radius: 15px;
-        font-family: "Nunito", sans-serif !important;
         transition: color 0.5s;
     }
 
-    body.dark-mode .nav-link {
-        color: var(--dark-color-text) !important;
+    .nav-link:hover {
+        transition: 1s;
+        background-color: var(--hover-color);
     }
 
     .navbar-brand {
@@ -393,19 +407,19 @@
     body.dark-mode .navbar-brand {
         color: var(--dark-navbar-brand) !important;
     }
+
     body main {
-         background-color: var(--main-background);
-        margin: 20px;
+        background-color: var(--main-background);
         background-size: cover;
-        padding: 0px;
         border-radius: 10px;
         border: double gray 2px;
-        display: flex; 
+        display: flex;
         flex-direction: column;
-         transition: background-color 0.5s;
+        transition: background-color 0.5s;
     }
+
     body.dark-mode main {
-         background-color: var(--dark-main-background);
+        background-color: black;
     }
 
     #container-menu {
@@ -434,15 +448,14 @@
 
     .title-change-color {
         background-color: var(--select-color);
+        border-radius: 10px;
         color: white;
         padding: 10px;
         display: inline-block;
-        border-radius: 10px;
         transition: background-color 0.5s;
     }
-
-     body.dark-mode .title-change-color {
-         background-color: var(--dark-select-color);
+    body.dark-mode .title-change-color {
+         background-color: var(--select-color);
     }
     #contatos{
         display: flex;
@@ -457,15 +470,17 @@
     }
 
     #my-image {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
         border-radius: 100%;
     }
     .text-change-color{
         color: white;
     }
+
     .focus{
-        color: #3C041A;
+        color: orangered;
     }
+
 
 }

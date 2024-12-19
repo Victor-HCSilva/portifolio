@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
-
 @media (max-width: 767px) { 
     html {
         scroll-behavior: smooth;
@@ -400,6 +399,8 @@ body > main {
     /* Adicionado */
     transition: background-color 0.5s; /* Transição para o main */
     border: 2px solid white;
+    width: 100vw !important;
+    
 }
 body.dark-mode > main {
      background-color: black; /* Cor do main no modo escuro */
