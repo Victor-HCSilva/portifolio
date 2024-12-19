@@ -164,12 +164,13 @@
         transition: all 0.5s;/* Transição para as imagens*/
     }
     
-    img:hover,
+    /*img:hover,
     iframe:hover {
         transition: 1s;
         width: 600px;
         height: 300px;
     }
+        */
     body.dark-mode img{
         border: 2px solid white; /* borda branca no modo escuro */
     }
@@ -342,12 +343,13 @@
         transition: all 0.5s;/* Transição para as imagens*/
     }
     
-    img:hover,
+    /*img:hover,
     iframe:hover {
         transition: 1s;
         width: 600px;
         height: 300px;
     }
+        */
     body.dark-mode img{
         border: 2px solid white; /* borda branca no modo escuro */
     }
@@ -480,7 +482,7 @@ body.dark-mode .streamlit-tag {
 .css-tag:hover,
 .django-tag:hover,
 .streamlit-tag:hover {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     transition: 0.5s;
 }
 .title-project{
@@ -523,12 +525,14 @@ img {
     transition: all 0.5s;/* Transição para as imagens*/
 }
 
+/*
 img:hover,
 iframe:hover {
     transition: 1s;
     width: 600px;
     height: 300px;
 }
+*/
 body.dark-mode img{
     border: 2px solid white; /* borda branca no modo escuro */
 }
