@@ -60,10 +60,7 @@
         color:black !important;
     }
     body > main {
-        
-        /*
-        background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-        background-color:orange;
+        background-color: rgb(142, 110, 217);
         background-size: cover;
         border-radius: 10px;
         border: double gray 2px;
@@ -175,6 +172,9 @@
     h3{
         font-weight: bold;
     }
+    .especial-link{
+        color: brown;
+    }
 
 }
 @media (min-width: 768px) and (max-width: 1023px) { 
@@ -234,7 +234,7 @@
     }
     body > main {
         /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-        background-color: orange;
+        background-color: rgb(142, 110, 217);
         background-size: cover;
         border-radius: 10px;
         border: double gray 2px;
@@ -318,6 +318,9 @@
     }
     h3{
         font-weight: bold;
+    }
+    .especial-link{
+        color: brown;
     }
 }
 
