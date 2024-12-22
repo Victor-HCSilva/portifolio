@@ -1,405 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
-@media (max-width: 767px) { 
-    html {
-        scroll-behavior: smooth;
-    }
-    * {
-    
-        font-size: 1rem;
-        font-family: "Nunito", sans-serif;
-        
-        color: white;
-    }
-    
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color: royalblue;
-        background-size: cover;
-        background-repeat: repeat;
-        color: black; /* Cor padrão para textos */
-        transition: background-color 0.5s, color 0.5s; /* Transição suave */
-    }
-    
-    body.dark-mode {
-        background-color: gray;
-        color: white; /* Cor para textos em dark mode */
-    }
-    
-    body > main {
-        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-        background-color: orange;
-        background-size: cover;
-        border-radius: 10px;
-        border: double gray 2px;
-        display: flex;
-        /* Adicionado */
-        flex-direction: column;
-        /* Adicionado */
-        transition: background-color 0.5s; /* Transição para o main */
-        border: 2px solid white;
-    }
-    body.dark-mode > main {
-         background-color: black; /* Cor do main no modo escuro */
-    }
-    button {
-        display: block;
-    }
-    
-    #change-color {
-        float: left;
-        width: 35px !important;
-        height: 30px !important;
-        border-radius: 10px;
-    }
-    
-    #change-color:hover {
-        transition: 1s;
-        background-color: gray;
-        width: 100px;
-        height: 50px;
-    }
-    
-    #nav-bar {
-        margin: auto;
-        border-radius: 6px;
-    }
-    
-    .nav-link {
-        padding: 5px;
-        color: black !important;
-        border-radius: 15px;
-        transition: color 0.5s;
-    }
-    body.dark-mode .nav-link{
-        color: black !important;
-    }
-    
-    #menu {
-        text-align: left;
-        transition: color 0.5s; /* Transição para o menu */
-    }
-    body.dark-mode #menu {
-        color:white;
-    }
-    
-    ol > a:hover {
-        transition: 1s;
-        font-size: 1.4rem;
-    }
-    
-    .json-tag,
-    .js-tag,
-    .html-tag,
-    .json-tag,
-    .css-tag,
-    .django-tag,
-    .streamlit-tag {
-        border-radius: 6px;
-        color: whitesmoke;
-        display: inline-block;
-        border: 2px solid black;
-        cursor: pointer;
-        transition: color 0.5s; /* Transição para as tags */
-    }
-    body.dark-mode .json-tag,
-    body.dark-mode .js-tag,
-    body.dark-mode .html-tag,
-    body.dark-mode .json-tag,
-    body.dark-mode .css-tag,
-    body.dark-mode .django-tag,
-    body.dark-mode .streamlit-tag {
-        border: 2px solid white; /* borda branca no modo escuro */
-    }
-    
-    .json-tag:hover,
-    .js-tag:hover,
-    .html-tag:hover,
-    .json-tag:hover,
-    .css-tag:hover,
-    .django-tag:hover,
-    .streamlit-tag:hover {
-        font-size: 1.9rem;
-        transition: 0.5s;
-    }
-    .title-project{
-        display: inline-block;
-        background-color:purple ;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-    
-    body.dark-mode .title-project{
-        background-color:red;
-    }
-    .django-tag {
-        background-color: rgb(50, 150, 28);
-    }
-    
-    .html-tag {
-        background-color: orangered;
-    }
-    
-    .css-tag {
-        background-color: royalblue;
-    }
-    
-    .js-tag {
-        background-color: gold;
-    }
-    
-    .streamlit-tag {
-        background-color: brown;
-    }
-    
-    .json-tag {
-        background-color: purple;
-    }
-    
-    img {
-        width: 200px;
-        height: 150px;
-        border-radius: 20px;
-        transition: all 0.5s;/* Transição para as imagens*/
-    }
-    
-    /*img:hover,
-    iframe:hover {
-        transition: 1s;
-        width: 600px;
-        height: 300px;
-    }
-        */
-    body.dark-mode img{
-        border: 2px solid white; /* borda branca no modo escuro */
-    }
-    .text-project-info {
-        display: none;
-    
-    }
-    
-}
-@media (min-width: 768px) and (max-width: 1023px) { 
-    html {
-        scroll-behavior: smooth;
-    }
-    * {
-        font-size: 1.2rem;
-        font-family: "Nunito", sans-serif;
-        color: white;
-    }
-    
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color: orange;
-        color: black; /* Cor padrão para textos */
-        transition: background-color 0.5s, color 0.5s; /* Transição suave */
-    }
-    
-    body.dark-mode {
-        background-color: gray;
-        color: white; /* Cor para textos em dark mode */
-    }
-    
-    body > main {
-        transition: background-color 1s;
 
-    }
-    body.dark-mode > main {
-         background-color: black; /* Cor do main no modo escuro */
-    }
-    button {
-        display: block;
-    }
-    
-    #change-color {
-        float: left;
-        width: 55px !important;
-        height: 50px !important;
-        border-radius: 10px;
-    }
-    
-    #change-color:hover {
-        transition: 1s;
-        background-color: gray;
-        width: 100px;
-        height: 50px;
-    }
-    
-    #nav-bar {
-        border-radius: 6px;
-    }
-    
-    .nav-link {
-        padding: 5px;
-        color: black !important;
-        border-radius: 15px;
-        transition: color 0.5s;
-    }
-    body.dark-mode .nav-link{
-        color: black !important;
-    }
-    
-    #menu {
-        text-align: left;
-        transition: color 0.5s; /* Transição para o menu */
-    }
-    body.dark-mode #menu {
-        color:white;
-    }
-    
-    ol > a:hover {
-        transition: 1s;
-        font-size: 1.4rem;
-    }
-    
-    .json-tag,
-    .js-tag,
-    .html-tag,
-    .json-tag,
-    .css-tag,
-    .django-tag,
-    .streamlit-tag {
-        border-radius: 6px;
-        color: whitesmoke;
-        display: inline-block;
-        border: 2px solid black;
-        cursor: pointer;
-        transition: color 0.5s; /* Transição para as tags */
-    }
-    body.dark-mode .json-tag,
-    body.dark-mode .js-tag,
-    body.dark-mode .html-tag,
-    body.dark-mode .json-tag,
-    body.dark-mode .css-tag,
-    body.dark-mode .django-tag,
-    body.dark-mode .streamlit-tag {
-        border: 2px solid white; /* borda branca no modo escuro */
-    }
-    
-    .json-tag:hover,
-    .js-tag:hover,
-    .html-tag:hover,
-    .json-tag:hover,
-    .css-tag:hover,
-    .django-tag:hover,
-    .streamlit-tag:hover {
-        font-size: 1.9rem;
-        transition: 0.5s;
-    }
-    .title-project{
-        display: inline-block;
-        background-color:purple ;
-        border-radius: 6px;
-        cursor: pointer;
-    }
-    
-    body.dark-mode .title-project{
-        background-color:red;
-    }
-    .django-tag {
-        background-color: rgb(50, 150, 28);
-    }
-    
-    .html-tag {
-        background-color: orangered;
-    }
-    
-    .css-tag {
-        background-color: royalblue;
-    }
-    
-    .js-tag {
-        background-color: gold;
-    }
-    
-    .streamlit-tag {
-        background-color: brown;
-    }
-    
-    .json-tag {
-        background-color: purple;
-    }
-    
-    img {
-        width: 200px;
-        height: 150px;
-        border-radius: 20px;
-        transition: all 0.5s;/* Transição para as imagens*/
-    }
-    
-    /*img:hover,
-    iframe:hover {
-        transition: 1s;
-        width: 600px;
-        height: 300px;
-    }
-        */
-    body.dark-mode img{
-        border: 2px solid white; /* borda branca no modo escuro */
-    }
-    .text-project-info {
-        display: none;
-    
-    }
-}
-
-@media (min-width: 1024px) { 
-    /* estilos.css */
+/* Estilos padrão */
 html {
     scroll-behavior: smooth;
 }
+
 * {
-    font-size: 1.2rem;
-    font-family: "Nunito", sans-serif;
-    padding-left: 30px;
-    padding-right: 20px;
-    color: white;
+    transition: all 0.3s ease;
 }
 
 body {
-    font-family: "Yuji Mai", serif;
-    background-color: royalblue;
-    background-size: cover;
-    background-repeat: repeat;
-    color: black; /* Cor padrão para textos */
-    transition: background-color 0.5s, color 0.5s; /* Transição suave */
+    background-color: rgb(142, 110, 217);
+    transition: background-color 0.3s ease;
+    color: white;
 }
 
-body.dark-mode {
-    background-color: gray;
-    color: white; /* Cor para textos em dark mode */
-}
-
-body > main {
-    /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-    background-color: orange;
-    margin: 20px;
-    background-size: cover;
-    border-radius: 10px;
-    border: double gray 2px;
-    display: flex;
-    /* Adicionado */
-    flex-direction: column;
-    /* Adicionado */
-    transition: background-color 0.5s; /* Transição para o main */
-    border: 2px solid white;
-    width: 100vw !important;
-    
-}
-body.dark-mode > main {
-     background-color: black; /* Cor do main no modo escuro */
-     
-}
-button {
-    display: block;
+.card-text,
+.card-title {
+    color: black;
 }
 
 #change-color {
-    float: left;
-    width: 105px !important;
-    height: 55px !important;
+    width: 70px !important;
+    height: 60px !important;
     border-radius: 10px;
+    transition: background-color 0.3s ease;
+    float: left;
 }
 
 #change-color:hover {
@@ -409,136 +36,65 @@ button {
     height: 50px;
 }
 
-#nav-bar {
-    margin: auto;
-    border-radius: 6px;
+.nav-link {
+    border-radius: 15px;
+    transition: color 0.3s ease;
+    color: black !important;
 }
 
-.nav-link {
-    padding: 5px;
-    color: black !important;
-    border-radius: 15px;
-    transition: color 0.5s;
-}
 .nav-link:hover {
     transition: 1s;
     background-color: purple;
 }
 
-body.dark-mode .nav-link{
-    color: black !important;
+.navbar-brand {
+    font-family: "Bangers", system-ui;
 }
 
-#menu {
-    text-align: left;
-    transition: color 0.5s; /* Transição para o menu */
-}
-body.dark-mode #menu {
-    color:white;
+#projetos {
+    background-color: rgb(142, 110, 217) !important;
 }
 
-ol > a:hover {
-    transition: 1s;
+#nav-name {
+    color: black;
+}
+
+#contatos {
+    font-size: 1.4rem
+}
+
+.especial-link {
     font-size: 1.4rem;
+    max-width: 100h;
+    color: brown;
 }
 
-.json-tag,
-.js-tag,
-.html-tag,
-.json-tag,
-.css-tag,
-.django-tag,
-.streamlit-tag {
-    border-radius: 6px;
-    color: whitesmoke;
-    display: inline-block;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: color 0.5s; /* Transição para as tags */
-}
-body.dark-mode .json-tag,
-body.dark-mode .js-tag,
-body.dark-mode .html-tag,
-body.dark-mode .json-tag,
-body.dark-mode .css-tag,
-body.dark-mode .django-tag,
-body.dark-mode .streamlit-tag {
-    border: 2px solid white; /* borda branca no modo escuro */
+
+/* Estilos para o tema dark */
+
+body.dark-mode {
+    background-color: black;
 }
 
-.json-tag:hover,
-.js-tag:hover,
-.html-tag:hover,
-.json-tag:hover,
-.css-tag:hover,
-.django-tag:hover,
-.streamlit-tag:hover {
-    font-size: 1.4rem;
-    transition: 0.5s;
-}
-.title-project{
-    display: inline-block;
-    background-color:purple ;
-    border-radius: 6px;
-    cursor: pointer;
-}
-body.dark-mode .title-project{
-    background-color:red;
-}
-.django-tag {
-    background-color: rgb(50, 150, 28);
+body.dark-mode .card-text,
+body.dark-mode .card-title {
+    color: black;
 }
 
-.html-tag {
-    background-color: orangered;
+body.dark-mode #projetos {
+    background-color: black !important;
 }
 
-.css-tag {
-    background-color: royalblue;
+/* Ajuste para dispositivos menores (até 767px) */
+@media (max-width: 767px) {
+    /* Replicando estilos para telas menores, se necessário alguma mudança especifica */
 }
 
-.js-tag {
-    background-color: gold;
-}
 
-.streamlit-tag {
-    background-color: brown;
-}
-
-.json-tag {
-    background-color: purple;
-}
-
-img {
-    width: 400px;
-    height: 300px;
-    border-radius: 20px;
-    transition: all 0.5s;/* Transição para as imagens*/
-}
-
-/*
-img:hover,
-iframe:hover {
-    transition: 1s;
-    width: 600px;
-    height: 300px;
-}
-*/
-body.dark-mode img{
-    border: 2px solid white; /* borda branca no modo escuro */
-}
-.text-project-info {
-    display: none;
-
-}
-    .title-project{
-    background-color: purple;
-}
-<<<<<<< HEAD
-  
-=======
-    .title-project{
-    background-color: purple;
-}
->>>>>>> c86c7d1 (melhorias visuais)
+/* Ajuste para dispositivos maiores (1024px ou mais) */
+@media (min-width: 1024px) {
+    /* Replicando estilos para telas maiores, se necessário alguma mudança especifica */
+    .nav-link {
+        font-size: 1.4rem !important;
+    }
 }
