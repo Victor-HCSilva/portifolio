@@ -325,18 +325,19 @@
     
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+
     html {
         scroll-behavior: smooth;
     }
     *{
-        font-size: 1.3rem !important;
-        font-family: "Nunito", sans-serif;
+        /*
         padding-left: 20px;
         padding-right: 20px;
+        */  
         transition: all 0.3s ease;
     }
     body {
-        font-family: "Yuji Mai", serif;
+        /*font-family: "Yuji Mai", serif;*/
         background-color: royalblue;
         background-size: cover;
         background-repeat: repeat;
@@ -346,9 +347,8 @@
         display: block;
     }
     #change-color{
-        float: right;
-        width: 100px !important;
-        height: 50px !important;
+        width: 70px !important;
+        height: 60px !important;
         border-radius: 10px;
         transition: background-color 0.3s ease;
     }
@@ -358,13 +358,7 @@
         width: 100px;
         height: 50px;
     }
-    #nav-bar{
-        margin: auto;
-        border-radius: 6px;
-    }
-    
     .nav-link{
-        padding: 5px;
         color: black !important;
         border-radius: 15px;
         font-family: "Nunito", sans-serif !important;
@@ -375,24 +369,16 @@
         background-color: purple;
     }
     
-    
-    @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
-    
     .navbar-brand{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-family: "Bangers", system-ui;
-        font-weight: 400;
         font-style: normal;
-        color:black !important;
-         transition: color 0.3s ease;
+        transition: color 0.3s ease;
     }
     body > main {
-        background-color: orange;
-        margin: 20px;
+        background-color: rgb(142, 110, 217);
         background-size: cover;
         padding: 0px;
-        border-radius: 10px;
-        border: double gray 2px;
         display: flex; 
         flex-direction: column; 
         transition: background-color 0.3s ease;
@@ -408,14 +394,13 @@
     #div-3,#div-4,#div-5,#div-6,#div-7,#div-8,#div-9{
         background: none;
         color: white
-        /*border: 2px solid red;
-        width: 200px;
-        height: 300px;*/
+        
     }
     .img-icon{
+        margin: 5px;
         cursor: pointer;
         width: 130px;
-        height: 80px;
+        height: 125px;
         /*border: double thick black;*/
          transition: transform 0.3s ease;
     }
@@ -468,6 +453,7 @@
     .change-color-text{
         text-align: center;
         color: white;
+        font-size: 2rem;
     }
     #projects-main{
         margin-top: 200px;
@@ -485,5 +471,7 @@
     h3{
         font-weight: bold;
     }
-    
+    .especial-link{
+        color: brown;
+    }
 }
