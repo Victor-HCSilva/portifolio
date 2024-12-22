@@ -71,12 +71,12 @@ document.addEventListener('DOMContentLoaded', function() {
         const isDarkMode = body.classList.contains('dark-mode');
        
       
-        if(isDarkMode){
+        /*if(isDarkMode){
             textChangeColor.innerText = 'Light Mode'
         }
         else{
             textChangeColor.innerText = 'Dark Mode'
-        }
+        }*/
         
         
         applyThemeColors(isDarkMode ? 'dark' : 'light', colorPicker.value);

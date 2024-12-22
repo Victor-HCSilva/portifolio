@@ -70,19 +70,17 @@
     }
 
     .nav-link {
-        text-align: center;
         padding: 5px;
         color: var(--nav-link-color) !important;
         border-radius: 15px;
         transition: color 0.5s;
     }
 
-    .nav-link:hover {
+    .nav-link:hover {    
         transition: 1s;
-        background-color: var(--hover-color);
+        background-color: purple;
     }
-
-    .navbar-brand {
+        .navbar-brand {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-family: "Bangers", system-ui;
         font-weight: 400;
@@ -157,8 +155,8 @@
     }
 
     #my-image {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
         border-radius: 100%;
     }
     .text-change-color{
@@ -166,7 +164,7 @@
     }
 
     .focus{
-        color: #3C041A;
+        color: orangered;
     }
 
 
@@ -218,7 +216,7 @@
     }
 
     .nav-link {
-        text-align: center;
+        text-align: start;
         padding: 5px;
         color: var(--nav-link-color) !important;
         border-radius: 15px;
@@ -227,7 +225,7 @@
 
     .nav-link:hover {
         transition: 1s;
-        background-color: var(--hover-color);
+        background-color: purple;
     }
 
     .navbar-brand {
@@ -305,8 +303,8 @@
     }
 
     #my-image {
-        width: 250px;
-        height: 250px;
+        width: 260px;
+        height: 260px;
         border-radius: 100%;
     }
     .text-change-color{
@@ -314,7 +312,7 @@
     }
 
     .focus{
-        color: #3C041A;
+        color: orangered;
     }
 
 
@@ -383,7 +381,6 @@
     }
 
     .nav-link {
-        text-align: center;
         padding: 5px;
         color: var(--nav-link-color) !important;
         border-radius: 15px;
@@ -392,7 +389,7 @@
 
     .nav-link:hover {
         transition: 1s;
-        background-color: var(--hover-color);
+        background-color: purple;
     }
 
     .navbar-brand {
@@ -470,8 +467,8 @@
     }
 
     #my-image {
-        width: 250px;
-        height: 250px;
+        width: 325px;
+        height: 260px;
         border-radius: 100%;
     }
     .text-change-color{

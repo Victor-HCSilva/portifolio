@@ -184,18 +184,14 @@
         scroll-behavior: smooth;
     }
     * {
-    
         font-size: 1.2rem;
         font-family: "Nunito", sans-serif;
-        
         color: white;
     }
     
     body {
         font-family: "Yuji Mai", serif;
-        background-color: royalblue;
-        background-size: cover;
-        background-repeat: repeat;
+        background-color: orange;
         color: black; /* Cor padrão para textos */
         transition: background-color 0.5s, color 0.5s; /* Transição suave */
     }
@@ -206,17 +202,8 @@
     }
     
     body > main {
-        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-        background-color: orange;
-        background-size: cover;
-        border-radius: 10px;
-        display: flex;
-        /* Adicionado */
-        flex-direction: column;
-        /* Adicionado */
-        transition: background-color 0.5s; /* Transição para o main */
-        border: 2px solid white;
-        height: 1800px;
+        transition: background-color 1s;
+
     }
     body.dark-mode > main {
          background-color: black; /* Cor do main no modo escuro */
@@ -240,7 +227,6 @@
     }
     
     #nav-bar {
-        margin: auto;
         border-radius: 6px;
     }
     
@@ -364,8 +350,7 @@ html {
     scroll-behavior: smooth;
 }
 * {
-
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: "Nunito", sans-serif;
     padding-left: 30px;
     padding-right: 20px;
@@ -412,8 +397,8 @@ button {
 
 #change-color {
     float: left;
-    width: 125px !important;
-    height: 75px !important;
+    width: 105px !important;
+    height: 55px !important;
     border-radius: 10px;
 }
 
@@ -435,6 +420,11 @@ button {
     border-radius: 15px;
     transition: color 0.5s;
 }
+.nav-link:hover {
+    transition: 1s;
+    background-color: purple;
+}
+
 body.dark-mode .nav-link{
     color: black !important;
 }

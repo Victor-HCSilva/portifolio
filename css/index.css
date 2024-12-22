@@ -36,15 +36,19 @@
 
     }
     .nav-link{
-        text-align: center;
         padding: 5px;
         color: #3C041A !important;
         border-radius: 15px;
     }
-    .nav-link:hover{
-        transition: 1s;
-        background-color: rgb(155, 170, 171);
-    }
+    .nav-link:hover {
+    transition: 1s;
+    background-color: purple;
+}
+.nav-link:hover {
+    transition: 1s;
+    background-color: purple;
+}
+
     
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
     
@@ -209,17 +213,15 @@
         border-radius: 10px ;
     }
     .nav-link{
-        text-align: center;
         padding: 5px;
         color: #3C041A !important;
         border-radius: 15px;
     }
-    .nav-link:hover{
+    .nav-link:hover {
         transition: 1s;
-        
-        background-color: rgb(155, 170, 171);
-        
+        background-color: purple;
     }
+    
     
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
     
@@ -368,6 +370,11 @@
         font-family: "Nunito", sans-serif !important;
         transition: color 0.3s ease;
     }
+    .nav-link:hover {
+        transition: 1s;
+        background-color: purple;
+    }
+    
     
     @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
     
