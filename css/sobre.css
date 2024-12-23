@@ -1,483 +1,221 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
-.title-project{
-    text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
 
 :root {
+    --background-color: rgb(0, 150, 150, 0.9);
+    --text: aliceblue;
+    --especial-link: orangered;
+    --hover-link:black; /* hover em links*/
+    --color-title-background: purple;
+    --links-nav-bar: gray;
+    --focus: orangered;
+    --navbar-bg: white;
+    --navbar-text: black;
+    --main-bg: rgba(0, 150, 150, 0.9);
+    --text-change-color: white;
+    
+
+}
+
+/* Dark Mode */
+.dark-mode {
     --background-color: black;
-    --color-text: white;
-    --dark-background-color: black;
-    --dark-color-text: white;
-    --main-background: orange;
-    --dark-main-background: black;
-    --navbar-brand: black;
-    --dark-navbar-brand: black;
-    --title-color: white;
-    --dark-title-color: purple;
-    --text-color: aliceblue;
-    --dark-text-color: white;
-    --hover-color: black;
-    --nav-link-color: #3C041A;
-    --select-color: purple;
-    --dark-select-color: black;
-    --background-default: royalblue;
-
-}
-@media (max-width: 767px) {
-    html {
-        scroll-behavior: smooth;
-    }
-    * {
-        font-size: 1rem;
-        font-family: "Nunito", sans-serif;
-    }
-
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color: var(--background-default);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: var(--color-text);
-        transition: background-color 0.5s, color 0.5s;
-    }
-
-    body.dark-mode {
-        background-color: var(--dark-background-color);
-    }
-
-    button {
-        display: block;
-    }
-
-    #change-color {
-        float: left;
-        width: 55px !important;
-        height: 50px !important;
-        border-radius: 10px;
-        transition: background-color 0.5s, color 0.5s;
-    }
+    --text: #f0f0f0; /* Um tom de cinza claro para o texto no dark mode */
+    /*--hover-link: white;*/
+    --color-title-background: purple;
+    --links-nav-bar: #ddd;
+    --navbar-bg: #333;
+    /*--navbar-text: white;*/
+    --main-bg: #222;
     
-    #change-color:hover{
-        transition: 1s;
-        background-color: #333;
-        width: 100px;
-        height: 50px;
-    }
-
-    .navbar-nav {
-        border-radius: 10px;
-        display: flex !important;
-    }
-
-    .nav-link {
-        padding: 5px;
-        color: var(--nav-link-color) !important;
-        border-radius: 15px;
-        transition: color 0.5s;
-    }
-
-    .nav-link:hover {    
-        transition: 1s;
-        background-color: purple;
-    }
-        .navbar-brand {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-family: "Bangers", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: var(--navbar-brand) !important;
-        transition: color 0.5s;
-    }
-
-    body.dark-mode .navbar-brand {
-        color: var(--dark-navbar-brand) !important;
-    }
-
-    body main {
-        background-color: var(--main-background);
-        background-size: cover;
-        border-radius: 10px;
-        border: double gray 2px;
-        display: flex;
-        flex-direction: column;
-        transition: background-color 0.5s;
-    }
-
-    body.dark-mode main {
-        background-color: black;
-    }
-
-    #container-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu-list {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #menu-list a {
-        color: var(--color-text);
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-    #menu-list a:hover {
-        background-color: #555;
-    }
-
-    .title-change-color {
-        background-color: var(--select-color);
-        border-radius: 10px;
-        color: white;
-        padding: 10px;
-        display: inline-block;
-        transition: background-color 0.5s;
-    }
-    body.dark-mode .title-change-color {
-         background-color: var(--select-color);
-    }
-    #contatos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #my-image {
-        width: 220px;
-        height: 220px;
-        border-radius: 100%;
-    }
-    .text-change-color{
-        color: white;
-    }
-
-    .focus{
-        color: orangered;
-    }
-
-
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-    html {
-        scroll-behavior: smooth;
-    }
-    * {
-        font-size: 1rem;
-        font-family: "Nunito", sans-serif;
-    }
-
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color: var(--background-default);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: var(--color-text);
-        transition: background-color 0.5s, color 0.5s;
-    }
-
-    body.dark-mode {
-        background-color: var(--dark-background-color);
-    }
-
-    button {
-        display: block;
-    }
-
-    #change-color {
-        float: left;
-        width: 55px !important;
-        height: 50px !important;
-        border-radius: 10px;
-        transition: background-color 0.5s, color 0.5s;
-    }
-    
-    #change-color:hover{
-        transition: 1s;
-        background-color: #333;
-        width: 100px;
-        height: 50px;
-    }
-
-    .navbar-nav {
-        border-radius: 10px;
-        display: flex !important;
-    }
-
-    .nav-link {
-        text-align: start;
-        padding: 5px;
-        color: var(--nav-link-color) !important;
-        border-radius: 15px;
-        transition: color 0.5s;
-    }
-
-    .nav-link:hover {
-        transition: 1s;
-        background-color: purple;
-    }
-
-    .navbar-brand {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-family: "Bangers", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: var(--navbar-brand) !important;
-        transition: color 0.5s;
-    }
-
-    body.dark-mode .navbar-brand {
-        color: var(--dark-navbar-brand) !important;
-    }
-
-    body main {
-        background-color: var(--main-background);
-        background-size: cover;
-        border-radius: 10px;
-        border: double gray 2px;
-        display: flex;
-        flex-direction: column;
-        transition: background-color 0.5s;
-    }
-
-    body.dark-mode main {
-        background-color: black;
-    }
-
-    #container-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu-list {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #menu-list a {
-        color: var(--color-text);
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-    #menu-list a:hover {
-        background-color: #555;
-    }
-
-    .title-change-color {
-        background-color: var(--select-color);
-        border-radius: 10px;
-        color: white;
-        padding: 10px;
-        display: inline-block;
-        transition: background-color 0.5s;
-    }
-    body.dark-mode .title-change-color {
-         background-color: var(--select-color);
-    }
-    #contatos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #my-image {
-        width: 260px;
-        height: 260px;
-        border-radius: 100%;
-    }
-    .text-change-color{
-        color: white;
-    }
-
-    .focus{
-        color: orangered;
-    }
-
-
 }
 
-@media (min-width: 1024px) {
-    html {
-        scroll-behavior: smooth;
-    }
-    * {
-        font-size: 1.2rem;
-        font-family: "Nunito", sans-serif;
-        padding-left: 30px;
-        padding-right: 20px;
-    }
-
-    body {
-        font-family: "Yuji Mai", serif;
-        background-color: var(--background-default);
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: var(--color-text);
-        transition: background-color 0.5s, color 0.5s;
-    }
-    body > main {
-        /*background: linear-gradient(black, rgb(33, 32, 32), rgb(69, 108, 69),rgb(9, 67, 20));*/
-        background-color: orange;
-        margin: 20px;
-        background-size: cover;
-        border-radius: 10px;
-        border: double gray 2px;
-        display: flex;
-        /* Adicionado */
-        flex-direction: column;
-        /* Adicionado */
-        transition: background-color 0.5s; /* Transição para o main */
-        border: 2px solid white;
-    }
-
-    body.dark-mode {
-        background-color: var(--dark-background-color);
-    }
-
-    button {
-        display: block;
-    }
-
-    #change-color {
-        float: left;
-        width: 105px !important;
-        height: 50px !important;
-        border-radius: 10px;
-        transition: background-color 0.5s, color 0.5s;
-    }
-    
-    #change-color:hover{
-        transition: 1s;
-        background-color: #333;
-        width: 100px;
-        height: 50px;
-    }
-
-    .navbar-nav {
-        border-radius: 10px;
-        display: flex !important;
-    }
-
-    .nav-link {
-        padding: 5px;
-        color: var(--nav-link-color) !important;
-        border-radius: 15px;
-        transition: color 0.5s;
-    }
-
-    .nav-link:hover {
-        transition: 1s;
-        background-color: purple;
-    }
-
-    .navbar-brand {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-family: "Bangers", system-ui;
-        font-weight: 400;
-        font-style: normal;
-        color: var(--navbar-brand) !important;
-        transition: color 0.5s;
-    }
-
-    body.dark-mode .navbar-brand {
-        color: var(--dark-navbar-brand) !important;
-    }
-
-    body main {
-        background-color: var(--main-background);
-        background-size: cover;
-        border-radius: 10px;
-        border: double gray 2px;
-        display: flex;
-        flex-direction: column;
-        transition: background-color 0.5s;
-    }
-
-    body.dark-mode main {
-        background-color: black;
-    }
-
-    #container-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #menu-list {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #menu-list a {
-        color: var(--color-text);
-        text-decoration: none;
-        padding: 5px 10px;
-        border-radius: 5px;
-    }
-
-    #menu-list a:hover {
-        background-color: #555;
-    }
-
-    .title-change-color {
-        background-color: var(--select-color);
-        border-radius: 10px;
-        color: white;
-        padding: 10px;
-        display: inline-block;
-        transition: background-color 0.5s;
-    }
-    body.dark-mode .title-change-color {
-         background-color: var(--select-color);
-    }
-    #contatos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #i{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #my-image {
-        width: 325px;
-        height: 260px;
-        border-radius: 100%;
-    }
-    .text-change-color{
-        color: white;
-    }
-
-    .focus{
-        color: orangered;
-    }
 
 
+#my-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background-size: cover;
+    background-repeat: repeat;
+    transition: background-color 0.3s ease;
+}
+
+button {
+    display: block;
+}
+
+#change-color {
+    width: 70px !important;
+    height: 60px !important;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#change-color:hover {
+    transition: 1s;
+    background-color: gray;
+    width: 100px;
+    height: 50px;
+}
+
+.nav-link {
+    color: var(--links-nav-bar) !important;
+    border-radius: 15px;
+
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    transition: 1s;
+    background-color: var(--hover-link);
+}
+
+.navbar-brand {
+    font-family: "Bangers", system-ui;
+    font-style: normal;
+    transition: color 0.3s ease;
+}
+
+body > main {
+    background-color: var(--main-bg);
+    background-size: cover;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+}
+nav{
+    background-color: var(--navbar-bg) !important;
+}
+.navbar-brand,.navbar-nav {
+    color: var(--navbar-text) !important;
+}
+
+#main-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#div-3,
+#div-4,
+#div-5,
+#div-6,
+#div-7,
+#div-8,
+#div-9 {
+    background: none;
+    color: var(--text); /* Usar a variável --text para cor */
+}
+
+.img-icon {
+    margin: 5px;
+    cursor: pointer;
+    width: 130px;
+    height: 125px;
+    transition: transform 0.3s ease;
+    /*border: double thick black;*/
+}
+
+.img-icon:hover {
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.img-eu {
+    width: 200px;
+    height: 350px;
+}
+
+#titulo {
+    margin-top: 50px;
+    background-color: var(--hover-link);
+    border-radius: 10px;
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#text {
+    border-radius: 6px;
+    color: var(--text); /* Usar a variável --text para cor */
+    font-size: 4rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p,
+ul {
+    text-align: left;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+li {
+    font-size: 1.3rem;
+}
+
+/*ADD: */
+.change-color-text {
+    text-align: center;
+    color: var(--text);
+    font-size: 2rem;
+}
+
+h1,
+h2 {
+    font-size: 2rem !important;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.especial-link {
+    color: var(--especial-link);
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.title-change-color {
+    padding: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    color: white !important;
+    background-color: var(--color-title-background);
+}
+.text-change-color{
+    color: var(--text-change-color);
+}
+
+.focus {
+    font-size: 1.3rem;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    color: var(--focus)
 }
