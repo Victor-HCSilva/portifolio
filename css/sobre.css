@@ -21,7 +21,6 @@
     --select-color: purple;
     --dark-select-color: black;
     --background-default: royalblue;
-
 }
 @media (max-width: 767px) {
     html {

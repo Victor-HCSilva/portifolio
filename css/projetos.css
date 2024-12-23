@@ -2,6 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
 
 /* Estilos padrão */
+:root{
+    --background-color: rgb(142, 110, 217);
+    --dark-background--color: black;
+    --text: black;
+    --hover-links: purple;
+    --especial-link: brown;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,14 +19,14 @@ html {
 }
 
 body {
-    background-color: rgb(142, 110, 217);
+    background-color: var(--background-color);
     transition: background-color 0.3s ease;
     color: white;
 }
 
 .card-text,
 .card-title {
-    color: black;
+    color: var(--text);
 }
 
 #change-color {
@@ -39,12 +47,12 @@ body {
 .nav-link {
     border-radius: 15px;
     transition: color 0.3s ease;
-    color: black !important;
+    color: var(--text) !important;
 }
 
 .nav-link:hover {
     transition: 1s;
-    background-color: purple;
+    background-color: var(--hover-links);
 }
 
 .navbar-brand {
@@ -52,11 +60,11 @@ body {
 }
 
 #projetos {
-    background-color: rgb(142, 110, 217) !important;
+    background-color: var(--background-color) !important;
 }
 
 #nav-name {
-    color: black;
+    color: var(--text);
 }
 
 #contatos {
@@ -66,34 +74,29 @@ body {
 .especial-link {
     font-size: 1.4rem;
     max-width: 100h;
-    color: brown;
+    color: var(--especial-link);
 }
 
 
 /* Estilos para o tema dark */
 
 body.dark-mode {
-    background-color: black;
+    background-color: var(--dark-background--color);
 }
 
 body.dark-mode .card-text,
 body.dark-mode .card-title {
-    color: black;
+    color: var(--dark-background--color);
 }
 
 body.dark-mode #projetos {
-    background-color: black !important;
+    background-color: var(--dark-background--color) !important;
 }
 
-/* Ajuste para dispositivos menores (até 767px) */
 @media (max-width: 767px) {
-    /* Replicando estilos para telas menores, se necessário alguma mudança especifica */
+    /**/
 }
-
-
-/* Ajuste para dispositivos maiores (1024px ou mais) */
 @media (min-width: 1024px) {
-    /* Replicando estilos para telas maiores, se necessário alguma mudança especifica */
     .nav-link {
         font-size: 1.4rem !important;
     }
