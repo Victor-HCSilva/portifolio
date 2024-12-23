@@ -3,11 +3,12 @@
 
 /* Estilos padrão */
 :root{
-    --background-color: rgb(142, 110, 217);
+    --background-color: rgb(0,150,150,0.9);
     --dark-background--color: black;
     --text: black;
-    --hover-links: purple;
-    --especial-link: brown;
+    --hover-links: black;
+    --especial-link: orangered;
+    --link-nav-bar: gray;
 }
 
 html {
@@ -47,7 +48,7 @@ body {
 .nav-link {
     border-radius: 15px;
     transition: color 0.3s ease;
-    color: var(--text) !important;
+    color: var(--link-nav-bar) !important;
 }
 
 .nav-link:hover {
