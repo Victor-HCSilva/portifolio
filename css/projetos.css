@@ -46,9 +46,10 @@ body {
 }
 
 .nav-link {
-    border-radius: 15px;
+    border-radius: 6px;
     transition: color 0.3s ease;
     color: var(--link-nav-bar) !important;
+    display: inline-block;
 }
 
 .nav-link:hover {

@@ -70,6 +70,7 @@ button {
     color: var(--links-nav-bar) !important;
     border-radius: 15px;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .nav-link:hover {

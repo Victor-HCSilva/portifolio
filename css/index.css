@@ -17,6 +17,7 @@
     max-width: 100%;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
@@ -51,7 +52,7 @@ button {
 }
 
 .nav-link {
-    display: inline-block;
+    display: inline-block ;
     color: var(--links-nav-bar) !important;
     border-radius: 15px;
     font-family: "Nunito", sans-serif !important;
