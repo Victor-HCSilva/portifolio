@@ -3,7 +3,7 @@ console.log('Dilica');
 // Seleciona os elementos
 const body = document.querySelector("body");
 const main = document.querySelector("body > main");
-const titulo = document.querySelector("#titulo");
+//const titulo = document.querySelector("#titulo");
 const main_text = document.querySelector("#text-main");
 const text_apresentacao = document.querySelector("div.text-apresentacao");
 const p_text = document.querySelector("p");
@@ -16,8 +16,8 @@ const initialStyles = {
   p_text: p_text.style.color,
   bodyBackground: body.style.background,
   mainBackground: main.style.background,
-  tituloColor: titulo.style.color,
-  tituloBackground: titulo.style.background,
+  //tituloColor: titulo.style.color,
+  //tituloBackground: titulo.style.background,
   mainTextColor: main_text.style.color,
   mainTextBackground: main_text.style.backgroundColor,
   textApresentacaoColor: text_apresentacao.style.color,
@@ -39,8 +39,8 @@ if(isChanged){
     change_color_button.style.background = "gray"
     
     //titulo color black and background white
-    titulo.style.color = "white";
-    titulo.style.background = "black";
+    //titulo.style.color = "white";
+    //titulo.style.background = "black";
     
       //main_text color black and background white
     main_text.style.color = "white";
@@ -65,8 +65,8 @@ function change_color() {
       change_color_button.style.background = "gray"
        
         //titulo color black and background white
-        titulo.style.color = "white";
-        titulo.style.background = "black";
+        //titulo.style.color = "white";
+        //titulo.style.background = "black";
         
         //main_text color black and background white
         main_text.style.color = "white";
@@ -84,8 +84,8 @@ function change_color() {
         body.style.background = initialStyles.bodyBackground;
         main.style.background = initialStyles.mainBackground;
          change_color_button.style.background = initialStyles.changeColorBackground;
-        titulo.style.color = initialStyles.tituloColor;
-        titulo.style.background = initialStyles.tituloBackground;
+        //titulo.style.color = initialStyles.tituloColor;
+        //titulo.style.background = initialStyles.tituloBackground;
         main_text.style.color = initialStyles.mainTextColor;
         main_text.style.backgroundColor = initialStyles.mainTextBackground;
         text_apresentacao.style.color = initialStyles.textApresentacaoColor;
