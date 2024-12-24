@@ -5,48 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
+    
 </head>
-<body id="body">
-    <!--teste...-->
-    <header id="is">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
-            <a class="navbar-brand" href="index.html"><strong>Victor</strong></a> 
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html"><strong>Victor</strong></a>
             
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre mim</a> 
-                    </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">Projetos</a> 
+                        <a class="nav-link" href="sobre.html">Sobre mim</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contatos">Contatos</a> 
+                        <a class="nav-link" href="projetos.html">Projetos</a>
                     </li>
-                    
-                     <li class="nav-item">                    
-                         <img onclick="change_color()" src="image/change_color.png" alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores" style="cursor: pointer;">
-                    </li>                      
-                </ul>                
-            </div>            
-        </nav>        
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="image/change_color.png" alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores" class="change-color-icon">
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     
     <main>
-        
         <section class="container">
             
-            <h1 class="titulo" class="text-center mt-4">Desenvolvedor back-end</h1>
-
+            <h1 class="titulo text-center mt-4">Desenvolvedor back-end</h1>
+            
             <div id="main-div" class="mt-4">
                 <div class="d-flex flex-wrap justify-content-center">
                     <div class="tech-div">
@@ -66,83 +62,69 @@
                         <img src="image/st.png" alt="Streamlit" class="img-icon" title="Streamlit">
                     </div>
                     <div class="tech-div">
-                         <p class="change-color-text">HTML</p>
+                        <p class="change-color-text">HTML</p>
                         <img src="image/html.png" alt="html" class="img-icon" title="HTML">
                     </div>
                     <div class="tech-div">
-                         <p class="change-color-text">CSS</p>
+                        <p class="change-color-text">CSS</p>
                         <img src="image/css.webp" alt="CSS" class="img-icon" title="CSS">
                     </div>
-                    <!--
-                    <div class="tech-div">
-                        <p class="change-color-text">JS</p>
-                        <img src="image/js.png" alt="js" class="img-icon" title="JavaScript">
-                    </div>-->
+                   
                     
                     <div class="tech-div">
                         <p class="change-color-text">GIT</p>
                         <img src="image/git.png" alt="git" class="img-icon" title="GIT">
                     </div>
                 </div>
-
+                
                 <h2 id="text-main" class="text-center mt-4">Hora de codar!</h2>
-
+                
                 <div class="titulo">
                     <p class="lead text-center">
                         Olá, me chamo Victor e sou desenvolvedor back-end. Tenho como linguagem principal Python. Trabalho
                         com freelancers e outros tipos de projetos. Para mais informações: <a href="sobre.html">clique aqui</a>.
                     </p>
                 </div>
-
-                <section id="projects-main" class="mt-5">
+                
+                <section class="projects-section mt-5">
                     <h1 id="section-title-projects" class="change-color-text">projetos</h1>
                     <br>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="project">
-                                
-                                
-                                
+                        
+                        <article class="col-md-4">
+                            
                                 <img src="image/projetos-images/sage.png" class="project-image" alt="Projeto 1">
                                 <h3 class="change-color-text">Agendamento de consultas</h3>
                                 <br>
                                 <p class="change-color-text">Projeto desenvolvido em Django, sistema de agendamentos
                                     e gerenciamento de consultas.
                                 </p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project">
-                                
-                                
+                            
+                        </article>
+                        
+                        <article class="col-md-4">
+                            
                                 <img src="image/projetos-images/lista.png" class="project-image" alt="Projeto 2">
                                 <h3 class="change-color-text">Lista de tarefas</h3>
                                 <br>
                                 <p class="change-color-text">Projeto desenvolvido com Streamlit,
                                     um programa que permite realizar anotações .
-
-                                    
-                                     
                                 </p>
                                 <a class="btn btn-primary" href="https://victor-hcsilva-lsista-de-tarefas-app-tcbtnq.streamlit.app/" target="_blank">Ver</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="project">
-                                
-                                
+                            
+                        </article>
+                        
+                        <article class="col-md-4">
+                            
                                 <img src="image/imc_image.png" class="project-image" alt="Projeto 3">
                                 <h3 class="change-color-text">Calculadora de IMC</h3>
                                 <br>
                                 <p class="change-color-text">Projeto desenvolvido com HTML, CSS e JS
                                     uma calculadora de IMC.
-                                    <!--
-                                    <a class="btn btn-primary" href="https://html-ten-ecru.vercel.app/" target="_blank">Ver</a>
-                                    -->
-                                    
                                 </p>
-                            </div>
-                        </div>
+                            
+                        </article>
+                    
                     </div>
                 </section>
                 
@@ -150,21 +132,21 @@
                     <div class="col-md">
                         <div id="contatos">
                             <h1 id="title-contatos"  class="change-color-text">Contatos</h1>
-                        <p class="change-color-text">
-                            Git Hub: <a class="especial-link" href="https://github.com/Victor-HCSilva" target="_blank">Link para o Git Hub</a>
-                            <br>
-                            Email: victorh.csilva20@gmail.com</a>
-                          <br>
-                            
-                            
-                        </p>
+                            <p class="change-color-text">
+                                Git Hub: <a class="especial-link" href="https://github.com/Victor-HCSilva" target="_blank">Link para o Git Hub</a>
+                                <br>
+                                Email: victorh.csilva20@gmail.com
+                              <br>
+                            </p>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </section>
-        <div></div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/index.js" defer></script>
 </body>
 </html>
