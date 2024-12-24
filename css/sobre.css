@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
 
 :root {
-    --background-color: rgb(0, 150, 150, 0.9);
+    /*--background-color: rgb(0, 110, 110, 1);*/
     --text: aliceblue;
-    --especial-link: orangered;
-    --hover-link:black; /* hover em links*/
+    --especial-link: orange;
+    --hover-link: gray; /* hover em links*/
     --color-title-background: purple;
-    --links-nav-bar: gray;
+    --links-nav-bar: black;
     --focus: orangered;
     --navbar-bg: white;
     --navbar-text: black;
-    --main-bg: rgba(0, 150, 150, 0.9);
+    --main-bg: rgb(0, 110, 110, 1);
     --text-change-color: white;
     
 
@@ -20,20 +20,16 @@
 /* Dark Mode */
 .dark-mode {
     --background-color: black;
-    --text: #f0f0f0; /* Um tom de cinza claro para o texto no dark mode */
     /*--hover-link: white;*/
     --color-title-background: purple;
-    --links-nav-bar: #ddd;
-    --navbar-bg: #333;
+    --links-nav-bar: black;
+    --navbar-bg: black;
     /*--navbar-text: white;*/
-    --main-bg: #222;
-    
+    --main-bg: black;   
 }
 
-
-
 #my-image {
-    width: 300px;
+    width: 305px;
     height: 300px;
     border-radius: 100%;
 }
@@ -50,8 +46,6 @@ html {
 
 body {
     font-family: "Nunito", sans-serif;
-    background-size: cover;
-    background-repeat: repeat;
     transition: background-color 0.3s ease;
 }
 
@@ -60,24 +54,23 @@ button {
 }
 
 #change-color {
-    width: 70px !important;
-    height: 60px !important;
+    width: 60px !important;
+    height: 50px !important;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 #change-color:hover {
     transition: 1s;
-    background-color: gray;
-    width: 100px;
-    height: 50px;
+    background-color: var(--hover-link);
+    
 }
 
 .nav-link {
     color: var(--links-nav-bar) !important;
     border-radius: 15px;
-
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .nav-link:hover {
@@ -93,7 +86,6 @@ button {
 
 body > main {
     background-color: var(--main-bg);
-    background-size: cover;
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -218,4 +210,11 @@ p {
     background-color: white;
     cursor: pointer;
     color: var(--focus)
+}
+.container{
+    max-width: 90%;
+}
+#back-init{
+    font-size: 2rem;
+    text-decoration:underline;
 }

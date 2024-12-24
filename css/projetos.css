@@ -3,12 +3,12 @@
 
 /* Estilos padrão */
 :root{
-    --background-color: rgb(0,150,150,0.9);
+    --background-color: rgb(0, 110, 110, 1);
     --dark-background--color: black;
     --text: black;
-    --hover-links: black;
-    --especial-link: orangered;
-    --link-nav-bar: gray;
+    --hover-links: gray;
+    --especial-link: orange;
+    --link-nav-bar: black;
 }
 
 html {
@@ -40,15 +40,16 @@ body {
 
 #change-color:hover {
     transition: 1s;
-    background-color: gray;
+    background-color: var(--hover-links);
     width: 100px;
     height: 50px;
 }
 
 .nav-link {
-    border-radius: 15px;
+    border-radius: 6px;
     transition: color 0.3s ease;
     color: var(--link-nav-bar) !important;
+    display: inline-block;
 }
 
 .nav-link:hover {
@@ -92,6 +93,9 @@ body.dark-mode .card-title {
 
 body.dark-mode #projetos {
     background-color: var(--dark-background--color) !important;
+}
+.container{
+    max-width: 90%;
 }
 
 @media (max-width: 767px) {
