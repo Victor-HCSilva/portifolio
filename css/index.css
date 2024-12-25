@@ -164,10 +164,10 @@ li {
 }
 
 .project-image {
-    border-radius: 60px;
+    border-radius: 40px;
     padding: 20px;
-    width: 350px !important;
-    height: 350px !important;
+    width:430px ;
+    height: 370px ;
 }
 
 h1,
@@ -196,8 +196,8 @@ h3 {
     .project-image {
         border-radius: 30px;
         padding: 20px;
-        width: 150px !important;
-        height: 150px !important;
+        width: 220px ;
+        height: 150px ;
     }
 
     .change-color-text,
@@ -211,7 +211,7 @@ h3 {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1024px) {
     .img-icon {
         margin: 5px;
         cursor: pointer;
@@ -223,8 +223,8 @@ h3 {
     .project-image {
         border-radius: 30px;
         padding: 20px;
-        width: 150px !important;
-        height: 150px !important;
+        width: 250px ;
+        height: 200px ;
     }
 
     .change-color-text,
@@ -239,5 +239,10 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-   /**/ 
+    .project-image {
+        border-radius: 30px;
+        padding: 15px;
+        width: 410px ;
+        height: 280px ;
+    }
 }
