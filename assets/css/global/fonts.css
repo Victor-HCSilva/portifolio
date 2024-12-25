@@ -1,0 +1,6 @@
+:root{
+    /*colors*/
+    
+    /*fonts*/
+    --f1: clamp(1rem, 1vw, 1.2rem);
+}
