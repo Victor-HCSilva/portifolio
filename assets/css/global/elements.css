@@ -2,7 +2,9 @@
 @import "../global/fonts.css";
 
 /*---------Header------------*/
-
+*{
+    transition: 0.5s;
+}
 .nav-link{
     color: white !important;
     font-size: var(--f-link);
@@ -40,7 +42,8 @@
     height: 50px;
 }
 .especial-link{
-    color:olive;
+    color:olive !important;
+    font-size: var(--f-link) !important;
     
 }
 .especial-link:hover{

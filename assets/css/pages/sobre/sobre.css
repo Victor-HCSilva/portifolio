@@ -6,34 +6,74 @@
 @import "../../global/normalize.css";
 @import "../../global/variables.css";
 
+/* Variáveis de Cores para Modo Claro (padrão) */
+:root {
+    --bg-color: #f8f9fa;  /* Cor de fundo padrão */
+    --text-color: #343a40; /* Cor do texto padrão */
+    --focus-bg-color: white; /* Cor de fundo do foco */
+    --focus-text-color: olive; /* Cor do texto do foco */
+      --secondary-bg-color: #ffffff;
+}
+
+/* Variáveis de Cores para Modo Escuro */
+body.dark-mode {
+    --bg-color: #212529; /* Cor de fundo para dark mode */
+    --text-color: #f8f9fa;  /* Cor do texto para dark mode */
+    --focus-bg-color: #343a40;/* Cor de fundo do foco para dark mode */
+    --focus-text-color: #b3ad27; /* Cor do texto do foco para dark mode */
+    --secondary-bg-color: #343a40;
+}
+
 /*largura da tela*/
-.container{
+.container {
     max-width: 90%;
+          background-color: var(--secondary-bg-color);
 }
+
 /*texto*/
-.text-change-color{
+.text-change-color {
     font-size: var(--f-default);
+    color: var(--text-color);
 }
-.title-change-color{
+.title-change-color {
     font-size: var(--title);
-    
+    color: var(--text-color);
 }
-.sub-title-change-color{
+.sub-title-change-color {
     font-size: var(--sub-title);
     text-align: center;
+    color: var(--text-color);
 }
-.focus{
-    background-color: white;
-    color: olive;
+
+/* Estilo do focus (sublinhado) */
+.focus {
+    background-color: var(--focus-bg-color);
+    color: var(--focus-text-color);
     border-radius: 6px;
     font-size: var(--f-link);
 }
-.especial-link{
-    font-size: var(--f-link);
-}
+
+
 /*imagem*/
 #my-image{
     max-width: 300px;
     max-height: 300px;
     border-radius: 100%;
+}
+/* Estilos gerais */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+     background-color: var(--bg-color);
+        transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para dark mode */
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link{
+     color: var(--text-color) !important;
 }
