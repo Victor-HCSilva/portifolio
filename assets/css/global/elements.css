@@ -1,0 +1,51 @@
+@import "../global/variables.css";
+@import "../global/fonts.css";
+
+/*---------Header------------*/
+
+.nav-link{
+    color: white !important;
+    font-size: var(--f-link);
+}
+.nav-link:hover{
+    transition: 1s;
+    color: var(--link-hover) !important;
+}
+.navbar-brand > strong{
+    color: var(--nav-brand-color) !important;
+}
+.navbar{
+    background-color: var(--black) !important;
+}
+.navbar-toggler-icon{
+    background-color: aliceblue;
+    border-radius: 6px;
+}
+/*imagemagens*/
+
+
+/*botao de mudar de cor*/
+#change-color {
+    background-color: white;
+    width: 45px !important;
+    height: 40px !important;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#change-color:hover {
+    transition: 1s;
+    background-color: var(--link-hover);
+    width: 100px;
+    height: 50px;
+}
+.especial-link{
+    color:olive;
+    
+}
+.especial-link:hover{
+    transition: 1s;
+    color:orange;
+    text-decoration: none;
+}
+
