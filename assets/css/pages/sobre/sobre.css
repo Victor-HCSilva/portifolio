@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+@import "../../global/config_navbar.css";
+@import "../../global/elements.css";
+@import "../../global/fonts.css";
+@import "../../global/normalize.css";
+@import "../../global/variables.css";
+
+/*largura da tela*/
+.container{
+    max-width: 90%;
+}
+/*texto*/
+.text-change-color{
+    font-size: var(--f-default);
+}
+.title-change-color{
+    font-size: var(--title);
+    
+}
+.sub-title-change-color{
+    font-size: var(--sub-title);
+    text-align: center;
+}
+.focus{
+    background-color: white;
+    color: olive;
+    border-radius: 6px;
+    font-size: var(--f-link);
+}
+.especial-link{
+    font-size: var(--f-link);
+}
+/*imagem*/
+#my-image{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
+}

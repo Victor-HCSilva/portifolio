@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Yuji+Mai&display=swap');
+@import "../../global/config_navbar.css";
+@import "../../global/elements.css";
+@import "../../global/fonts.css";
+@import "../../global/normalize.css";
+@import "../../global/variables.css";
+/*configs padrão*/
+/*Largura da tela*/
+.container {
+    border-radius: 6px;
+    max-width: 90%;
+}
+/*imagens*/
+.img-icon:hover {
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.project-image {
+    border-radius: 40px;
+    padding: 20px;
+    width:530px ;
+    height: 370px ;
+}
+.img-icon:hover {
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.img-icon {
+    margin: 5px;
+    cursor: pointer;
+    width: 130px;
+    height: 125px;
+    transition: transform 0.3s ease;
+}
+.img-icon:hover {
+    transition: 1s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.d-flex{
+    text-align: center;
+}
+/*texto*/
+.title-change-color{
+    text-align: center;
+    font-size: var(--title);
+    cursor: pointer;    
+}
+.sub-title-change-color{
+    font-size: var(--sub-title);
+}
+.change-color-text{
+    font-size: var(--f-default);
+}
+
+/*celulares*/
+@media (max-width: 767px) {
+    /*largura total*/
+    .container{
+        max-width: 100%;
+    }
+    /*adaptações das imagens*/
+    .img-icon {
+        margin: 5px;
+        cursor: pointer;
+        width: 65px;
+        height: 60px;
+        transition: transform 0.3s ease;
+    }
+    .project-image {
+        border-radius: 30px;
+        padding: 20px;
+        width: 220px ;
+        height: 150px ;
+    }
+    /*texto*/
+    .title-change-color{
+        text-align: center;
+        font-size: var(--m-title);
+        cursor: pointer;    
+    }
+    .sub-title-change-color{
+        font-size: var(--m-sub-title);
+    }
+    .change-color-text{
+        font-size: var(--f-default);
+    }    
+}
+
+/*telas medias*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .project-image {
+        border-radius: 30px;
+        padding: 20px;
+        width: 220px ;
+        height: 180px ;
+    }
+    .container{
+        max-width: 100%;
+    }    
+    /*texto*/
+    .title-change-color{
+        text-align: center;
+        font-size: var(--m-title);
+        cursor: pointer;    
+    }
+    .sub-title-change-color{
+        font-size: var(--m-sub-title);
+    }
+    .change-color-text{
+        font-size: var(--f-default);
+    }    
+}
+
+/*computador
+@media (min-width: 1024px) {
+    .project-image {
+        border-radius: 30px;
+        padding: 15px;
+        width: 310px ;
+        height: 180px ;
+    }
+}
+*/
+
