@@ -5,3 +5,69 @@
 @import "../../global/fonts.css";
 @import "../../global/normalize.css";
 @import "../../global/variables.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Variáveis de Cores para Modo Escuro */
+body.dark-mode {
+    --bg-color: #212529; /* Cor de fundo para dark mode */
+    --text-color: #f8f9fa; /* Cor de texto para dark mode */
+    --card-bg-color: #343a40; /* Cor de fundo dos cards para dark mode */
+    --secondary-bg-color: #343a40;
+}
+
+/* Estilos gerais */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+     background-color: var(--bg-color);
+        transition: background-color 0.3s ease;
+}
+
+.container{
+    background-color: var(--secondary-bg-color);
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg-color);
+  border: 1px solid #dee2e6; /* Cor da borda do card */
+    transition: background-color 0.3s ease;
+}
+/* Títulos */
+.card-title {
+     color: var(--text-color);
+}
+/* Textos */
+.card-text,
+#title-contatos,
+.change-color-text {
+  color: var(--text-color);
+}
+h2 {
+     color: var(--text-color);
+}
+
+
+
+/* Estilos específicos para dark mode */
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link{
+     color: var(--text-color) !important;
+}
+.container{
+    max-width: 90%;
+}
+#title-contatos{
+    font-size: var(--sub-title);
+}
+.change-color-text{
+    font-size: var(--f-default);
+}

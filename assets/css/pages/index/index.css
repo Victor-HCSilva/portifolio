@@ -5,11 +5,31 @@
 @import "../../global/fonts.css";
 @import "../../global/normalize.css";
 @import "../../global/variables.css";
+
+html {
+    scroll-behavior: smooth;
+}
+/* Variáveis de Cores para Modo Claro (padrão) */
+:root {
+    --bg-color: #f8f9fa; /* Cor de fundo padrão */
+    --text-color: #343a40; /* Cor de texto padrão */
+    --secondary-bg-color: #ffffff;
+}
+
+/* Variáveis de Cores para Modo Escuro */
+body.dark-mode {
+    --bg-color: #212529; /* Cor de fundo para dark mode */
+    --text-color: #f8f9fa; /* Cor de texto para dark mode */
+      --secondary-bg-color: #343a40;
+}
+
+
 /*configs padrão*/
 /*Largura da tela*/
 .container {
     border-radius: 6px;
     max-width: 90%;
+        background-color: var(--secondary-bg-color);
 }
 /*imagens*/
 .img-icon:hover {
@@ -20,8 +40,8 @@
 .project-image {
     border-radius: 40px;
     padding: 20px;
-    width:530px ;
-    height: 370px ;
+    max-width: 340px ;
+    max-height: 200px ;
 }
 .img-icon:hover {
     transition: 1s;
@@ -47,14 +67,39 @@
 .title-change-color{
     text-align: center;
     font-size: var(--title);
-    cursor: pointer;    
+    cursor: pointer;
+    color: var(--text-color);
 }
 .sub-title-change-color{
     font-size: var(--sub-title);
+     color: var(--text-color);
 }
 .change-color-text{
     font-size: var(--f-default);
+     color: var(--text-color);
 }
+
+
+/* Aplica a cor de fundo do body usando a variável */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+    background-color: var(--bg-color);
+        transition: background-color 0.3s ease;
+}
+
+
+/* Estilos específicos para dark mode */
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link,
+body.dark-mode .titulo p{
+    color: var(--text-color) !important;
+}
+
 
 /*celulares*/
 @media (max-width: 767px) {
@@ -80,14 +125,14 @@
     .title-change-color{
         text-align: center;
         font-size: var(--m-title);
-        cursor: pointer;    
+        cursor: pointer;
     }
     .sub-title-change-color{
         font-size: var(--m-sub-title);
     }
     .change-color-text{
         font-size: var(--f-default);
-    }    
+    }
 }
 
 /*telas medias*/
@@ -101,29 +146,17 @@
     }
     .container{
         max-width: 100%;
-    }    
+    }
     /*texto*/
     .title-change-color{
         text-align: center;
         font-size: var(--m-title);
-        cursor: pointer;    
+        cursor: pointer;
     }
     .sub-title-change-color{
         font-size: var(--m-sub-title);
     }
     .change-color-text{
         font-size: var(--f-default);
-    }    
-}
-
-/*computador
-@media (min-width: 1024px) {
-    .project-image {
-        border-radius: 30px;
-        padding: 15px;
-        width: 310px ;
-        height: 180px ;
     }
 }
-*/
-

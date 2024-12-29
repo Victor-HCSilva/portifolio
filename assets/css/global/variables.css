@@ -4,4 +4,9 @@
     --nav-brand-color: white;
     --text-black: black;
     --especial-link:olive;
+    /*white*/
+    --bg-color: #f8f9fa; /* Cor de fundo padrão */
+    --text-color: #343a40; /* Cor de texto padrão */
+    --card-bg-color: #ffffff; /* Cor de fundo dos cards */
+    --secondary-bg-color: #ffffff;
 }
