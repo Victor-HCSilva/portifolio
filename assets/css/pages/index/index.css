@@ -6,6 +6,9 @@
 @import "../../global/normalize.css";
 @import "../../global/variables.css";
 
+html {
+    scroll-behavior: smooth;
+}
 /* Variáveis de Cores para Modo Claro (padrão) */
 :root {
     --bg-color: #f8f9fa; /* Cor de fundo padrão */
@@ -37,8 +40,8 @@ body.dark-mode {
 .project-image {
     border-radius: 40px;
     padding: 20px;
-    width:530px ;
-    height: 370px ;
+    max-width: 340px ;
+    max-height: 200px ;
 }
 .img-icon:hover {
     transition: 1s;
