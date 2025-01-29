@@ -71,3 +71,24 @@ body.dark-mode .nav-link{
 .change-color-text{
     font-size: var(--f-default);
 }
+
+/* Estilos para a imagem */
+.project-image {
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Adiciona transição suave */
+}
+.project-image:hover{
+  transform: scale(1.05)
+}
+.modal-links{
+  margin-top: 20px;
+}
+
+/* Estilos do Modal */
+.modal-dialog {
+max-width: 80%;
+}
+
+.modal-body img{
+max-width: 100%;
+}
