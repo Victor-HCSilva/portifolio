@@ -1,5 +1,3 @@
-console.log('Dilica');
-
 // Seleciona os elementos
 const body = document.querySelector("body");
 const change_color_button = document.querySelector("#change-color");
