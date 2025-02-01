@@ -80,3 +80,6 @@ body.dark-mode .navbar-brand,
 body.dark-mode .nav-link{
      color: var(--text-color) !important;
 }
+#menu-list:hover{
+    color:gray;
+}

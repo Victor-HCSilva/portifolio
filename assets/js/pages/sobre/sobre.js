@@ -22,3 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
       applyTheme(savedTheme);
   }
 });
+
+const myImage = document.querySelector("#my-image")
+
+myImage.style.border = "4px solid red"
+myImage.style.fontSize = '1.6rem'
+
+setInterval(()=>{
+        if (myImage.style.border == "4px solid red"){
+            myImage.style.border = '4px solid green';
+        } else if(myImage.style.border == '4px solid green') {
+            myImage.style.border = '4px solid red';
+        }    
+},1000)
+
