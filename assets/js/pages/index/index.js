@@ -22,12 +22,13 @@ const changeColorButton = document.getElementById("change-color");
 changeColorButton.addEventListener("click", change_color);
 
 seta.style.color = "red"
+seta.style.fontSize = '1.6rem'
 
 setInterval(()=>{
-        if (seta.style.color == "blue"){
+        if (seta.style.color == "red"){
+            seta.style.color = 'green';
+        } else if(seta.style.color == 'green') {
             seta.style.color = 'red';
-        } else if(seta.style.color == 'red') {
-            seta.style.color = 'blue';
         }    
 },1000)
 
