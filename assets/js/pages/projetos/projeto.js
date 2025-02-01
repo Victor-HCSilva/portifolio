@@ -1,3 +1,4 @@
+console.log('Projetos \nprojetos.html')
 function applyTheme(theme) {
   const body = document.body;
   if (theme === 'dark') {

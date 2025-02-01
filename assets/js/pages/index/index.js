@@ -1,3 +1,6 @@
+
+console.log('Olá :D \npag index\n')
+
 // Seleciona os elementos
 const body = document.querySelector("body");
 const change_color_button = document.querySelector("#change-color");

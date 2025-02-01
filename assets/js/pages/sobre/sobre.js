@@ -1,3 +1,4 @@
+console.log('Minhas informações\nsobre.html')
 function applyTheme(theme) {
   const body = document.body;
   if (theme === 'dark') {
