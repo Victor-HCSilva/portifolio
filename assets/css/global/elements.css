@@ -14,13 +14,14 @@
     color: var(--link-hover) !important;
 }
 .navbar-brand > strong{
-    color: var(--nav-brand-color) !important;
+    color: var(--nav-brand-color);
 }
+/*--navbrand não está mudando a cor com var()*/
 .navbar{
     background: black !important;
 }
 .navbar-toggler-icon{
-    background-color: var(--nav-toggler-icon);
+    background-color: var(--navbar-toggler-icon);
     border-radius: 6px;
 }
 

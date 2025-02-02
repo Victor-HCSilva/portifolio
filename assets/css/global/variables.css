@@ -22,7 +22,9 @@
     --background-linear-gradient:linear-gradient(#ffd105, #f87502);
     --secondary-bg-color: #ffffff;
     /*navbar-toggler-icon*/
-    --navbar-toggler-icon:aliceblue;
+    --navbar-toggler-icon:white !important;
+    /*navbar*/
+    --navbar: black !important;
     /*botao de mudar de cor*/
     --change-color: white;
 /* Variáveis de Cores para Modo Claro (padrão) */
