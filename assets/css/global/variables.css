@@ -30,7 +30,7 @@
     --text-color: #343a40; /* Cor do texto padrão */
     --focus-bg-color: white; /* Cor de fundo do foco */
     --focus-text-color: olive; /* Cor do texto do foco */
-    --secondary-bg-color: rgb(224, 238, 239);/*container*/
+    --secondary-bg-color: rgb(255, 255, 255);/*container*/
 }
 /* Variáveis de Cores para Modo Escuro */
 body.dark-mode {
