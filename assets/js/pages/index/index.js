@@ -2,10 +2,16 @@
 const body = document.querySelector("body");
 const change_color_button = document.querySelector("#change-color");
 const seta = document.querySelector("#seta")
-seta.style.color = "red"
-const color1 = "red"
-const color2 = "black"
-seta.style.fontSize = '1.9rem'
+
+seta.style.color = "red";
+seta.style.fontSize = '1.9rem';
+const color1 = "red";
+const color2 = "black";
+
+
+setInterval(()=>{
+    seta.style.color = seta.style.color === color1 ? color2 : color1;
+},1000)
 
 let isChanged = localStorage.getItem('colorPreference') === 'true';
 
@@ -24,12 +30,6 @@ function change_color() {
 // Adiciona o evento de clique ao botão
 const changeColorButton = document.getElementById("change-color");
 changeColorButton.addEventListener("click", change_color);
-
-
-setInterval(()=>{
-    seta.style.color = seta.style.color === color1 ? color2 : color1
-       
-},1000)
 
 const carouselSlide = document.querySelector('.carousel-slide');
 const carouselImages = document.querySelectorAll('.carousel-slide img');

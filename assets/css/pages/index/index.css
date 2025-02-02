@@ -163,7 +163,8 @@ body.dark-mode .titulo p{
 
 .carousel-container {
     width: 80%;
-    max-width: 800px;
+    max-width: 1000px;
+    max-height: 450px;
     margin: 50px auto;
     overflow: hidden;
     position: relative;
