@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Forca</title>
+    <style>
+        body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#forca img {
+    max-width: 150px;
+}
+
+#wordDisplay {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 10px 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#lettersGuessed {
+    margin-top: 20px;
+    font-style: italic;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">voltar</a>
+        <h1>Jogo da Forca</h1>
+        
+        <div id="forca">
+            <img src="assets/image/global/c.jpg" alt="Forca" id="forcaImg">
+        </div>
+        <p id="wordDisplay"></p>
+        <p>
+            <input type="text" id="letterInput" maxlength="1">
+            <button id="guessButton">Adivinhar</button>
+        </p>
+        <p id="message"></p>
+        <p id="lettersGuessed"></p>
+    </div>
+
+    <script >
+        document.addEventListener('DOMContentLoaded', function() {
+    const words = ["javascript", "programacao", "desenvolvimento", "computador", "internet"];
+    const wordDisplay = document.getElementById('wordDisplay');
+    const letterInput = document.getElementById('letterInput');
+    const guessButton = document.getElementById('guessButton');
+    const message = document.getElementById('message');
+    const lettersGuessed = document.getElementById('lettersGuessed');
+    const forcaImg = document.getElementById('forcaImg');
+    let secretWord;
+    let guessedLetters;
+    let remainingAttempts;
+    const maxAttempts = 6;
+
+    function startNewGame() {
+        secretWord = words[Math.floor(Math.random() * words.length)];
+        guessedLetters = [];
+        remainingAttempts = maxAttempts;
+        letterInput.value = '';
+        message.textContent = '';
+        lettersGuessed.textContent = '';
+        forcaImg.src = 'forca0.png';
+        updateWordDisplay();
+    }
+
+    function updateWordDisplay() {
+        let display = '';
+        for (let letter of secretWord) {
+            if (guessedLetters.includes(letter)) {
+                display += letter + ' ';
+            } else {
+                display += '_ ';
+            }
+        }
+        wordDisplay.textContent = display;
+    }
+
+    function updateForcaImage() {
+         let forcaStep = maxAttempts - remainingAttempts;
+        forcaImg.src = 'forca' + forcaStep + '.png';
+    }
+
+
+    startNewGame();
+
+    guessButton.addEventListener('click', function() {
+        const letter = letterInput.value.toLowerCase();
+         if (!letter || !letter.match(/[a-z]/i) ) {
+            message.textContent = 'Por favor, insira uma letra válida.';
+            letterInput.value = '';
+            return;
+        }
+
+        if (guessedLetters.includes(letter)) {
+            message.textContent = 'Você já tentou essa letra.';
+            letterInput.value = '';
+            return;
+        }
+
+        guessedLetters.push(letter);
+        lettersGuessed.textContent = 'Letras tentadas: ' + guessedLetters.join(', ');
+
+        if (secretWord.includes(letter)) {
+            updateWordDisplay();
+           if (!wordDisplay.textContent.includes('_')) {
+                message.textContent = 'Parabéns! Você venceu!';
+                letterInput.disabled = true;
+                guessButton.disabled = true;
+
+            }
+        } else {
+            remainingAttempts--;
+            updateForcaImage();
+            if (remainingAttempts === 0) {
+                message.textContent = `Você perdeu! A palavra era: ${secretWord}.`;
+                letterInput.disabled = true;
+                guessButton.disabled = true;
+             } else {
+                message.textContent = `Tentativas restantes: ${remainingAttempts}`;
+            }
+        }
+          letterInput.value = '';
+    });
+});
+    </script>
+</body>
+</html>

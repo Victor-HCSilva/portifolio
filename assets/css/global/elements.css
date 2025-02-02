@@ -17,7 +17,7 @@
     color: var(--nav-brand-color) !important;
 }
 .navbar{
-    background-color: var(--black) !important;
+    background: linear-gradient(#ffd105, #f87502);
 }
 .navbar-toggler-icon{
     background-color: aliceblue;
@@ -48,7 +48,7 @@
 }
 .especial-link:hover{
     transition: 1s;
-    color: var(--link-hover) !important;
+    color: orangered !important;/*color: var(--link-hover) !important;*/
     text-decoration: none;
 }
 
