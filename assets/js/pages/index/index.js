@@ -4,7 +4,7 @@ const change_color_button = document.querySelector("#change-color");
 const seta = document.querySelector(".seta")
 const linkEspecial = document.querySelector("#link_sobre")
 const color1 = "green";
-const color2 = "black";
+const color2 = "blue";
 
 
 seta.style.color = color1;
