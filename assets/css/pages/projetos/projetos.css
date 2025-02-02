@@ -88,3 +88,41 @@ max-width: 80%;
 .modal-body img{
 max-width: 100%;
 }
+/*tags*/
+.tag{
+  color: white;
+  border-radius: 6px;
+  box-shadow: black 1px 1px 1px;
+  font-family: Tahoma, sans-serif;
+  padding: 2px;
+  border: white 1px solid;
+}
+.tag:hover{
+  transition: 1s;
+  background-color: blueviolet !important;
+  color: white;
+}
+
+.django{
+  background-color: rgb(2, 98, 2);
+}
+.js{
+  background-color: rgb(255, 255, 4);
+  box-shadow: black 0.5px 0.5px 0.5px;
+  color:black;
+}
+.json{
+  background-color: darkviolet;
+}
+.python{
+  background-color: rgba(2, 35, 193, 0.8);
+}
+.html{
+  background-color: orangered;
+}
+.css{
+  background-color: rgba(0,100,250,1);
+}
+.st{
+  background-color: rgb(255, 0, 0);
+}
