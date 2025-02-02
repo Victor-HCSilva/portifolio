@@ -1,12 +1,33 @@
 :root{
+    /*foco:)*/
+    --focus: orangered
+    /*links*/
+    --f-link:1.4rem;
     --black:black;
     --link-hover: rgb(0,100,100);/*--link-hover: rgb(0,200,200);*/
     --nav-brand-color: white;
     --text-black: black;
     --especial-link: rgb(0,130,200);
+    --nav-link: white;
     /*white*/
     --bg-color: #f8f9fa; /* Cor de fundo padrão */
     --text-color: #343a40; /* Cor de texto padrão */
     --card-bg-color: #ffffff; /* Cor de fundo dos cards */
     --secondary-bg-color: #ffffff;
+    /*bottao*/
+    --btn-primary: orangered;
+    --border-btn-primary: red;
+    /*botao-hover*/
+    --btn-primary-hover: orange;
+    --background-linear-gradient:linear-gradient(#ffd105, #f87502);
+    /* Variáveis de Cores para Modo Claro (padrão) */
+    --bg-color: #f8f9fa; /* Cor de fundo padrão */
+    --text-color: #343a40; /* Cor de texto padrão */
+    --secondary-bg-color: #ffffff;
+    /*navbar-toggler-icon*/
+    --navbar-toggler-icon:aliceblue;
+    /*botao de mudar de cor*/
+    --change-color: white;
+
+
 }

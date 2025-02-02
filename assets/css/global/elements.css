@@ -6,7 +6,7 @@
     transition: 0.5s;
 }
 .nav-link{
-    color: white !important;
+    color: var(--nav-link) !important;
     font-size: var(--f-link);
 }
 .nav-link:hover{
@@ -17,18 +17,16 @@
     color: var(--nav-brand-color) !important;
 }
 .navbar{
-    background: linear-gradient(#ffd105, #f87502);
+    background: var(--background-linear-gradient);
 }
 .navbar-toggler-icon{
-    background-color: aliceblue;
+    background-color: var(--nav-toggler-icon);
     border-radius: 6px;
 }
-/*imagemagens*/
-
 
 /*botao de mudar de cor*/
 #change-color {
-    background-color: white;
+    background-color: var(--change-color);
     width: 45px !important;
     height: 40px !important;
     border-radius: 10px;
@@ -53,11 +51,11 @@
 }
 
 .btn-primary{
-    background-color: orangered;
+    background-color: var(--btn-primary);
     border-radius: 6px;
-    border: red;
+    border: var(--border-btn-primary);
 }
 .btn-primary:hover{
     transition: 1s;
-    background-color: orange;
+    background-color: var(--btn-primary-hover);
 }
