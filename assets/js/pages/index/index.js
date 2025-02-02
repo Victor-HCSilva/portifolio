@@ -1,16 +1,21 @@
 // Seleciona os elementos
 const body = document.querySelector("body");
 const change_color_button = document.querySelector("#change-color");
-const seta = document.querySelector("#seta")
-
-seta.style.color = "red";
-seta.style.fontSize = '1.9rem';
-const color1 = "red";
+const seta = document.querySelector(".seta")
+const linkEspecial = document.querySelector("#link_sobre")
+const color1 = "green";
 const color2 = "black";
+
+
+seta.style.color = color1;
+linkEspecial.style.color = color1;
+
+seta.style.fontSize = '1.4rem';
 
 
 setInterval(()=>{
     seta.style.color = seta.style.color === color1 ? color2 : color1;
+    linkEspecial.style.color = linkEspecial.style.color === color1 ? color2 : color1;
 },1000)
 
 let isChanged = localStorage.getItem('colorPreference') === 'true';
