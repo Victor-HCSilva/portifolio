@@ -7,18 +7,12 @@
 html {
     scroll-behavior: smooth;
 }
-/* Variáveis de Cores para Modo Claro (padrão) */
-:root {
-    --bg-color: #f8f9fa; /* Cor de fundo padrão */
-    --text-color: #343a40; /* Cor de texto padrão */
-    --secondary-bg-color: #ffffff;
-}
 
 /* Variáveis de Cores para Modo Escuro */
 body.dark-mode {
     --bg-color: #212529; /* Cor de fundo para dark mode */
     --text-color: #f8f9fa; /* Cor de texto para dark mode */
-      --secondary-bg-color: #343a40;
+    --secondary-bg-color: #343a40;
 }
 
 
@@ -27,7 +21,7 @@ body.dark-mode {
 .container {
     border-radius: 6px;
     max-width: 90%;
-        background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color);
 }
 /*imagens*/
 .img-icon:hover {

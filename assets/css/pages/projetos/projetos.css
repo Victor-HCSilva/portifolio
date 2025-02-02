@@ -53,8 +53,6 @@ h2 {
      color: var(--text-color);
 }
 
-
-
 /* Estilos específicos para dark mode */
 body.dark-mode .navbar-brand,
 body.dark-mode .nav-link{

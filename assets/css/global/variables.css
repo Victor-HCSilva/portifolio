@@ -4,7 +4,7 @@
     /*links*/
     --f-link:1.4rem;
     --black:black;
-    --link-hover: rgb(0,100,100);/*--link-hover: rgb(0,200,200);*/
+    --link-hover: rgb(0,200,200);/*--link-hover: rgb(0,200,200);*/
     --nav-brand-color: white;
     --text-black: black;
     --especial-link: rgb(0,130,200);
@@ -20,14 +20,25 @@
     /*botao-hover*/
     --btn-primary-hover: orange;
     --background-linear-gradient:linear-gradient(#ffd105, #f87502);
-    /* Variáveis de Cores para Modo Claro (padrão) */
-    --bg-color: #f8f9fa; /* Cor de fundo padrão */
-    --text-color: #343a40; /* Cor de texto padrão */
     --secondary-bg-color: #ffffff;
     /*navbar-toggler-icon*/
     --navbar-toggler-icon:aliceblue;
     /*botao de mudar de cor*/
     --change-color: white;
-
-
+/* Variáveis de Cores para Modo Claro (padrão) */
+    --bg-color: #ffffff;  /* Cor de fundo padrão */
+    --text-color: #343a40; /* Cor do texto padrão */
+    --focus-bg-color: white; /* Cor de fundo do foco */
+    --focus-text-color: olive; /* Cor do texto do foco */
+    --secondary-bg-color: rgb(224, 238, 239);/*container*/
 }
+/* Variáveis de Cores para Modo Escuro */
+body.dark-mode {
+    --bg-color: #212529; /* Cor de fundo para dark mode */
+    --text-color: #f8f9fa;  /* Cor do texto para dark mode */
+    --focus-bg-color: #343a40;/* Cor de fundo do foco para dark mode */
+    --focus-text-color: #00ffea; /* Cor do texto do foco para dark mode */
+    --secondary-bg-color: #343a40;/*container*/
+}
+
+

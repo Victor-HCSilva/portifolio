@@ -17,7 +17,7 @@
     color: var(--nav-brand-color) !important;
 }
 .navbar{
-    background: var(--background-linear-gradient);
+    background: black !important;
 }
 .navbar-toggler-icon{
     background-color: var(--nav-toggler-icon);
