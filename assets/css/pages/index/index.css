@@ -158,3 +158,56 @@ body.dark-mode .titulo p{
         font-size: var(--f-default);
     }
 }
+
+/*-----------*/
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+    position: relative;
+}
+.slider-image{
+    border-radius: 6px;
+}
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%; /* Faz as imagens ocuparem a largura do slide */
+    height: auto; /* Mantém a proporção da imagem */
+    flex-shrink: 0; /* Impede que as imagens encolham */
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.2);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .carousel-container {
+        width: 95%; /* Adapta a largura do carrossel em telas menores */
+    }
+    .carousel-prev, .carousel-next {
+        font-size: 20px; /* Ajusta o tamanho dos botões em telas menores */
+    }
+}

@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 /* Variáveis de Cores para Modo Claro (padrão) */
 :root {
     --bg-color: #f8f9fa;  /* Cor de fundo padrão */
