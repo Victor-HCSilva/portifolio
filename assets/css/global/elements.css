@@ -42,13 +42,13 @@
     height: 50px;
 }
 .especial-link{
-    color:olive ;
+    color: var(--especial-link) ;
     font-size: var(--f-link) !important;
     
 }
 .especial-link:hover{
     transition: 1s;
-    color: orangered !important;/*color: var(--link-hover) !important;*/
+    color: var(--link-hover)!important;/*color: var(--link-hover) !important;*/
     text-decoration: none;
 }
 
