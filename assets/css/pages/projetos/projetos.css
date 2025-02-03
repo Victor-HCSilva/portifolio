@@ -130,6 +130,8 @@ max-width: 100%;
   max-width: 100%;
   align-content:space-around !important ;
 }
-#descricao_dj, #descricao_js, #descricao_json,#descricao_css,#descricao_py{
+#descricao_dj, #descricao_js, #descricao_json,#descricao_css,#descricao_py,#descricao_html{
+  scroll-behavior: smooth;
   display: none;
+  opacity: 9;
 }

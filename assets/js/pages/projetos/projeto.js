@@ -81,10 +81,19 @@ document.addEventListener('DOMContentLoaded',() => {
   const html_tag = document.querySelector(".html");
   const css_descricao = document.querySelector("#descricao_css");
   const css_tag = document.querySelector(".css");
-
+  const especial_span = document.querySelector("#especial_span");
+  const all = [
+    dj_descricao,
+    js_descricao,
+    json_descricao,
+    css_descricao,
+    py_descricao,
+    html_descricao,
+  ]
   /*dj */
   function show_descricao_dj(){
     dj_descricao.style = "display:inline;";
+    especial_span.innerHTML = ""
   }
   function hide_descricao_dj(){
     dj_descricao.style = "display:none;";
@@ -92,6 +101,7 @@ document.addEventListener('DOMContentLoaded',() => {
   //js
   function show_descricao_js(){
     js_descricao.style = "display:inline;";
+    especial_span.innerHTML = ""
   }
   function hide_descricao_js(){
     js_descricao.style = "display:none;";
@@ -102,6 +112,7 @@ document.addEventListener('DOMContentLoaded',() => {
   }
   function show_descricao_json(){
     json_descricao.style = "display:inline;";
+    especial_span.innerHTML = ""
   }
   //py
   function hide_descricao_py(){
@@ -109,6 +120,7 @@ document.addEventListener('DOMContentLoaded',() => {
   }
   function show_descricao_py(){
     py_descricao.style = "display:inline;";
+    especial_span.innerHTML = ""
   }
   //html
   function hide_descricao_html(){
@@ -116,12 +128,14 @@ document.addEventListener('DOMContentLoaded',() => {
   }
   function show_descricao_html(){
     html_descricao.style = "display:inline;";
+    especial_span.innerHTML = ""
   }
   //css
   function hide_descricao_css(){
     css_descricao.style = "display:none;";
   }
   function show_descricao_css(){
+    especial_span.innerHTML = ""
     css_descricao.style = "display:inline;";
   }
 
@@ -143,5 +157,19 @@ document.addEventListener('DOMContentLoaded',() => {
   //css
   css_tag.addEventListener("mouseover", show_descricao_css);
   css_tag.addEventListener("mouseout", hide_descricao_css);
+
+  
+  let i = 0;
+  let validation = false;
+
+  for(const i of all){
+    
+    if((i.style.display == "")){
+      validation = true;   
+    } 
+  }
+  if(validation){
+    especial_span.innerHTML = "Passe o mouse por cima deste botoes e veja a descrição"
+  }
 
 })
