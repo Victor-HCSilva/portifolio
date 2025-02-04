@@ -31,8 +31,8 @@ myImage.style.fontSize = '1.6rem'
 
 setInterval(()=>{
         if (myImage.style.border == "4px solid red"){
-            myImage.style.border = '4px solid green';
-        } else if(myImage.style.border == '4px solid green') {
+            myImage.style.border = '4px solid gold';
+        } else if(myImage.style.border == '4px solid gold') {
             myImage.style.border = '4px solid red';
         }    
 },1000)

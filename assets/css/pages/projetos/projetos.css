@@ -114,6 +114,10 @@ max-width: 100%;
 .json{
   background-color: darkviolet;
 }
+.json:hover{
+  color: darkviolet;
+  background-color: white !important;
+}
 .python{
   background-color: rgba(2, 35, 193, 0.8);
 }
