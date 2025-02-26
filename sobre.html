@@ -6,123 +6,111 @@
     <title>Sobre</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/pages/sobre/sobre.css">
-    <script src="assets/js/pages/sobre/sobre.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
-    
     <header id="is">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
-            <a class="navbar-brand" href="index.html"><strong>Victor</strong></a> 
-            
+            <a class="navbar-brand" href="index.html"><strong>Victor</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a> 
+                        <a class="nav-link" href="index.html">Início</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">Projetos</a> 
-                    </li>
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="#contatos">Contatos</a> 
+                        <a class="nav-link" href="projetos.html">Projetos</a>
                     </li>
-                    
-                    
-                     <li class="nav-item">                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">Contatos</a>
+                    </li>
+                    <li class="nav-item">
                         <img onclick="change_color()" src="assets/image/global/change_color.png" alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores" style="cursor: pointer;">
-                   </li>                      
-                </ul>                
-            </div>            
-        </nav>        
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
+
     <main>
         <section class="container">
-            <div class="container">
-                <h2 class="title-change-color">Sobre mim </h2>
-                <div id="container-menu">
-                    <ul id="menu-list">
-                        <li><a  class="especial-link" href="#formacao">Formação</a></li>
-                        
-                        <li><a class="especial-link" href="#softskills">Soft Skills</a></li>
-                        
-                
-                        <li><a class="especial-link" href="#hardskills">Hard Skills</a></li>
 
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="container-menu">
+                        <ul id="menu-list">
+                            <li><a class="especial-link" href="#formacao">Formação</a></li>
+                            <li><a class="especial-link" href="#softskills">Soft Skills</a></li>
+                            <li><a class="especial-link" href="#hardskills">Hard Skills</a></li>
+                            <li class="nav-item">
 
-
-                        <li class="nav-item">
-                            <a class="especial-link" href="#experiencias">Experiências</a> 
-                        </li>
-                        <li><a class="especial-link" href="#contatos">Contatos</a></li>
-                    </ul>
+                                <a class="especial-link" href="#experiencias">Experiências</a>
+                            </li>
+                            <!--
+                            <li><a class="especial-link" href="#contatos">Contatos</a></li>
+                            -->
+                        </ul>
+                    </div>
                 </div>
-                
-            
-                <h3 class="sub-title-change-color text-left" id="formacao">Formação</h3>
-                
-                <p class="text-change-color">
-                    Oi me chamo Victor tenho formação em back-end pela FAP (formação acelerada em programação) ofertada pela Softex Pernambuco,
-                possuo conhecimentos sobre banco de dados (Mysql, sqlite) e como framework principal Django.
-                </p>
-                <br>
-                <h3 class="sub-title-change-color text-left" id="softskills">Soft Skills</h3>
-                <p class="text-change-color" >
-                    Nesta formação também havia ensinamentos sobre Soft Skills: "Como lidar com adversidades no ambiente de trabalho",
-                "Liderança", "Empatia" todos estes temas,  e outros, foram abordados visando nos introduzir melhor ao trabalho em grupo.
-                </p>
-                <br>
-                <h3 class="sub-title-change-color text-left" id="hardskills">Hard Skills</h3>
-                <p class="text-change-color">
+                <div class="col-md-8 text-center" id="contatos">
+                    <div id="i">
+                        <img id="my-image" src="assets/image/pages/sobre/i.jpg" alt="Eu mesmo" class="img-fluid mx-auto d-block">
+                        <h3 class="sub-title-change-color text-center" >Victor Hugo Clementino da Silva</h3>
+                        <br>
+                    </div>
+                    <p class="text-change-color" style="color:rgb(60,60,60)">
 
-                    <span class="focus">Python</span> é minha linguagem que tenho mais experiência, a maioria dos projetos que fiz foram construidos com frameworks
-                Streamlit e Django.  Mesmo com essa formação tenho conhecimentos em outras linguagens <span class="focus">(JavaScript, C++)</span>. 
-                Este portifólio foi feito diretamente por mim dispondo de <span class="focus">Html, CSS, Bootstrap, js e auxílio de
-                    inteligência artificial.</span>  
-                <br>
-                <br>
-                </p>
-                <h3 class="sub-title-change-color text-left" id="experiencias">Experiências</h3>
-                <p class="text-change-color">
-                    Embora não tenha experiência profissional, o último modulo da minha formação envolvia um trabalho em grupo, consistia
-                    em um sistema de agendamentos de consultas. Um problema real que foi passado ao nosso grupo. Por meio do 
-                    versionamento de código (Git e GitHub) criamos um sistema de agendamentos que tinha como objetivo 
-                    solucionar o problema de agendamentos lentos. Assim obtivemos prática real em trabalho conjunto. 
-                    
-                </p>
-             
+                        <a class="especial-link" href="https://github.com/Victor-HCSilva" target="_blank">
+                            <svg  xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                            </svg>
+                        </a>
+                        <br>
+                        <svg style="background-color: white; border-radius: 6px; padding:2px;" mlns="http://www.w3.org/2000/svg" width="44" height="44" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        
+                         <u class="text-change-color">victorh.csilva20@gmail.com</u>
+                        <br>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3 class="sub-title-change-color text-left underline" id="formacao">Formação</h3>
+            <p class="text-change-color">
+                Olá! Me chamo Victor e sou um desenvolvedor back-end formado pela FAP (Formação Acelerada em Programação) da Softex Pernambuco. Possuo experiência com bancos de dados (MySQL, SQLite) e sou proficiente no framework Django para desenvolvimento web.
             </p>
             <br>
-            
-            <div class="text-center" id="contatos">
-                
-                <div id="i">
-                    <img id="my-image" src="assets/image/pages/sobre/i.jpg" alt="Eu mesmo" >
-                    <h3 class="sub-title-change-color text-center" id="experiencias">Victor Hugo Clementino da Silva</h3>
-                    <br>
-                </div>
-                <p class="text-change-color">
-                    Git Hub: <a class="especial-link" href="https://github.com/Victor-HCSilva" target="_blank">Link para o Git Hub</a>
-                    <br>
-                    Email: <u>victorh.csilva20@gmail.com</u>
-                    <br>
-                    
-                </p>
-                <a id="back-init" class="especial-link" href="#is">^^^</a>
-            </div>
-            
-            
-            </div>
-            
+            <hr>
+
+            <h3 class="sub-title-change-color text-left underline" id="softskills">Soft Skills</h3>
+            <p class="text-change-color">
+                Durante a formação, desenvolvi Soft Skills essenciais para o trabalho em equipe, como: comunicação, liderança, empatia e resolução de problemas. Esses temas foram abordados com foco em preparar os alunos para os desafios do ambiente profissional.
+            </p>
+            <br>
+            <hr>
+
+            <h3 class="sub-title-change-color text-left underline" id="hardskills">Hard Skills</h3>
+            <p class="text-change-color">
+                Tenho mais experiência com <span class="focus">Python</span> e utilizei frameworks como Streamlit e Django na maioria dos meus projetos. Além disso, possuo conhecimentos em <span class="focus">JavaScript</span>. Este portfólio foi construído por mim utilizando <span class="focus">HTML, CSS, Bootstrap e JavaScript,</span> com auxílio de inteligência artificial.
+                <br><br>
+            </p>
+            <hr>
+
+            <h3 class="sub-title-change-color text-left underline" id="experiencias">Experiências</h3>
+            <p class="text-change-color">
+                Embora ainda não possua experiência profissional formal, participei de um projeto em grupo durante a formação, que consistiu no desenvolvimento de um sistema de agendamento de consultas para solucionar um problema real. Utilizamos Git e GitHub para versionamento do código e colaboração, o que me proporcionou experiência prática em trabalho em equipe e no desenvolvimento de software em um cenário real.
+            </p>
         </section>
-        <div></div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/pages/sobre/sobre.js" defer></script>
 </body>
 </html>

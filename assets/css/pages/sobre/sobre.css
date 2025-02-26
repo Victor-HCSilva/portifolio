@@ -66,3 +66,13 @@ body.dark-mode .nav-link{
 #menu-list:hover{
     color:gray;
 }
+#contatos{
+    border-radius: 10px;
+  /*  background-color: rgb(200,200,200);*/
+    max-height: 600px;
+    max-width: 500px;
+}
+
+.underline {
+  text-decoration: underline;
+}

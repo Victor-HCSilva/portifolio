@@ -158,10 +158,12 @@ body.dark-mode .titulo p{
 .carousel-container {
     width: 80%;
     max-width: 1000px;
-    max-height: 450px;
+    max-height: 500px;
     margin: 50px auto;
     overflow: hidden;
     position: relative;
+    border-radius:20px;
+    border: 2px solid white;
 }
 .slider-image{
     border-radius: 6px;

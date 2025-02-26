@@ -36,7 +36,7 @@ main {
 /* Cards */
 .card {
   background-color: var(--card-bg-color);
-  border: 1px solid #dee2e6; /* Cor da borda do card */
+  border: 1px solid black; /* Cor da borda do card */
     transition: background-color 0.3s ease;
 }
 /* Títulos */
@@ -92,10 +92,10 @@ max-width: 100%;
 .tag{
   color: white;
   border-radius: 6px;
-  box-shadow: black 1px 1px 1px;
+  /*box-shadow: black 1px 1px 1px;*/
   font-family: Tahoma, sans-serif;
   padding: 2px;
-  border: white 1px solid;
+  
 }
 .tag:hover{
   transition: 1s;
@@ -108,11 +108,15 @@ max-width: 100%;
 }
 .js{
   background-color: rgb(255, 255, 4);
-  box-shadow: black 0.5px 0.5px 0.5px;
+  /*box-shadow: black 0.5px 0.5px 0.5px;*/
   color:black;
 }
 .json{
   background-color: darkviolet;
+}
+.json:hover{
+  color: darkviolet;
+  background-color: white !important;
 }
 .python{
   background-color: rgba(2, 35, 193, 0.8);
@@ -125,4 +129,13 @@ max-width: 100%;
 }
 .st{
   background-color: rgb(255, 0, 0);
+}
+.tags_explain{
+  max-width: 100%;
+  align-content:space-around !important ;
+}
+#descricao_dj, #descricao_js, #descricao_json,#descricao_css,#descricao_py,#descricao_html{
+  scroll-behavior: smooth;
+  display: none;
+  opacity: 9;
 }
