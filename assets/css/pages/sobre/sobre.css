@@ -68,7 +68,7 @@ body.dark-mode .nav-link{
 }
 #contatos{
     border-radius: 10px;
-    background-color: rgb(200,200,200);
+  /*  background-color: rgb(200,200,200);*/
     max-height: 600px;
     max-width: 500px;
 }
