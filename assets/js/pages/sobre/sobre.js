@@ -26,26 +26,62 @@ document.addEventListener('DOMContentLoaded', function () {
 //-------Minha imagem------//
 //
 const myImage = document.querySelector("#my-image")
-let red = "4px solid red";
-let gold = "4px solid gold";
-let blue = "4px solid royalblue";
-let green = "4px solid green"
 
-myImage.style.border = red
+let cores = [
+    "FireBrick", "Crimson", "Red", "OrangeRed", "Tomato",
+    "DarkOrange", "Coral", "Salmon", "LightSalmon", "Orange",
+    "Gold", "Yellow", "LightYellow", "LemonChiffon", "PaleGoldenrod",
+    "Khaki", "Moccasin", "PeachPuff", "Bisque", "NavajoWhite",
+    "Wheat", "BurlyWood", "Tan", "RosyBrown", "SandyBrown",
+    "Peru", "Chocolate", "Sienna", "SaddleBrown", "Brown",
+    "Maroon", "DarkRed", "IndianRed", "LightCoral", "DarkSalmon",
+    "Pink", "LightPink", "HotPink", "DeepPink", "PaleVioletRed",
+    "MediumVioletRed", "Orchid", "Violet", "Plum", "Thistle",
+    "LavenderBlush", "MistyRose", "AntiqueWhite", "Beige", "Linen",
+
+    "WhiteSmoke", "Gainsboro", "LightGray", "Silver", "DarkGray",
+    "Gray", "DimGray", "LightSlateGray", "SlateGray", "DarkSlateGray",
+    "Black", "LightSteelBlue", "LightBlue", "SkyBlue", "LightSkyBlue",
+    "DeepSkyBlue", "DodgerBlue", "CornflowerBlue", "SteelBlue", "RoyalBlue",
+    "Blue", "MediumBlue", "DarkBlue", "Navy", "MidnightBlue",
+    "Cyan", "LightCyan", "PaleTurquoise", "Aquamarine", "Turquoise",
+    "MediumTurquoise", "DarkTurquoise", "CadetBlue", "Teal", "DarkCyan",
+    "Aqua", "MediumAquamarine", "MediumSeaGreen", "SeaGreen", "ForestGreen",
+    "Green", "DarkGreen", "LimeGreen", "Lime", "SpringGreen",
+    "MediumSpringGreen", "LawnGreen", "Chartreuse", "GreenYellow", "YellowGreen",
+    "OliveDrab", "Olive", "DarkOliveGreen", "DarkKhaki", "PaleGreen",
+    "LightGreen", "Honeydew", "MintCream", "Azure", "AliceBlue",
+
+    "GhostWhite", "Snow", "Ivory", "FloralWhite", "OldLace",
+    "Lavender", "LightSlateGray", "SlateGray", "DarkSlateGray", "MidnightBlue",
+    "Cornsilk", "SeaShell", "PapayaWhip", "BlanchedAlmond", "OldLace",
+    "Bisque", "PeachPuff", "Moccasin", "NavajoWhite", "LemonChiffon",
+    "LightGoldenrodYellow", "LightYellow", "Ivory", "WhiteSmoke", "Gainsboro",
+    "LightGrey", "Silver", "DarkGrey", "Grey", "DimGrey",
+    "LightSteelBlue", "LightSlateGrey", "SkyBlue", "LightSkyBlue", "DeepSkyBlue",
+    "DodgerBlue", "CornflowerBlue", "SteelBlue", "RoyalBlue", "Blue",
+    "MediumBlue", "DarkBlue", "Navy", "MidnightBlue", "Cyan",
+    "LightCyan", "PaleTurquoise", "Aquamarine", "Turquoise", "MediumTurquoise",
+    "DarkTurquoise", "CadetBlue", "Teal", "DarkCyan", "Aqua",
+    "MediumAquamarine", "MediumSeaGreen", "SeaGreen", "ForestGreen", "Green",
+    "DarkGreen", "LimeGreen", "Lime", "SpringGreen", "MediumSpringGreen",
+    "LawnGreen", "Chartreuse", "GreenYellow", "YellowGreen", "OliveDrab",
+    "Olive", "DarkOliveGreen", "DarkKhaki", "PaleGreen", "LightGreen",
+    "Honeydew", "MintCream", "Azure", "AliceBlue", "GhostWhite"
+  ];
+
+let listaDeCoresComBorda = cores.slice(0, 50).map(cor => `border: 4px solid ${cor}`)
+let indice = 0;
 
 myImage.style.fontSize = '1.6rem'
+myImage.style.border = 'red'
 
 setInterval(()=>{
-    //console.log("Borda:",myImage.style.border)//
-    if (myImage.style.border == red){
-        myImage.style.border = gold;
+   // console.log("Borda:",myImage.style.border)//
+    indice+=1
+    myImage.style = listaDeCoresComBorda[indice]
+    if(indice == listaDeCoresComBorda.length){
+        indice = 0;
     }
-    else if (myImage.style.border == gold){
-        myImage.style.border = green;
-    } else if(myImage.style.border == green ){
-        myImage.style.border = blue;
-    }  else if  (myImage.style.border == blue){
-        myImage.style.border = red;
-    }
-},1000)
+},300)
 
