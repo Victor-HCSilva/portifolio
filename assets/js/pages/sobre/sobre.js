@@ -23,17 +23,23 @@ document.addEventListener('DOMContentLoaded', function () {
       applyTheme(savedTheme);
   }
 });
-
+//-------Minha imagem------//
+//
 const myImage = document.querySelector("#my-image")
+let red = "4px solid red";
+let gold = "4px solid gold";
+let blue = "4px solid royalblue";
+myImage.style.border = red
 
-myImage.style.border = "4px solid red"
 myImage.style.fontSize = '1.6rem'
 
 setInterval(()=>{
-        if (myImage.style.border == "4px solid red"){
-            myImage.style.border = '4px solid gold';
-        } else if(myImage.style.border == '4px solid gold') {
-            myImage.style.border = '4px solid red';
-        }    
+        if (myImage.style.border == red){
+            myImage.style.border = gold;
+        } else if(myImage.style.border == gold ){
+            myImage.style.border = blue;
+        }
+    myImage.style.border = red;
+       
 },1000)
 
