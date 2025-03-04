@@ -29,17 +29,23 @@ const myImage = document.querySelector("#my-image")
 let red = "4px solid red";
 let gold = "4px solid gold";
 let blue = "4px solid royalblue";
+let green = "4px solid green"
+
 myImage.style.border = red
 
 myImage.style.fontSize = '1.6rem'
 
 setInterval(()=>{
-        if (myImage.style.border == red){
-            myImage.style.border = gold;
-        } else if(myImage.style.border == gold ){
-            myImage.style.border = blue;
-        }
-    myImage.style.border = red;
-       
+    //console.log("Borda:",myImage.style.border)//
+    if (myImage.style.border == red){
+        myImage.style.border = gold;
+    }
+    else if (myImage.style.border == gold){
+        myImage.style.border = green;
+    } else if(myImage.style.border == green ){
+        myImage.style.border = blue;
+    }  else if  (myImage.style.border == blue){
+        myImage.style.border = red;
+    }
 },1000)
 
