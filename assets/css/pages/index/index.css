@@ -24,6 +24,8 @@ body.dark-mode {
     background-color: var(--secondary-bg-color);
 }
 /*imagens*/
+
+
 .img-icon:hover {
     transition: 1s;
     cursor: pointer;
