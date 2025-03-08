@@ -139,3 +139,14 @@ max-width: 100%;
   display: none;
   opacity: 9;
 }
+#contatos{
+    max-width: 1000px;
+    align-items: center;
+    position: absolute; left: 50%; transform: translateX(-50%);
+    padding: 0px 
+
+}
+#contatos a {
+        padding: 5px;     
+}
+

@@ -209,4 +209,30 @@ body.dark-mode .titulo p{
     .carousel-prev, .carousel-next {
         font-size: 20px; /* Ajusta o tamanho dos botões em telas menores */
     }
+    #section-title-projects{
+        margin-top:400px !important;
+    }
 }
+.apresentation{
+    margin: 0; 
+    /*border: 2px solid red;*/
+    text-align:left ;
+    max-width:1000px;
+    align-items: center;
+    position: absolute; left: 50%; transform: translateX(-50%);
+    
+}
+#section-title-projects{
+    margin-top: 200px;
+}
+#contatos{
+    max-width: 1000px;
+    align-items: center;
+    position: absolute; left: 50%; transform: translateX(-50%);
+    padding: 0px 
+
+}
+#contatos a {
+        padding: 5px;     
+}
+
