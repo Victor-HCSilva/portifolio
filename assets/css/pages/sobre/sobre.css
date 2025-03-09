@@ -63,10 +63,31 @@ body.dark-mode .navbar-brand,
 body.dark-mode .nav-link{
      color: var(--text-color) !important;
 }
+#container-menu{
+    /*border: 2px solid  red;*/
+    margin-top: 50px;
+    max-width: 100px !important;
+    max-height: 300px !important;
+}
+#container-menu a{
+    color: black;
+    text-align: center;
+    border: 2px solid black ;
+    display: block;
+    border-radius: 10px;
+    background-color: rgb(200,200,200);
+}
+#container-menu a:hover{
+    color: black;
+    transition: 0.3s !important;
+    color: black !important;
+    transform: scale(1.1);
+    background-color: rgb(240,240,240)
+}
 #menu-list:hover{
     color:gray;
 }
-#contatos{
+#myimage{
     border-radius: 10px;
   /*  background-color: rgb(200,200,200);*/
     max-height: 600px;
@@ -76,3 +97,14 @@ body.dark-mode .nav-link{
 .underline {
   text-decoration: underline;
 }
+#contatos{
+    max-width: 1000px;
+    align-items: center;
+    position: absolute; left: 50%; transform: translateX(-50%);
+    padding: 0px 
+
+}
+#contatos a {
+        padding: 5px;     
+}
+

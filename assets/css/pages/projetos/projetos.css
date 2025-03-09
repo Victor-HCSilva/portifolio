@@ -37,7 +37,8 @@ main {
 .card {
   background-color: var(--card-bg-color);
   border: 1px solid black; /* Cor da borda do card */
-    transition: background-color 0.3s ease;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
 }
 /* Títulos */
 .card-title {
@@ -70,6 +71,7 @@ body.dark-mode .nav-link{
 
 /* Estilos para a imagem */
 .project-image {
+    border-radius: 15px;
   cursor: pointer;
   transition: transform 0.3s ease; /* Adiciona transição suave */
 }
