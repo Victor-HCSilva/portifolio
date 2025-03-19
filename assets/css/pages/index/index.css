@@ -61,7 +61,7 @@ body.dark-mode {
 .title-change-color{
     text-align: center;
     font-size: var(--title);
-    cursor: pointer;
+    /*cursor: pointer;*/
     color: var(--text-color);
 }
 .sub-title-change-color{

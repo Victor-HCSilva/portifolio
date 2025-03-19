@@ -89,9 +89,12 @@ body.dark-mode .nav-link{
 }
 #myimage{
     border-radius: 10px;
-  /*  background-color: rgb(200,200,200);*/
+  /*  background-color: rgb(200,200,200);
     max-height: 600px;
-    max-width: 500px;
+    max-width: 500px;*/
+    
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .underline {

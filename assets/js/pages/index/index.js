@@ -31,7 +31,6 @@ function change_color() {
     localStorage.setItem('colorPreference', isChanged); // Salva a preferência
 }
 
-
 // Adiciona o evento de clique ao botão
 const changeColorButton = document.getElementById("change-color");
 changeColorButton.addEventListener("click", change_color);
