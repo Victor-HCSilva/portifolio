@@ -17,6 +17,10 @@ body.dark-mode {
 
 
 /*configs padrão*/
+main{
+
+    height: 100vh;
+}
 /*Largura da tela*/
 .container {
     border-radius: 6px;
@@ -227,15 +231,18 @@ body.dark-mode .titulo p{
 }
 /*Config para simular tag footer*/
 #contatos{
+    padding: 0px !important;
     /*max-width: 1000px;*/
     display: inline-block;
     background-color: black;
     align-items: center;
     position: absolute;
     left: 50%; transform: translateX(-50%);
-    width: 100vw !important;
+    width: 100vw  ;
+    background-size: cover;
+    border-radius: 10px;
 }
 #contatos a {
-    padding: 5px;     
+    padding: 15px;     
 }
 
