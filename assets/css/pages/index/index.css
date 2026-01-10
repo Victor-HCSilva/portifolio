@@ -229,20 +229,26 @@ body.dark-mode .titulo p{
 #section-title-projects{
     margin-top: 200px;
 }
-/*Config para simular tag footer*/
-#contatos{
-    padding: 0px !important;
-    /*max-width: 1000px;*/
+
+/* Footer Styles */
+footer#contatos {
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--secondary-bg-color); /* Use variable for consistency */
+    text-align: center;
+    margin-top: 50px; /* Spacing from content */
+    border-radius: 10px 10px 0 0; /* Optional: rounded top corners */
+}
+
+footer#contatos a {
+    padding: 15px;
     display: inline-block;
-    background-color: black;
-    align-items: center;
-    position: absolute;
-    left: 50%; transform: translateX(-50%);
-    width: 100vw  ;
-    background-size: cover;
-    border-radius: 10px;
+    color: var(--text-color);
 }
-#contatos a {
-    padding: 15px;     
+
+#contatos-text {
+    margin-top: 15px;
+    color: var(--text-color);
 }
+
 

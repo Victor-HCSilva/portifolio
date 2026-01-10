@@ -11,10 +11,13 @@ html {
 
 /* Variáveis de Cores para Modo Escuro */
 body.dark-mode {
-    --bg-color: #212529; /* Cor de fundo para dark mode */
-    --text-color: #f8f9fa; /* Cor de texto para dark mode */
-    --card-bg-color: #343a40; /* Cor de fundo dos cards para dark mode */
-    --secondary-bg-color: #343a40;
+  --bg-color: #212529;
+  /* Cor de fundo para dark mode */
+  --text-color: #f8f9fa;
+  /* Cor de texto para dark mode */
+  --card-bg-color: #343a40;
+  /* Cor de fundo dos cards para dark mode */
+  --secondary-bg-color: #343a40;
 }
 
 /* Estilos gerais */
@@ -25,140 +28,169 @@ body {
 }
 
 main {
-     background-color: var(--bg-color);
-        transition: background-color 0.3s ease;
+  background-color: var(--bg-color);
+  transition: background-color 0.3s ease;
 }
 
-.container{
-    background-color: var(--secondary-bg-color);
+.container {
+  background-color: var(--secondary-bg-color);
 }
 
 /* Cards */
 .card {
   background-color: var(--card-bg-color);
-  border: 1px solid black; /* Cor da borda do card */
+  border: 1px solid black;
+  /* Cor da borda do card */
   border-radius: 15px;
   transition: background-color 0.3s ease;
 }
+
 /* Títulos */
 .card-title {
-     color: var(--text-color);
+  color: var(--text-color);
 }
+
 /* Textos */
 .card-text,
 #title-contatos,
 .change-color-text {
   color: var(--text-color);
 }
+
 h2 {
-     color: var(--text-color);
+  color: var(--text-color);
 }
 
 /* Estilos específicos para dark mode */
 body.dark-mode .navbar-brand,
-body.dark-mode .nav-link{
-     color: var(--text-color) !important;
+body.dark-mode .nav-link {
+  color: var(--text-color) !important;
 }
-.container{
-    max-width: 90%;
+
+.container {
+  max-width: 90%;
 }
-#title-contatos{
-    font-size: var(--sub-title);
+
+#title-contatos {
+  font-size: var(--sub-title);
 }
-.change-color-text{
-    font-size: var(--f-default);
+
+.change-color-text {
+  font-size: var(--f-default);
 }
 
 /* Estilos para a imagem */
 .project-image {
-    border-radius: 15px;
+  border-radius: 15px;
   cursor: pointer;
-  transition: transform 0.3s ease; /* Adiciona transição suave */
+  transition: transform 0.3s ease;
+  /* Adiciona transição suave */
 }
-.project-image:hover{
+
+.project-image:hover {
   transform: scale(1.05)
 }
-.modal-links{
+
+.modal-links {
   margin-top: 20px;
 }
 
 /* Estilos do Modal */
 .modal-dialog {
-max-width: 80%;
+  max-width: 80%;
 }
 
-.modal-body img{
-max-width: 100%;
+.modal-body img {
+  max-width: 100%;
 }
+
 /*tags*/
-.tag{
+.tag {
   color: white;
   border-radius: 6px;
   /*box-shadow: black 1px 1px 1px;*/
   font-family: Tahoma, sans-serif;
   padding: 2px;
-  
+
 }
-.tag:hover{
+
+.tag:hover {
   transition: 1s;
   background-color: blueviolet !important;
   color: white;
 }
 
-.django{
+.django {
   background-color: rgb(2, 98, 2);
 }
-.js{
+
+.js {
   background-color: rgb(255, 255, 4);
   /*box-shadow: black 0.5px 0.5px 0.5px;*/
-  color:black;
+  color: black;
 }
-.json{
+
+.json {
   background-color: darkviolet;
 }
-.json:hover{
+
+.json:hover {
   color: darkviolet;
   background-color: white !important;
 }
-.python{
+
+.python {
   background-color: rgba(2, 35, 193, 0.8);
 }
-.html{
+
+.html {
   background-color: orangered;
 }
-.css{
-  background-color: rgba(0,100,250,1);
+
+.css {
+  background-color: rgba(0, 100, 250, 1);
 }
-.st{
+
+.st {
   background-color: rgb(255, 0, 0);
 }
-.tags_explain{
+
+.tags_explain {
   max-width: 100%;
-  align-content:space-around !important ;
+  align-content: space-around !important;
 }
-#descricao_dj, #descricao_js, #descricao_json,#descricao_css,#descricao_py,#descricao_html{
+
+#descricao_dj,
+#descricao_js,
+#descricao_json,
+#descricao_css,
+#descricao_py,
+#descricao_html {
   scroll-behavior: smooth;
   display: none;
   opacity: 9;
 }
+
 /*Config para simular tag footer*/
-#contatos{
-    /*max-width: 1000px;*/
-    display: inline-block;
-    background-color: black;
-    align-items: center;
-    position: absolute;
-    left: 50%; transform: translateX(-50%);
-    width: 100vw !important;
-}
-#contatos a {
-    padding: 15px;     
+/* Footer Styles */
+footer#contatos {
+  padding: 20px 0;
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 10px 10px 0 0;
 }
 
-#contatos-text{
-    color: gray;
-    margin: 0;
-    display: block;
-    /*border:2px solid red;*/
-    padding: 0;
+footer#contatos a {
+  padding: 15px;
+  display: inline-block;
+  color: var(--text-color);
+}
+
+#contatos-text {
+  color: var(--text-color);
+  margin-top: 15px;
+  display: block;
+  padding: 0;
 }

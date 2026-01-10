@@ -12,7 +12,7 @@ html {
 /*largura da tela*/
 .container {
     max-width: 90%;
-          background-color: var(--secondary-bg-color);
+    background-color: var(--secondary-bg-color);
 }
 
 /*texto*/
@@ -20,10 +20,12 @@ html {
     font-size: var(--f-default);
     color: var(--text-color);
 }
+
 .title-change-color {
     font-size: var(--title);
     color: var(--text-color);
 }
+
 .sub-title-change-color {
     font-size: var(--sub-title);
     text-align: center;
@@ -40,12 +42,13 @@ html {
 
 
 /*imagem*/
-#my-image{
+#my-image {
     max-width: 300px;
     max-height: 300px;
     border-radius: 100%;
-    
+
 }
+
 /* Estilos gerais */
 body {
     background-color: var(--bg-color);
@@ -54,63 +57,71 @@ body {
 }
 
 main {
-     background-color: var(--bg-color);
-        transition: background-color 0.3s ease;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease;
 }
 
 /* Estilos específicos para dark mode */
 body.dark-mode .navbar-brand,
-body.dark-mode .nav-link{
-     color: var(--text-color) !important;
+body.dark-mode .nav-link {
+    color: var(--text-color) !important;
 }
-#container-menu{
+
+#container-menu {
     /*border: 2px solid  red;*/
     margin-top: 50px;
     max-width: 100px !important;
     max-height: 300px !important;
 }
-#container-menu a{
+
+#container-menu a {
     color: black;
     text-align: center;
-    border: 2px solid black ;
+    border: 2px solid black;
     display: block;
     border-radius: 10px;
-    background-color: rgb(200,200,200);
+    background-color: rgb(200, 200, 200);
 }
-#container-menu a:hover{
+
+#container-menu a:hover {
     color: black;
     transition: 0.3s !important;
     color: black !important;
     transform: scale(1.1);
-    background-color: rgb(240,240,240)
+    background-color: rgb(240, 240, 240)
 }
-#menu-list:hover{
-    color:gray;
+
+#menu-list:hover {
+    color: gray;
 }
-#myimage{
+
+#myimage {
     border-radius: 10px;
-  /*  background-color: rgb(200,200,200);
+    /*  background-color: rgb(200,200,200);
     max-height: 600px;
     max-width: 500px;*/
-    
+
     left: 50%;
     transform: translateX(-50%);
 }
 
 .underline {
-  text-decoration: underline;
-}
-/*Config para simular tag footer*/
-#contatos{
-    /*max-width: 1000px;*/
-    display: inline-block;
-    background-color: black;
-    align-items: center;
-    position: absolute;
-    left: 50%; transform: translateX(-50%);
-    width: 100vw !important;
-}
-#contatos a {
-    padding: 15px;     
+    text-decoration: underline;
 }
 
+/*Config para simular tag footer*/
+/* Footer Styles */
+footer#contatos {
+    padding: 20px 0;
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+footer#contatos a {
+    padding: 15px;
+    display: inline-block;
+    color: var(--text-color);
+}

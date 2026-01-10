@@ -1,31 +1,8 @@
 console.log('Projetos \nprojetos.html')
-function applyTheme(theme) {
-  const body = document.body;
-  if (theme === 'dark') {
-      body.classList.add('dark-mode');
-  } else {
-      body.classList.remove('dark-mode');
-  }
-}
 
-function change_color() {
-  const body = document.body;
-  const currentTheme = localStorage.getItem('theme') || (body.classList.contains('dark-mode') ? 'dark' : 'light');
-  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  localStorage.setItem('theme', newTheme);
-  applyTheme(newTheme);
-}
 
-// Aplica o tema salvo ao carregar a página
+
 document.addEventListener('DOMContentLoaded', function () {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-      applyTheme(savedTheme);
-  }
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
   const projectCards = document.querySelectorAll('.project-card');
   const modal = document.getElementById('projectModal');
   const modalImage = document.getElementById('modal-image');
@@ -36,39 +13,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   projectCards.forEach(card => {
-      card.addEventListener('click', function() {
-          const imageUrl = this.getAttribute('data-image');
-          const title = this.getAttribute('data-title');
-          const description = this.getAttribute('data-description');
-          const link = this.getAttribute('data-link');
-          const code = this.getAttribute('data-code')
+    card.addEventListener('click', function () {
+      const imageUrl = this.getAttribute('data-image');
+      const title = this.getAttribute('data-title');
+      const description = this.getAttribute('data-description');
+      const link = this.getAttribute('data-link');
+      const code = this.getAttribute('data-code')
 
-          modalImage.src = imageUrl;
-          modalTitle.textContent = title;
-          modalDescription.textContent = description;
-           // Define a visibilidade e o href do botão de "Ver"
-          if (link) {
-              modalLink.href = link;
-              modalLink.style.display = 'inline-block';
-          } else {
-              modalLink.style.display = 'none';
-          }
+      modalImage.src = imageUrl;
+      modalTitle.textContent = title;
+      modalDescription.textContent = description;
+      // Define a visibilidade e o href do botão de "Ver"
+      if (link) {
+        modalLink.href = link;
+        modalLink.style.display = 'inline-block';
+      } else {
+        modalLink.style.display = 'none';
+      }
 
-          // Define a visibilidade e o href do botão de "Código"
-           if (code) {
-              modalCode.href = code;
-              modalCode.style.display = 'inline-block';
-           } else{
-              modalCode.style.display = 'none';
-           }
+      // Define a visibilidade e o href do botão de "Código"
+      if (code) {
+        modalCode.href = code;
+        modalCode.style.display = 'inline-block';
+      } else {
+        modalCode.style.display = 'none';
+      }
 
 
-          $(modal).modal('show');
-      });
+      $(modal).modal('show');
+    });
   });
 });
 
-document.addEventListener('DOMContentLoaded',() => {
+document.addEventListener('DOMContentLoaded', () => {
   const dj_tag = document.querySelector(".django");
   const dj_descricao = document.querySelector("#descricao_dj");
   const js_descricao = document.querySelector("#descricao_js");
@@ -91,50 +68,50 @@ document.addEventListener('DOMContentLoaded',() => {
     html_descricao,
   ]
   /*dj */
-  function show_descricao_dj(){
+  function show_descricao_dj() {
     dj_descricao.style = "display:inline;";
     especial_span.innerHTML = ""
   }
-  function hide_descricao_dj(){
+  function hide_descricao_dj() {
     dj_descricao.style = "display:none;";
   }
   //js
-  function show_descricao_js(){
+  function show_descricao_js() {
     js_descricao.style = "display:inline;";
     especial_span.innerHTML = ""
   }
-  function hide_descricao_js(){
+  function hide_descricao_js() {
     js_descricao.style = "display:none;";
-  } 
+  }
   //json 
-  function hide_descricao_json(){
+  function hide_descricao_json() {
     json_descricao.style = "display:none;";
   }
-  function show_descricao_json(){
+  function show_descricao_json() {
     json_descricao.style = "display:inline;";
     especial_span.innerHTML = ""
   }
   //py
-  function hide_descricao_py(){
+  function hide_descricao_py() {
     py_descricao.style = "display:none;";
   }
-  function show_descricao_py(){
+  function show_descricao_py() {
     py_descricao.style = "display:inline;";
     especial_span.innerHTML = ""
   }
   //html
-  function hide_descricao_html(){
+  function hide_descricao_html() {
     html_descricao.style = "display:none;";
   }
-  function show_descricao_html(){
+  function show_descricao_html() {
     html_descricao.style = "display:inline;";
     especial_span.innerHTML = ""
   }
   //css
-  function hide_descricao_css(){
+  function hide_descricao_css() {
     css_descricao.style = "display:none;";
   }
-  function show_descricao_css(){
+  function show_descricao_css() {
     especial_span.innerHTML = ""
     css_descricao.style = "display:inline;";
   }
@@ -158,17 +135,17 @@ document.addEventListener('DOMContentLoaded',() => {
   css_tag.addEventListener("mouseover", show_descricao_css);
   css_tag.addEventListener("mouseout", hide_descricao_css);
 
-  
+
   let i = 0;
   let validation = false;
 
-  for(const i of all){
-    
-    if((i.style.display == "")){
-      validation = true;   
-    } 
+  for (const i of all) {
+
+    if ((i.style.display == "")) {
+      validation = true;
+    }
   }
-  if(validation){
+  if (validation) {
     especial_span.innerHTML = "Passe o mouse por cima deste botoes e veja a descrição"
   }
 
