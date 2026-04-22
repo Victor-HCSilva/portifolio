@@ -1,46 +1,46 @@
-
-// Centralized Theme Logic
+// Centralized Theme Logic - Tailwind Compatible
 const THEME_KEY = 'theme_preference';
-const DARK_MODE_CLASS = 'dark-mode';
 
 function getPreferredTheme() {
     const storedTheme = localStorage.getItem(THEME_KEY);
     if (storedTheme) {
         return storedTheme;
     }
-    // Default to dark mode if no preference is stored
-    return 'dark';
+    // Check user's system preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
 function applyTheme(theme) {
-    const body = document.body;
+    const root = document.documentElement;
     if (theme === 'dark') {
-        body.classList.add(DARK_MODE_CLASS);
+        root.classList.add('dark');
     } else {
-        body.classList.remove(DARK_MODE_CLASS);
+        root.classList.remove('dark');
     }
+    localStorage.setItem(THEME_KEY, theme);
 }
 
 function toggleTheme() {
-    const body = document.body;
-    const isDark = body.classList.contains(DARK_MODE_CLASS);
+    const isDark = document.documentElement.classList.contains('dark');
     const newTheme = isDark ? 'light' : 'dark';
-    
     applyTheme(newTheme);
-    localStorage.setItem(THEME_KEY, newTheme);
 }
 
-// Initialize Theme on Load
-document.addEventListener('DOMContentLoaded', () => {
-    const preferredTheme = getPreferredTheme();
-    applyTheme(preferredTheme);
+// Initial execution - Run as fast as possible to prevent flicker
+(function() {
+    const theme = getPreferredTheme();
+    applyTheme(theme);
+})();
 
-    // Setup Toggle Button if it exists
-    const changeColorBtn = document.querySelector("#change-color");
-    if (changeColorBtn) {
-        changeColorBtn.addEventListener('click', toggleTheme);
-    }
+document.addEventListener('DOMContentLoaded', () => {
+    // Setup Toggle Button if it exists (using querySelectorAll for all potential buttons)
+    const changeColorBtns = document.querySelectorAll("#change-color");
+    changeColorBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            toggleTheme();
+        });
+    });
 });
 
-// Expose toggle function globally just in case inline onclicks are used
 window.change_color = toggleTheme;

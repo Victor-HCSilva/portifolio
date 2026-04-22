@@ -1,316 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
-
-    <script src="assets/js/global/global.js" defer></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/pages/projetos/projetos.css">
+    <title>Projetos | Victor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'orangered',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="assets/js/global/global.js"></script>
 </head>
 
-<body>
-    <header id="is">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
-            <a class="navbar-brand" href="index.html"><strong id="nav-name">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                        class="bi bi-star-half" viewBox="0 0 16 16">
-                        <path
-                            d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
+<body class="bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans">
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <a class="text-2xl font-bold flex items-center gap-2 group" href="index.html">
+                <strong class="text-primary group-hover:rotate-12 transition-transform inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-star-half" viewBox="0 0 16 16">
+                        <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
                     </svg>
-                </strong></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">Sobre mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contatos">Contatos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <img onclick="change_color()" src="assets/image/global/change_color.png"
-                            alt="Mudar esquema de cores" id="change-color" title="Mudar esquema de cores"
-                            style="cursor: pointer;">
-                    </li>
+                </strong>
+                <span class="dark:text-white text-black font-bold">Victor</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8">
+                <ul class="flex space-x-6 text-lg font-medium">
+                    <li><a class="hover:text-primary transition-colors" href="index.html">Início</a></li>
+                    <li><a class="text-primary" href="about.html">Sobre mim</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="#contatos">Contatos</a></li>
                 </ul>
+                <img src="assets/image/global/change_color.png" alt="Mudar tema" id="change-color" class="w-10 h-10 cursor-pointer p-1 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-800 transition-all border border-transparent dark:border-gray-700">
             </div>
         </nav>
     </header>
 
-    <main>
-        <section id="projetos" class="py-5">
-            <div class="container">
-                <h1 class="text-center">Meus Projetos</h1>
-                <p style="color: gray" class="text-center change-color-text">Clique na imagem para mais detalhes</p>
-                <br>
-                <br>
-                <!--
-                <div class="tags_explain">
-                    <span class="html tag">HTML</span>
-                    <span class="css tag">CSS</span>
-                    <span class="django tag">Django</span>
-                    <span class="python tag">Python </span>
-                    <span class="js tag">JavaScript </span>
-                    <span class="json tag">Json </span>
-                </div>
-                <span id="especial_span"></span>
-                <span id="descricao_dj">
-                Django é um framework (conjunto de tecnologias) para python robusto e amplamente usando.
-                </span>
-                <span id="descricao_js">
-                    JavaScript é a linguagem de programação dominante na área do desenvovimento web (sites).
-                </span>
-                <span id="descricao_html">
-                    HTML é uma lingugem de marcação de texto.
-                </span>
-                <span id="descricao_css">
-                CSS é uma tecnologia de estilização para o HTML.
-                </span>
-                <span id="descricao_py">
-                Python é uma linguagem de programação poderosa, dentre suas utilidades existe o
-                desenvolvimento web.
-                </span>
-                <span id="descricao_json">
-                    JSON (JavaScript Object Notation).
-                </span>
-                -->
-                <div class="row">
-                    <!-- Projeto 1 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-image="assets/image/pages/projetos/full_sage.png"
-                            data-title="Agendamentos de consultas" data-description="
-                                    Projeto final do meu curso de formação realizado em gupo,
-                                    sistema de agendamento de consultas.Construido utilizando o framework
-                                    Django e banco de dados nativo (Sqlite3)."
-                            data-code="https://github.com/Victor-HCSilva/deploydjango">
-                            <img src="assets/image/pages/projetos/full_sage.png" class="card-img-top project-image"
-                                alt="Projeto 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Agendamentos de consultas</h5>
-                                <p class="card-text">Projeto final do meu curso de formação realizado em gupo,
-                                    sistema de agendamento de consultas. <strong>Imagem ilustrativa.</strong>
+    <main class="min-h-screen py-12">
+        <section id="projetos" class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight dark:text-white text-gray-900 uppercase">MEUS PROJETOS</h1>
+                <p class="text-gray-500 dark:text-gray-400 text-lg">Clique em um projeto para ver mais detalhes</p>
+            </div>
 
-                                    <span class="html tag">HTML</span>
-                                    <span class="css tag">CSS</span>
-                                    <span class="django tag">Django</span>
-                                    <span class="python tag">Python </span>
-                                    <span class="js tag">JavaScript </span>
-                                </p>
-
-
-                                <!--
-                                    <a href="https://victorhcsilva.pythonanywhere.com/" class="btn btn-primary"
-                                    target="_blank">
-                                    Ver
-                                </a>
-                                -->
-                                <a href="https://github.com/Victor-HCSilva/deploydjango" class="btn btn-primary"
-                                    target="_blank">
-                                    Código
-                                </a>
-
-
-                                <!--
-                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projetoModal1">Detalhes</button>
-                                    -->
-
-                            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+                <!-- Projeto 1 -->
+                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10" 
+                    data-image="assets/image/pages/projetos/full_sage.png"
+                    data-title="Agendamentos de consultas" 
+                    data-description="Sistema robusto de agendamento de consultas desenvolvido como projeto final. Utiliza Django no backend para gestão de dados e uma interface limpa para o usuário final."
+                    data-code="https://github.com/Victor-HCSilva/deploydjango">
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="assets/image/pages/projetos/full_sage.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agendamentos">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
                         </div>
                     </div>
-
-                    <!-- Projeto 2 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-image="assets/image/pages/projetos/full_api_youtube.png"
-                            data-title="Projeto 2" data-description="Extensão para o navegador que muda atibutos do estilo da pagina do You-Tube. 
-                            Consiste em manipular o DOM da página permitindo uma interessante interação,
-                            mudar atributos CSS." data-code="https://github.com/Victor-HCSilva/youtube-api">
-                            <img src="assets/image/pages/projetos/full_api_youtube.png"
-                                class="card-img-top project-image" alt="Projeto 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Extensão para navegador</h5>
-                                <p class="card-text">Extensão que muda atibutos do estilo da pagina do You-Tube.
-                                    <span class="html tag">HTML</span>
-                                    <span class="css tag">CSS</span>
-                                    <span class="js tag">JavaScript </span>
-
-                                </p>
-                                <a class="btn btn-primary" href="https://github.com/Victor-HCSilva/youtube-api"
-                                    target="_blank">Código</a>
-                                <!--
-                                
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projetoModal2">Detalhes</button>
-                                -->
-
-                            </div>
+                    <div class="p-8">
+                        <h5 class="text-2xl font-bold mb-4 dark:text-white">Agendamentos</h5>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-green-900/20 text-green-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-green-900/30">Django</span>
+                            <span class="px-3 py-1 bg-blue-900/20 text-blue-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-blue-900/30">Python</span>
                         </div>
-                    </div>
-                    <!-- Projeto 3 -->
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-image="assets/image/pages/projetos/quiz.png"
-                            data-title="Projeto 3" data-description="Quiz educativo, utilizando a biblioteca P5.js,
-                                Jogo em JavaScript." data-link="https://editor.p5js.org/victorLOP/full/2RTmi9DGV">
-                            <img src="assets/image/pages/projetos/quiz.png" class="card-img-top project-image"
-                                alt="Projeto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Quiz</h5>
-                                <p class="card-text">Quiz educativo, utilizando a biblioteca P5.js
-                                    <span class="js tag">JavaScript </span>
-                                </p>
-                                <a href="https://editor.p5js.org/victorLOP/full/2RTmi9DGV" class="btn btn-primary"
-                                    target="_blank">
-                                    Jogar
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--projeto 4-->
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-image="assets/image/pages/projetos/lista.png"
-                            data-title="Lista de tarefas" data-description="Lista de tarefas. Utilizando o Sqlite3 permite anotar tarefas, que são salvas no
-                        banco de dados." data-link="https://victor-hcsilva-lsista-de-tarefas-app-tcbtnq.streamlit.app/"
-                            data-code="https://github.com/Victor-HCSilva/lista_de_tarefas">
-                            <img src="assets/image/pages/projetos/lista.png" class="card-img-top project-image"
-                                alt="Projeto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Lista de tarefas</h5>
-                                <p class="card-text"> Lista de tarefas, simples porém útil
-                                    <span class="python tag">Python </span>
-                                    <span class="st tag">Streamlit</span>
-
-                                </p>
-                                <a class="btn btn-primary"
-                                    href="https://victor-hcsilva-lsista-de-tarefas-app-tcbtnq.streamlit.app/"
-                                    target="_blank">Ver</a>
-                                <a class="btn btn-primary" href="https://github.com/Victor-HCSilva/lista_de_tarefas"
-                                    target="_blank">Código</a>
-                                <!--
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projetoModal3">Detalhes</button>
-                                -->
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--projeto5-->
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-image="assets/image/pages/projetos/produtos.png"
-                            data-title="Gerenciamento de produtos"
-                            data-description="Programa para gerenciar produtos. Feito com Django usando banco de dados padrão"
-                            data-code="https://github.com/Victor-HCSilva/produtos/tree/main">
-                            <img src="assets/image/pages/projetos/produtos.png" class="card-img-top project-image"
-                                alt="Projeto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Gerenciamento de produtos</h5>
-                                <p class="card-text">Programa para gerir produtos, simples
-                                    <span class="html tag">HTML</span>
-                                    <span class="css tag">CSS</span>
-                                    <span class="django tag">Django</span>
-                                    <span class="python tag">Python </span>
-
-                                </p>
-                                <a class="btn btn-primary" href="https://github.com/Victor-HCSilva/produtos/tree/main"
-                                    target="_blank">Código</a>
-                                <!--
-                                
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projetoModal3">Detalhes</button>
-                                -->
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--projeto6-->
-                    <div class="col-md-4 mb-4">
-                        <div class="card project-card" data-image="assets/image/pages/projetos/breve.png"
-                            data-title="Projeto 5" data-description="Em andamento ...">
-                            <img src="assets/image/pages/projetos/breve.png" class="card-img-top project-image"
-                                alt="Projeto 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Projeto 5</h5>
-                                <p class="card-text">Em andamento ...</p>
-                                <!--
-                                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projetoModal3">Detalhes</button>
-                                -->
-
-                            </div>
-                        </div>
+                        <a href="https://github.com/Victor-HCSilva/deploydjango" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver Código</a>
                     </div>
                 </div>
 
-            </div>
-            </div>
+                <!-- Projeto 2 -->
+                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10"
+                    data-image="assets/image/pages/projetos/full_api_youtube.png"
+                    data-title="YouTube Customizer" 
+                    data-description="Extensão de navegador focada em UI/UX para personalizar a experiência de visualização do YouTube, permitindo ajustes dinâmicos via injeção de CSS." 
+                    data-code="https://github.com/Victor-HCSilva/youtube-api">
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="assets/image/pages/projetos/full_api_youtube.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Extensão YouTube">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="text-2xl font-bold mb-4 dark:text-white">YT Customizer</h5>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-600 text-[10px] font-black uppercase tracking-wider rounded-lg border border-yellow-500/30">JS</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-blue-500/30">CSS3</span>
+                        </div>
+                        <a href="https://github.com/Victor-HCSilva/youtube-api" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver Código</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10"
+                    data-image="assets/image/pages/projetos/quiz.png"
+                    data-title="P5.js Game Quiz" 
+                    data-description="Um quiz interativo com mecânicas de jogo construído sobre a engine P5.js, demonstrando lógica de game loop e estados." 
+                    data-link="https://editor.p5js.org/victorLOP/full/2RTmi9DGV">
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="assets/image/pages/projetos/quiz.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Quiz Game">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="text-2xl font-bold mb-4 dark:text-white">Quiz Game</h5>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-pink-500/20 text-pink-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-pink-500/30">P5.JS</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-600 text-[10px] font-black uppercase tracking-wider rounded-lg border border-yellow-500/30">JavaScript</span>
+                        </div>
+                        <a href="https://editor.p5js.org/victorLOP/full/2RTmi9DGV" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Jogar</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer id="contatos">
-        <h1 id="title-contatos" class="change-color-text text-center"></h1>
-        <p class="change-color-text">
-            <a class="especial-link"
-                href="https://docs.google.com/document/d/1NN30tFfyLpw88KCtHjKouTX9MPMBqg2VSvg_vHb6DI8/edit?usp=sharing"
-                target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-file-earmark-person-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" />
-                </svg>
-            </a>
 
-            <a class="especial-link" href="https://github.com/Victor-HCSilva" target="_blank">
-                <svg class="img-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-            </a>
-
-            <a href="https://www.linkedin.com/in/victor-hugo-clementino-da-silva-92307b334/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
-                    class="bi bi-linkedin" viewBox="0 0 16 16">
-                    <path
-                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                </svg>
-            </a>
-        <p id="contatos-text">© 2025 Victor Hugo - Contatos </p>
-        </p>
+    <footer id="contatos" class="bg-white dark:bg-gray-900 mt-20 py-16 rounded-t-[5rem] border-t border-gray-100 dark:border-gray-800">
+        <div class="container mx-auto px-4 text-center">
+            <h3 class="text-3xl font-black mb-12 dark:text-white tracking-tight italic">CONTATOS</h3>
+            <div class="flex justify-center gap-6 md:gap-10 mb-12">
+                <a title="Currículo" href="https://docs.google.com/document/d/1NN30tFfyLpw88KCtHjKouTX9MPMBqg2VSvg_vHb6DI8/edit?usp=sharing" target="_blank" class="p-5 bg-gray-50 dark:bg-gray-800 rounded-[2rem] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all text-gray-600 dark:text-gray-300 border border-gray-100 dark:border-gray-700 hover:text-primary dark:hover:text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0m2 5.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12s5 1.755 5 1.755" /></svg>
+                </a>
+                <a title="GitHub" href="https://github.com/Victor-HCSilva" target="_blank" class="p-5 bg-gray-50 dark:bg-gray-800 rounded-[2rem] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all text-gray-600 dark:text-gray-300 border border-gray-100 dark:border-gray-700 hover:text-primary dark:hover:text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" /></svg>
+                </a>
+                <a title="Linkedin" href="https://www.linkedin.com/in/victor-hugo-clementino-da-silva-92307b334/" target="_blank" class="p-5 bg-gray-50 dark:bg-gray-800 rounded-[2rem] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all text-gray-600 dark:text-gray-300 border border-gray-100 dark:border-gray-700 hover:text-primary dark:hover:text-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" /></svg>
+                </a>
+            </div>
+            <p class="text-sm opacity-30 dark:text-white">© 2025 Victor Hugo - Contatos</p>
+        </div>
     </footer>
-    </main>
-    <!-- Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModalLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+
+    <!-- Tailwind Modal -->
+    <div id="projectModal" class="hidden fixed inset-0 z-[60] overflow-y-auto" role="dialog" aria-modal="true">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div class="fixed inset-0 transition-opacity bg-black/90 backdrop-blur-sm" aria-hidden="true" onclick="closeModal()"></div>
+            <span class="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            <div class="inline-block overflow-hidden text-left align-bottom transition-all transform bg-white dark:bg-gray-900 rounded-[3rem] shadow-2xl sm:my-8 sm:align-middle sm:max-w-4xl sm:w-full border border-gray-200 dark:border-gray-800">
+                <div class="absolute top-6 right-6 z-10">
+                    <button onclick="closeModal()" class="p-3 bg-gray-100 dark:bg-gray-800 rounded-full text-gray-500 hover:text-primary transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M6 18L18 6M6 6l12 12"></path></svg>
                     </button>
                 </div>
-                <div class="modal-body text-center">
-                    <img src="" alt="Project Image" class="img-fluid mb-3" id="modal-image">
-                    <p id="modal-description"></p>
-                    <div class="modal-links">
-                        <a id="modal-link" href="#" class="btn btn-primary" target="_blank"
-                            style="display: none">Ver</a>
-                        <a id="modal-code" href="#" class="btn btn-primary" target="_blank"
-                            style="display: none">Código</a>
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-gray-100 dark:bg-black">
+                        <img id="modal-image" src="" alt="Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-10">
+                        <h3 id="projectModalLabel" class="text-3xl font-black mb-6 dark:text-white tracking-tight uppercase"></h3>
+                        <p id="modal-description" class="text-gray-600 dark:text-gray-400 mb-10 leading-relaxed text-lg"></p>
+                        <div class="flex flex-col gap-4">
+                            <a id="modal-link" href="#" target="_blank" class="w-full py-4 bg-primary text-white text-center font-black rounded-2xl hover:scale-[1.02] transition-all shadow-xl shadow-orange-500/30 uppercase tracking-widest text-sm">Ver Projeto</a>
+                            <a id="modal-code" href="#" target="_blank" class="w-full py-4 bg-gray-100 dark:bg-gray-800 dark:text-white text-center font-black rounded-2xl hover:bg-gray-200 dark:hover:bg-gray-700 transition-all uppercase tracking-widest text-sm">Ver Código</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <script src="assets/js/pages/projetos/projeto.js" defer></script>
 </body>
 

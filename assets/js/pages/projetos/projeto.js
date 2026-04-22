@@ -1,7 +1,3 @@
-console.log('Projetos \nprojetos.html')
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const projectCards = document.querySelectorAll('.project-card');
   const modal = document.getElementById('projectModal');
@@ -11,142 +7,51 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalLink = document.getElementById('modal-link');
   const modalCode = document.getElementById('modal-code');
 
+  function openModal(data) {
+    modalImage.src = data.imageUrl;
+    modalTitle.textContent = data.title;
+    modalDescription.textContent = data.description;
+
+    // Visibility for Link
+    if (data.link && data.link !== "#") {
+      modalLink.href = data.link;
+      modalLink.classList.remove('hidden');
+    } else {
+      modalLink.classList.add('hidden');
+    }
+
+    // Visibility for Code
+    if (data.code) {
+      modalCode.href = data.code;
+      modalCode.classList.remove('hidden');
+    } else {
+      modalCode.classList.add('hidden');
+    }
+
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent scroll
+  }
+
+  window.closeModal = function() {
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto'; // Restore scroll
+  };
 
   projectCards.forEach(card => {
     card.addEventListener('click', function () {
-      const imageUrl = this.getAttribute('data-image');
-      const title = this.getAttribute('data-title');
-      const description = this.getAttribute('data-description');
-      const link = this.getAttribute('data-link');
-      const code = this.getAttribute('data-code')
-
-      modalImage.src = imageUrl;
-      modalTitle.textContent = title;
-      modalDescription.textContent = description;
-      // Define a visibilidade e o href do botão de "Ver"
-      if (link) {
-        modalLink.href = link;
-        modalLink.style.display = 'inline-block';
-      } else {
-        modalLink.style.display = 'none';
-      }
-
-      // Define a visibilidade e o href do botão de "Código"
-      if (code) {
-        modalCode.href = code;
-        modalCode.style.display = 'inline-block';
-      } else {
-        modalCode.style.display = 'none';
-      }
-
-
-      $(modal).modal('show');
+      const data = {
+        imageUrl: this.getAttribute('data-image'),
+        title: this.getAttribute('data-title'),
+        description: this.getAttribute('data-description'),
+        link: this.getAttribute('data-link'),
+        code: this.getAttribute('data-code')
+      };
+      openModal(data);
     });
   });
+
+  // Close on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-  const dj_tag = document.querySelector(".django");
-  const dj_descricao = document.querySelector("#descricao_dj");
-  const js_descricao = document.querySelector("#descricao_js");
-  const js_tag = document.querySelector(".js");
-  const json_descricao = document.querySelector("#descricao_json");
-  const json_tag = document.querySelector(".json");
-  const py_descricao = document.querySelector("#descricao_py");
-  const py_tag = document.querySelector(".python");
-  const html_descricao = document.querySelector("#descricao_html");
-  const html_tag = document.querySelector(".html");
-  const css_descricao = document.querySelector("#descricao_css");
-  const css_tag = document.querySelector(".css");
-  const especial_span = document.querySelector("#especial_span");
-  const all = [
-    dj_descricao,
-    js_descricao,
-    json_descricao,
-    css_descricao,
-    py_descricao,
-    html_descricao,
-  ]
-  /*dj */
-  function show_descricao_dj() {
-    dj_descricao.style = "display:inline;";
-    especial_span.innerHTML = ""
-  }
-  function hide_descricao_dj() {
-    dj_descricao.style = "display:none;";
-  }
-  //js
-  function show_descricao_js() {
-    js_descricao.style = "display:inline;";
-    especial_span.innerHTML = ""
-  }
-  function hide_descricao_js() {
-    js_descricao.style = "display:none;";
-  }
-  //json 
-  function hide_descricao_json() {
-    json_descricao.style = "display:none;";
-  }
-  function show_descricao_json() {
-    json_descricao.style = "display:inline;";
-    especial_span.innerHTML = ""
-  }
-  //py
-  function hide_descricao_py() {
-    py_descricao.style = "display:none;";
-  }
-  function show_descricao_py() {
-    py_descricao.style = "display:inline;";
-    especial_span.innerHTML = ""
-  }
-  //html
-  function hide_descricao_html() {
-    html_descricao.style = "display:none;";
-  }
-  function show_descricao_html() {
-    html_descricao.style = "display:inline;";
-    especial_span.innerHTML = ""
-  }
-  //css
-  function hide_descricao_css() {
-    css_descricao.style = "display:none;";
-  }
-  function show_descricao_css() {
-    especial_span.innerHTML = ""
-    css_descricao.style = "display:inline;";
-  }
-
-  /*django*/
-  dj_tag.addEventListener("mouseover", show_descricao_dj);
-  dj_tag.addEventListener("mouseout", hide_descricao_dj);
-  /*js*/
-  js_tag.addEventListener("mouseover", show_descricao_js);
-  js_tag.addEventListener("mouseout", hide_descricao_js);
-  //json
-  json_tag.addEventListener("mouseover", show_descricao_json);
-  json_tag.addEventListener("mouseout", hide_descricao_json);
-  //py
-  py_tag.addEventListener("mouseover", show_descricao_py);
-  py_tag.addEventListener("mouseout", hide_descricao_py);
-  //html
-  html_tag.addEventListener("mouseover", show_descricao_html);
-  html_tag.addEventListener("mouseout", hide_descricao_html);
-  //css
-  css_tag.addEventListener("mouseover", show_descricao_css);
-  css_tag.addEventListener("mouseout", hide_descricao_css);
-
-
-  let i = 0;
-  let validation = false;
-
-  for (const i of all) {
-
-    if ((i.style.display == "")) {
-      validation = true;
-    }
-  }
-  if (validation) {
-    especial_span.innerHTML = "Passe o mouse por cima deste botoes e veja a descrição"
-  }
-
-})
