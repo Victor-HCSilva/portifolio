@@ -36,10 +36,14 @@
             <div class="hidden md:flex items-center space-x-8">
                 <ul class="flex space-x-6 text-lg font-medium">
                     <li><a class="hover:text-primary transition-colors" href="index.html">Início</a></li>
-                    <li><a class="text-primary" href="about.html">Sobre mim</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="projects.html">Projetos</a></li>
                     <li><a class="hover:text-primary transition-colors" href="#contatos">Contatos</a></li>
+                    <li><a class="hover:text-primary transition-colors" href="about.html">Sobre mim</a></li>
                 </ul>
-                <img src="assets/image/global/change_color.png" alt="Mudar tema" id="change-color" class="w-10 h-10 cursor-pointer p-1 rounded-xl hover:bg-gray-200 dark:hover:bg-gray-800 transition-all border border-transparent dark:border-gray-700">
+                <button id="change-color" class="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all border border-transparent dark:border-gray-700">
+                    <svg class="w-6 h-6 text-yellow-500 block dark:hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zm2.12 10.607a1 1 0 010-1.414l.706-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 11a1 1 0 100-2H3a1 1 0 100 2h1z"></path></svg>
+                    <svg class="w-6 h-6 text-blue-400 hidden dark:block" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                </button>
             </div>
         </nav>
     </header>
@@ -53,13 +57,13 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
                 <!-- Projeto 1 -->
-                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10" 
-                    data-image="assets/image/pages/projetos/full_sage.png"
+                <!-- <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10" 
+                    data-image="assets/image/pages/projetos/full_sage-2.png"
                     data-title="Agendamentos de consultas" 
                     data-description="Sistema robusto de agendamento de consultas desenvolvido como projeto final. Utiliza Django no backend para gestão de dados e uma interface limpa para o usuário final."
                     data-code="https://github.com/Victor-HCSilva/deploydjango">
                     <div class="relative overflow-hidden aspect-[4/3]">
-                        <img src="assets/image/pages/projetos/full_sage.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agendamentos">
+                        <img src="assets/image/pages/projetos/full_sage-2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agendamentos">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
                         </div>
@@ -72,7 +76,7 @@
                         </div>
                         <a href="https://github.com/Victor-HCSilva/deploydjango" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver Código</a>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Projeto 2 -->
                 <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10"
@@ -115,6 +119,80 @@
                             <span class="px-3 py-1 bg-yellow-500/20 text-yellow-600 text-[10px] font-black uppercase tracking-wider rounded-lg border border-yellow-500/30">JavaScript</span>
                         </div>
                         <a href="https://editor.p5js.org/victorLOP/full/2RTmi9DGV" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Jogar</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10"
+                    data-image="assets/image/pages/projetos/to-do.png"
+                    data-title="Lista de Tarefas" 
+                    data-description="Gerenciador de tarefas pessoal com persistência de dados e filtros de status. Focado em produtividade e UI minimalista." 
+                    data-code="https://github.com/Victor-HCSilva">
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="assets/image/pages/projetos/to-do.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Lista de Tarefas">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="text-2xl font-bold mb-4 dark:text-white">To-Do List</h5>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-600 text-[10px] font-black uppercase tracking-wider rounded-lg border border-yellow-500/30">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-blue-500/30">HTML/CSS</span>
+                        </div>
+                        <a href="https://victoraccount2.pythonanywhere.com/main/login/" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver online</a>
+                        <br>
+                        <a href="https://github.com/Victor-HCSilva/ToDo" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver código</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10"
+                    data-image="assets/image/pages/projetos/produtos.png"
+                    data-title="Gestão de Produtos" 
+                    data-description="Sistema de CRUD para gerenciamento de inventário e catálogo de produtos, integrando frontend dinâmico com lógica de backend." 
+                    data-code="https://github.com/Victor-HCSilva">
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="assets/image/pages/projetos/produtos.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Gestão de Produtos">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="text-2xl font-bold mb-4 dark:text-white">Estoque</h5>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-green-900/20 text-green-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-green-900/30">Django</span>
+                            <span class="px-3 py-1 bg-blue-900/20 text-blue-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-blue-900/30">Python</span>
+                        </div>
+                        <a href="https://github.com/Victor-HCSilva" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver Código</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="project-card group cursor-pointer bg-white dark:bg-gray-900 rounded-[2.5rem] overflow-hidden border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-xl hover:shadow-orange-500/10"
+                    data-image="assets/image/pages/projetos/sage-2.png"
+                    data-title="Agendamento Web" 
+                    data-description="Fork do projeto de conclusão de curso um sistema de agendamentos focado em responsividade e didática." 
+                    data-code="https://github.com/Victor-HCSilva/deploydjango">
+                    <div class="relative overflow-hidden aspect-[4/3]">
+                        <img src="assets/image/pages/projetos/sage-2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" alt="Agendamento Web">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-6 py-2 bg-white text-black font-bold rounded-full shadow-xl">DETALHES</span>
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <h5 class="text-2xl font-bold mb-4 dark:text-white">SAGE</h5>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-blue-500/20 text-blue-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-blue-500/30">CSS3</span>
+                            <span class="px-3 py-1 bg-yellow-500/20 text-yellow-600 text-[10px] font-black uppercase tracking-wider rounded-lg border border-yellow-500/30">JavaScript</span>
+                            <span class="px-3 py-1 bg-green-900/20 text-green-500 text-[10px] font-black uppercase tracking-wider rounded-lg border border-green-900/30">Django</span>
+
+                        </div>
+                        <a href="https://victorcsilva.pythonanywhere.com/" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver online</a>
+                        <br>
+                        <a href="https://github.com/Victor-HCSilva/deploydjango" target="_blank" class="w-full block py-3 bg-gray-50 dark:bg-gray-800 hover:bg-primary hover:text-white text-center rounded-2xl font-bold transition-all border border-gray-100 dark:border-gray-700 uppercase text-xs tracking-widest">Ver código</a>
+
+                        
                     </div>
                 </div>
             </div>

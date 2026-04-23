@@ -27,19 +27,7 @@
 
 /*botao de mudar de cor*/
 #change-color {
-    background-color: var(--change-color);
-    width: 45px !important;
-    height: 40px !important;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
     cursor: pointer;
-}
-
-#change-color:hover {
-    transition: 1s;
-    background-color: var(--link-hover);
-    width: 100px;
-    height: 50px;
 }
 .especial-link{
     color: var(--especial-link) ;
