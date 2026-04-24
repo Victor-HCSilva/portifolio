@@ -33,7 +33,7 @@ function toggleTheme() {
 })();
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Setup Toggle Button if it exists (using querySelectorAll for all potential buttons)
+    // Setup Theme Toggle
     const changeColorBtns = document.querySelectorAll("#change-color");
     changeColorBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -41,6 +41,30 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleTheme();
         });
     });
+
+    // Mobile Menu Logic
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuLinks = document.querySelectorAll('.mobile-link');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden';
+        });
+
+        const closeMenu = () => {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = 'auto';
+        };
+
+        if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+        
+        menuLinks.forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    }
 });
 
 window.change_color = toggleTheme;
